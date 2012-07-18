@@ -32,4 +32,24 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+    var $components = array('Session','Auth' );
+
+    public function beforeFilter(){
+        $this->Auth->allow('login');
+        $this->Auth->authorize = array('Controller');
+        $this->Auth->authenticate = array(
+            'all' => array(
+                'scope' => array('User.is_active' => 1)
+            ),
+            'Form'
+        );
+    }
+
+    function isAuthorized($user){
+        if($this->params['prefix']=='admin' && ($user['is_admin']!=1)){
+            return false;
+        }
+        return true;
+    }
 }

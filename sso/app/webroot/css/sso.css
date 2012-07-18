@@ -1,0 +1,12 @@
+.login{
+    width: 500px;
+    margin:auto;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    padding:10px;
+}
+
+#UserRegisterForm{
+    width:400px;
+    margin:auto;
+}
