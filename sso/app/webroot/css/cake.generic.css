@@ -314,7 +314,7 @@ form div.submit {
 	margin-top: 10px;
 }
 label {
-	display: block;
+	display: inline;
 	font-size: 100%;
 	/*margin-bottom:3px;*/
 
@@ -333,8 +333,8 @@ input, textarea {
 }
 select {
 	clear: both;
-	font-size: 120%;
-	vertical-align: text-bottom;
+	font-size: 100%;
+	vertical-align: middle;
 }
 select[multiple=multiple] {
 	width: 100%;

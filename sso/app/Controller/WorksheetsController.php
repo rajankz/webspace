@@ -19,6 +19,24 @@ class WorksheetsController extends AppController {
 		$this->set('worksheet',$worksheet);
 	}
 
+	//public function beforeFilter(){
+	//	$this->loadModelData();
+	//}
+
+	function loadModelData(){
+		$this->loadModel('Roles');
+		$this->loadModel('SelectOptions');
+		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+		$this->set('financialBlockOptions',$this->SelectOptions->find('list',array(
+			'fields'=>array('SelectOptions.code','SelectOptions.code'),
+			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
+		)));
+		$this->set('judicialBlockOptions',$this->SelectOptions->find('list',array(
+			'fields'=>array('SelectOptions.code','SelectOptions.code'),
+			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'judicial')
+		)));
+	}
+
 }
 
 ?>

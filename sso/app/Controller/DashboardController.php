@@ -8,7 +8,7 @@
  */
 
 class DashboardController extends AppController{
-    //function index(){$this->redirect('index');}
+
 }
 
 

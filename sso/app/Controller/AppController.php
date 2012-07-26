@@ -36,6 +36,28 @@ class AppController extends Controller {
     var $components = array('Session','Auth' );
 	var $helpers = array('Html', 'Form', 'Js');
 
+	var $loaded = false;
+
+	//var $financialBlocks = null;
+//	var $judicialBlock = null;
+
+	private function loadModelData(){
+		if($this->loaded)
+			return;
+		$this->loadModel('Roles');
+		$this->loadModel('SelectOptions');
+		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+		$this->set('financialBlockOptions',$this->SelectOptions->find('list',array(
+			'fields'=>array('SelectOptions.code','SelectOptions.code'),
+			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
+		)));
+		$this->set('judicialBlockOptions',$this->SelectOptions->find('list',array(
+			'fields'=>array('SelectOptions.code','SelectOptions.code'),
+			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'judicial')
+		)));
+		$this->loaded = true;
+	}
+
 	public function index(){
 		if($this->Auth->loggedIn()){
 			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
@@ -54,6 +76,7 @@ class AppController extends Controller {
             'Form'
         );
 	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false);
+	    $this->loadModelData();
     }
 
     function isAuthorized($user){
