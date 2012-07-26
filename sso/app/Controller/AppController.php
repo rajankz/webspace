@@ -34,22 +34,35 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
     var $components = array('Session','Auth' );
+	var $helpers = array('Html', 'Form', 'Js');
+
+	public function index(){
+		if($this->Auth->loggedIn()){
+			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
+		}else{
+			$this->redirect(array('controller'=>'users', 'action'=>'login'));
+		}
+	}
 
     public function beforeFilter(){
         $this->Auth->allow('login');
-        $this->Auth->authorize = array('Controller');
+        $this->Auth->authorize = array('controller');
         $this->Auth->authenticate = array(
             'all' => array(
                 'scope' => array('User.is_active' => 1)
             ),
             'Form'
         );
+	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false);
     }
 
     function isAuthorized($user){
-        if($this->params['prefix']=='admin' && ($user['is_admin']!=1)){
+        if($this->params['prefix']=='admin' && ($user['role']!=1)){
             return false;
         }
+	    if($this->params['prefix']=='creator' && ($user['role']!=3)){
+		    return false;
+	    }
         return true;
     }
 }

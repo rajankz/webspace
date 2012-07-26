@@ -31,6 +31,8 @@
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('sso');
         echo '<link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-1020px.css" />';
+        echo $this->Html->script('jquery-1.7.2.min.js');
+        echo $this->Html->script('functions.js');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -45,12 +47,14 @@
 
 	<div id="container">
 		<div id="header">
+            <div id="banner">
             <?php echo $this->Html->link(
                 $this->Html->image('sso-banner.jpg',array('alt' => $siteDescription, 'border' => '0')),
-                'http://studentsuccess.umd.edu/',
+                '/',
                 array('target' => '_self', 'escape' => false)
             );
             ?>
+            </div>
 		</div>
 		<div id="content">
             <?php echo $this->Session->flash(); ?>

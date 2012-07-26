@@ -3,18 +3,13 @@
 class User extends AppModel{
 	var $name = 'User';
     var $useTable = 'users';
-    /*
-    var $validate = array(
-        'username' => 'VALID_NOT_EMPTY',
-        'password' => 'VALID_NOT_EMPTY',
-        'emailId' => 'VALID_NOT_EMPTY'
-    );
-    */
 
     public $validate = array(
         'username' => array(
             array(
                 'rule' => 'notEmpty',
+	            'required' => true,
+	            'allowEmpty' => false,
                 'message' => 'Username cannot be empty'
             ),
             array(
@@ -25,6 +20,8 @@ class User extends AppModel{
         'password' => array(
             array(
                 'rule' => 'notEmpty',
+	            'required' => true,
+	            'allowEmpty' => false,
                 'message' => 'Password cannot be empty'
             ),
             array(

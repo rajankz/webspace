@@ -27,8 +27,8 @@ body {
 	background: #003d4c;
     background:#fff;
 	color: #fff;
-	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
-	font-size:90%;
+	font-family: Helvetica, 'lucida grande',verdana,arial,sans-serif;
+	font-size:0.9em;
 }
 a {
 	color: #003d4c;
@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 h1 {
 	background:#fff;
 	color: #003d4c;
-	font-size: 100%;
+	font-size: 200%;
 }
 h2 {
 	background:#fff;
@@ -82,6 +82,7 @@ p {
 #header{
 	/*padding: 10px 20px;*/
     background: #fff;
+    margin: 0;
 }
 #header h1 {
 	line-height:20px;
@@ -100,11 +101,14 @@ p {
 	background: #003d4c;
 	text-decoration: underline;
 }
+#header a img{
+    text-align: center;
+}
 #content{
 	background: #fff;
 	clear: both;
 	color: #333;
-	padding: 10px 20px 40px 20px;
+	/*padding: 10px 20px 40px 20px;*/
 	overflow: auto;
 }
 #footer {
@@ -294,6 +298,7 @@ form div {
 }
 form .input {
 	color: #444;
+    margin-bottom: auto;
 }
 form .required {
 	font-weight: bold;
@@ -310,18 +315,21 @@ form div.submit {
 }
 label {
 	display: block;
-	font-size: 110%;
-	margin-bottom:3px;
+	font-size: 100%;
+	/*margin-bottom:3px;*/
+
+    margin-right: 5px;
 }
 input, textarea {
 	clear: both;
 	font-family: Helvetica, "frutiger linotype", "lucida grande", "verdana", sans-serif;
-    font-size:1.2em;
-	padding: 2%;
-	width:98%;
+    font-size:.75em;
+	padding: 5px;
+	/*width:98%;*/
     border-style: none;
     border:1px solid #999;
     border-radius: 3px;
+    margin: 3px auto;
 }
 select {
 	clear: both;
@@ -462,7 +470,8 @@ p.error,
 	background-image: linear-gradient(top, #ee5f5b, #c43c35);
 	*/
 	text-shadow: 0 -1px 0 rgba(f, f, f, 0.3);
-    width:95%;
+    width:90%;
+    margin: auto;
 }
 .success {
 	clear: both;

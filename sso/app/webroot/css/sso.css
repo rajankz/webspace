@@ -10,3 +10,91 @@
     width:400px;
     margin:auto;
 }
+#banner{
+    margin: auto;
+    text-align: center;
+}
+#sidemenu{
+    width: 200px;
+    padding:15px;
+    background: #C6D3E1;
+    border: 1px solid #A4B8CD;
+    min-height: 300px;
+    box-shadow: 1px 1px 0 #fff;
+    margin: -1px 0 0 -1px;
+    float: left;
+    font-family: Helvetica, 'lucida grande', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+#sidemenu a{
+    box-shadow: none;
+    padding: 1px 15px;
+    color: #1A3F7E;
+    cursor: auto;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    text-shadow: rgba(0,0,0,0) 1px 1px 0px, #A4AFBA 1px 1px 1px;
+    text-transform: capitalize;
+    vertical-align: baseline;
+    font-style: normal;
+}
+#sidemenu a:hover{
+    color: #1A3F7E;
+    padding: 0 14px;
+    background: #EEE;
+    background-color: #EDEDED;
+    border: 1px solid #AFBAC6;
+    border-bottom-color: #8E97A0;
+    border-top: 1px solid white;
+    box-shadow: 0 -1px 0 #AFBAC6;
+    border-radius: 4px;
+}
+
+.buttonLink{
+     display:inline;
+     text-decoration: none;
+     margin: 0 10px;
+     border: 1px solid #2d4f78;
+     padding: 9px 7px;
+     border-radius: 4px;
+     color: #fefefe;
+     background-color: #427dc1;
+    font-family: Helvetica, 'lucida grande', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 30px;
+    vertical-align: baseline;
+ }
+
+.buttonLink:hover{
+    text-decoration: none;
+    border: 1px solid #2d4f78;
+    padding: 9px 7px;
+    padding-left: 30px;
+    border-radius: 4px;
+    color: #427dc1;
+    background-color: #fefefe;
+}
+
+.defaultText { width: 300px; }
+.defaultTextActive { color: #3c3c3c; }
+
+#worksheetForm{
+    width:750px;
+    border: 1px solid #cccccc;
+    float:right;
+    margin: auto 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+#addButton{
+    background-image: url('User-add-24.png');
+    background-repeat: no-repeat;
+    background-position:left center;
+}
