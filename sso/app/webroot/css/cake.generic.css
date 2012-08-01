@@ -58,9 +58,10 @@ h2 {
 	font-size: 190%;
 }
 h3 {
-	color: #2c6877;
+	color: #771e4c;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
-	font-size: 165%;
+	font-size: 110%;
+    font-weight: 700;
 }
 h4 {
 	color: #993;
@@ -327,14 +328,20 @@ input, textarea {
 	padding: 5px;
 	/*width:98%;*/
     border-style: none;
-    border:1px solid #999;
-    border-radius: 3px;
+    /*border:1px solid #999;*/
+    border-bottom: 1px solid #666;
+    /*border-radius: 3px;*/
     margin: 3px auto;
 }
 select {
 	clear: both;
 	font-size: 100%;
+    padding: 3px;
 	vertical-align: middle;
+    border: 1px solid #666;
+    min-width: 50px;
+    min-height: 20px;
+    background: transparent;
 }
 select[multiple=multiple] {
 	width: 100%;
