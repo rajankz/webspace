@@ -24,7 +24,7 @@ class UsersController extends AppController{
     }
 
     function index($user = null){
-	    debug($this->User);
+	    //debug($this->User);
 	    $this->loadModel('Roles');
 	    $this->Roles->id = $this->Auth->user('role');
 	    $this->Roles->read();

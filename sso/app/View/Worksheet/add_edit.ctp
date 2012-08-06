@@ -16,7 +16,7 @@
 
     <div>
     <h3>Blocks</h3>
-    <?php echo $this->Form->input('Worksheet.financialBlock',array('type'=>'select','options'=>$financialBlockOptions)); ?>
+    <?php echo $this->Form->input('Worksheet.financialBlock',array('type'=>'select','options'=>array($financialBlockOptions.code,$financialBlockOptions.name))); ?>
     <?php //echo $this->Form->input('Worksheet.financialBlock',array($financialBlockOptions.code, $financialBlockOptions)); ?>
     <?php echo $this->Form->input('Worksheet.judicialBlock',array('type'=>'select','options'=>$judicialBlockOptions)); ?>
     <?php echo $this->Form->input('Worksheet.missingTranscripts', array('type'=>'checkbox','hiddenField' => false)); ?>

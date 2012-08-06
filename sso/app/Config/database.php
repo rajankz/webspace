@@ -64,7 +64,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'ugst',
-		'password' => 'ugst123',
+		'password' => 'ugst',
 		'database' => 'ugst',
 		'prefix' => '',
 		//'encoding' => 'utf8',

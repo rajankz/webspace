@@ -7,6 +7,11 @@
 class SelectOption extends AppModel {
 	var $name = 'SelectOption';
 	var $useTable = 'select_options';
+
+    var $virtualFields = array(
+        financialBlockString => 'CONCAT(SelectOptions.code," - ",SelectOptions.name)'
+    );
+
 }
 
 ?>

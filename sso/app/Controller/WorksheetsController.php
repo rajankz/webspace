@@ -28,7 +28,7 @@ class WorksheetsController extends AppController {
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
-		$financialBlockOptions = array();
+		/*$financialBlockOptions = array();
 		$financialBlocks = array();
 		$financialBlocks = $this->SelectOptions->find('list',array(
 			'fields'=>array('SelectOptions.code','SelectOptions.name'),
@@ -36,16 +36,17 @@ class WorksheetsController extends AppController {
 		));
 		foreach ($financialBlocks as $row) {
 			$financialBlockOptions["{$row['SelectOptions']['code']}"] = "{$row['SelectOptions']['code']} - {$row['SelectOptions']['name']}";
-		}
-		$this->set('financialBlockOptions', $financialBlockOptions);
-		/*
+		}*/
+		//$this->set('financialBlockOptions', $financialBlockOptions);
+
+
 		$this->set('financialBlockOptions',$this->SelectOptions->find('list',array(
-			'fields'=>array('SelectOptions.name'),
+			'fields'=>array('SelectOptions.code','SelectOptions.name'),
 			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
 		)));
-		*/
+
 		$this->set('judicialBlockOptions',$this->SelectOptions->find('list',array(
-			'fields'=>array('SelectOptions.code','SelectOptions.code'),
+			'fields'=>array('SelectOptions.code','SelectOptions.code'.'SelectOptions.name'),
 			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'judicial')
 		)));
 	}

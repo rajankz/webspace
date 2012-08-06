@@ -329,8 +329,8 @@ input, textarea {
 	/*width:98%;*/
     border-style: none;
     /*border:1px solid #999;*/
-    border-bottom: 1px solid #666;
-    /*border-radius: 3px;*/
+    border: 1px solid #ccc;
+    border-radius: 3px;
     margin: 3px auto;
 }
 select {
