@@ -54,30 +54,21 @@
 }
 
 .buttonLink{
-     display:inline;
-     text-decoration: none;
-     margin: 0 10px;
-     border: 1px solid #2d4f78;
-     padding: 9px 7px;
-     border-radius: 4px;
-     color: #fefefe;
-     background-color: #427dc1;
     font-family: Helvetica, 'lucida grande', sans-serif;
-    font-style: normal;
+    display: inline;
+    margin: auto 5px;
+    width: 80px;
+    padding:7px 5px;
+    font-size: 15px;
+    line-height: 18px;
     font-weight: 500;
-    padding-left: 30px;
-    vertical-align: baseline;
- }
-
-.buttonLink:hover{
-    text-decoration: none;
-    border: 1px solid #2d4f78;
-    padding: 9px 7px;
-    padding-left: 30px;
-    border-radius: 4px;
-    color: #427dc1;
-    background-color: #fefefe;
+    color: #fff;
+    border: 1px solid #ccc;
+    background-color: #2e51a2;
+    box-sizing: border-box;
+    border-radius: 3px;
 }
+
 
 .defaultText { width: 300px; }
 .defaultTextActive { color: #3c3c3c; }
@@ -85,16 +76,42 @@
 #worksheetForm{
     width:750px;
     border: 1px solid #cccccc;
-    float:right;
-    margin: auto 10px;
+    float:left;
+    margin: 0 10px;
+    text-align: left;
 }
 
 .center{
     text-align: center;
 }
 
-#addButton{
-    background-image: url('User-add-24.png');
-    background-repeat: no-repeat;
-    background-position:left center;
+table.uiGrid{
+    border: none;
+    border-collapse: collapse;;
+    border-spacing: 0;
+    margin: 0;
+}
+
+input{
+    width: 250px;
+    padding: 6px;
+    font-size:16px;
+}
+
+td.label{
+    text-align: right;
+    vertical-align: middle;
+}
+.table400{
+    width: 400px;
+}
+#formBox{
+    padding-left: 0;
+    vertical-align: middle;
+}
+#formBox>table tr:nth-child(even) {
+    background: none;
+}
+#formBox>table tr td {
+    border: none;
 }

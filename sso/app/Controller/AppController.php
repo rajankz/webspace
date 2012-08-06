@@ -37,9 +37,8 @@ class AppController extends Controller {
 	var $helpers = array('Html', 'Form', 'Js');
 
 	var $loaded = false;
+    var $financialBlock;
 
-	//var $financialBlocks = null;
-//	var $judicialBlock = null;
 
 	private function loadModelData(){
 		if($this->loaded)
@@ -47,6 +46,13 @@ class AppController extends Controller {
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+
+/*
+        $this->financialBlock = $this->SelectOptions->find('list',array(
+            'fields'=>array('SelectOptions.code','SelectOptions.code'),
+            'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
+        ));
+
 		$this->set('financialBlockOptions',$this->SelectOptions->find('list',array(
 			'fields'=>array('SelectOptions.code','SelectOptions.code'),
 			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
@@ -55,8 +61,10 @@ class AppController extends Controller {
 			'fields'=>array('SelectOptions.code','SelectOptions.code'),
 			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'judicial')
 		)));
+*/
 		$this->loaded = true;
 	}
+
 
 	public function index(){
 		if($this->Auth->loggedIn()){

@@ -9,29 +9,31 @@ class UsersController extends AppController{
         if (!$this->request->is('post'))
             return;
 
-	   // if($this->View->Form->error('username')!=null && $this->View->Form->error('password')!=null)
-
-
         if($this->Auth->loggedIn())
             $this->Auth->logout();
 
         if($this->Auth->login()){
-            $this->redirect(array('controller'=>'users','action'=>'index', $this->User));
+            $this->redirect(array('action'=>'index'));
         } else {
             $this->Auth->authError = 'Invalid username / password combination';
             $this->Session->setFlash($this->Auth->authError);
         }
     }
 
+    function admin_login(){
+        $this->redirect(array('action'=>'login','admin'=>false));
+    }
+
+    function creator_login(){
+        $this->redirect(array('action'=>'login','creator'=>false));
+    }
+
     function index($user = null){
-	    //debug($this->User);
 	    $this->loadModel('Roles');
 	    $this->Roles->id = $this->Auth->user('role');
 	    $this->Roles->read();
         switch($this->Roles->field('role_name')){
             case 'admin':
-	            debug($this->Roles->field('role_name'));
-	            //exit();
                 $this->redirect(array('controller'=>'users','action'=>'dashboard','admin'=>true));
                 break 1;
             case 'reviewer':

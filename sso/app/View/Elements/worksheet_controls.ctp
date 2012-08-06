@@ -1,6 +1,5 @@
 <div id="worksheetControls">
-
-    <?php echo $this->Html->link('Add', array('controller'=>'worksheets','action' => 'add'),array('class'=>'buttonLink','id'=>'addButton')); ?>
-    <?php echo $this->Html->link('Delete', array('controller'=>'worksheets','action' => 'delete'),array('class'=>'buttonLink')); ?>
-    <?php echo $this->Html->link('Edit', array('controller'=>'worksheets','action' => 'edit'),array('class'=>'buttonLink')); ?>
+    <button class="buttonLink" onclick="location.href='<?php echo $this->Html->url(array('controller'=>'worksheets', 'action'=>'add')); ?>';">Add</button>
+    <button class="buttonLink" onclick="location.href='<?php echo $this->Html->url(array('controller'=>'worksheets', 'action'=>'edit')); ?>';">Edit</button>
+    <button class="buttonLink" onclick="location.href='<?php echo $this->Html->url(array('controller'=>'worksheets', 'action'=>'delete')); ?>';">Delete</button>
 </div>
