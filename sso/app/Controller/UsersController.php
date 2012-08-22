@@ -15,7 +15,9 @@ class UsersController extends AppController{
         if($this->Auth->login()){
             $this->redirect(array('action'=>'index'));
         } else {
-            $this->Auth->authError = 'Invalid username / password combination';
+        	//debug($this->Auth->authenticate['all']['scope']['User.is_active']);
+            $this->Auth->loginError = 'Invalid username / password combination.';
+            $this->Auth->authError = 'Your account has been diabled. Please contact Administrator.';
             $this->Session->setFlash($this->Auth->authError);
         }
     }
@@ -28,27 +30,24 @@ class UsersController extends AppController{
         $this->redirect(array('action'=>'login','creator'=>false));
     }
 
-    function index($user = null){
-	    $this->loadModel('Roles');
-	    $this->Roles->id = $this->Auth->user('role');
-	    $this->Roles->read();
-        switch($this->Roles->field('role_name')){
+    function index(){
+        switch($this->Auth->user('role')){
             case 'admin':
-                $this->redirect(array('controller'=>'users','action'=>'dashboard','admin'=>true));
+                $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>true));
                 break 1;
             case 'reviewer':
-                $this->redirect(array('controller'=>'users','action'=>'dashboard','admin'=>false));
+                $this->redirect(array('controller'=>'users','action'=>'dashboard','admin'=>false,'creator'=>false));
                 break 1;
 	        case 'creator':
-		        $this->redirect(array('controller'=>'users','action'=>'dashboard','creator'=>true));
+		        $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>false,'creator'=>true));
 		        break 1;
             default:
                 $this->redirect(array('controller'=>'users','action'=>'login','admin'=>false));
         }
     }
 
-	function admin_dashboard(){}
 	function creator_dashboard(){}
+
 	function dashboard(){}
 	
 	function beforeFilter(){
@@ -79,6 +78,25 @@ class UsersController extends AppController{
         }
         if(!empty( $this->data['User']['confirm_password'] ) ){
             $this->request->data['User']['confirm_password'] = $this->Auth->password( $this->data['User']['confirm_password'] );
+        }
+    }
+    
+    function admin_updateUser() {
+        $this->loadModel('Roles');
+        $this->set('roles',$this->Roles->find('list',array('fields'=>array('role_name'))));
+        if (!empty($this->data)) {
+            $this->convertPasswords();
+            if ($this->request->data['User']['password'] == $this->request->data['User']['confirm_password']) {
+            
+                if($this->User->save($this->data)){
+                    $this->Session->setFlash('User data has been saved.','flashSuccess');
+                    $this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
+                }else {
+                    $this->data['User']['password'] = null;
+                    $this->data['User']['confirm_password'] = null;
+                    $this->flash('Passwords do not match.');
+                }
+            }
         }
     }
 

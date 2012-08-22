@@ -47,21 +47,6 @@ class AppController extends Controller {
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
 
-/*
-        $this->financialBlock = $this->SelectOptions->find('list',array(
-            'fields'=>array('SelectOptions.code','SelectOptions.code'),
-            'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
-        ));
-
-		$this->set('financialBlockOptions',$this->SelectOptions->find('list',array(
-			'fields'=>array('SelectOptions.code','SelectOptions.code'),
-			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'financial')
-		)));
-		$this->set('judicialBlockOptions',$this->SelectOptions->find('list',array(
-			'fields'=>array('SelectOptions.code','SelectOptions.code'),
-			'conditions'=>array('SelectOptions.type'=>'block','SelectOptions.subtype'=>'judicial')
-		)));
-*/
 		$this->loaded = true;
 	}
 
@@ -88,10 +73,10 @@ class AppController extends Controller {
     }
 
     function isAuthorized($user){
-        if($this->params['prefix']=='admin' && ($user['role']!=1)){
+        if($this->params['prefix']=='admin' && ($user['role']!='admin')){
             return false;
         }
-	    if($this->params['prefix']=='creator' && ($user['role']!=3)){
+	    if($this->params['prefix']=='creator' && ($user['role']!='creator')){
 		    return false;
 	    }
         return true;

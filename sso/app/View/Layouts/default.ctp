@@ -56,7 +56,7 @@
             ?>
             </div>
 		</div>
-		<div id="content">
+		<div id="contentWrapper">
             <?php echo $this->Session->flash(); ?>
 			<?php echo $this->Session->flash('auth');?>
 			<?php echo $this->fetch('content'); ?>

@@ -1,5 +1,5 @@
-<?php echo $this->element('common'); ?>
-<?php echo $this->element('admin_sidemenu'); ?>
+<?php //echo $this->element('common'); ?>
+<?php //echo $this->element('admin_sidemenu'); ?>
 
 <div id="theContent">
 <h2 class="center" xmlns="http://www.w3.org/1999/html">Create or Edit Worksheet</h2>

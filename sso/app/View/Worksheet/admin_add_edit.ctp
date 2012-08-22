@@ -1,10 +1,11 @@
-<?php echo $this->element('common'); ?>
 <?php echo $this->element('admin_sidemenu'); ?>
+<?php echo $this->element('common'); ?>
 
 <div id="theContent">
-<h2 class="center" xmlns="http://www.w3.org/1999/html">Create or Edit Worksheet</h2>
+<h2 class="center red">Create or Edit Worksheet</h2>
 
-<?php echo $this->Form->create('Worksheet', array('action' => 'submit')); ?>
+<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
+
 <div class="formBox">
 	<h3>Student Information</h3>
     <table class="uiGrid table400" cellspacing="0" cellpadding="1">
@@ -52,7 +53,7 @@
 	<?php echo $this->Form->input('numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X)')); ?>
 	<?php echo $this->Form->input('numCancelledApplications', array('label'=>'Number of Cancelled Applications (RC)')); ?>
 	
-	<?php //echo $this->Html->div('priorReEnrollmentDecisions');
+	<?php //echo $this->Html->div('priorReEnrollmentDecisions'); ?>
 	
 	<?php //echo $this->Html->Link('addSemester',$options=>array('onClick'=>'addOneSemester()')); ?>
 	
@@ -65,7 +66,6 @@
 	<?php echo $this->Form->input('Worksheet.needPermToRegisterThirdTime', array('type'=>'checkbox','hiddenField' => false,'label'=>'Needs permission to register for a major requirement for a third time')); ?>
 	<?php echo $this->Form->input('Worksheet.needPermToRepeatMoreThan18', array('type'=>'checkbox','hiddenField' => false,'label'=>'Needs permission to repeat more than 18 credits')); ?>
 </div>
-
 
 <div class="formBox">
 	<h3>GPA</h3>
@@ -80,7 +80,6 @@
 	</div>
 	</div><div style="clear: both;margin: 0;padding: 0;"></div>
 </div>
-
 
 <div class="formBox">
 	<h3>Major</h3>
@@ -105,14 +104,12 @@
 
 <div class="formBox">
 <?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
-<?php	//if($this->Worksheet != null)
-echo $this->Form->submit('Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
+<?php debug($this->params); ?>
+<?php if($this->params['Worksheet'] != null)
+		echo $this->Form->submit('Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
 ?>
 </div>
+
 <?php echo $this->Form->end(); ?>
 
 </div>
-
-
-
-

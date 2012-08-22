@@ -17,15 +17,14 @@
 #sidemenu{
     width: 200px;
     padding:15px;
-    background: #C6D3E1;
+    /*background: #C6D3E1;*/
     border: 1px solid #A4B8CD;
     min-height: 300px;
     box-shadow: 1px 1px 0 #fff;
-    margin: -1px 0 0 -1px;
+    margin: 0px 0 -1px 0px;
     float: left;
-    font-family: Helvetica, 'lucida grande', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
+	background-color: #dae0e7;
+	font: 400 12px Helvetica, 'lucida grande', sans-serif;
 }
 #sidemenu a{
     box-shadow: none;
@@ -36,12 +35,15 @@
     height: 25px;
     line-height: 25px;
     text-decoration: none;
-    text-shadow: rgba(0,0,0,0) 1px 1px 0px, #A4AFBA 1px 1px 1px;
+    text-shadow: 1px 1px 1px rgb(254, 254, 254), 1px 1px 1px #A4AFBA;
     text-transform: capitalize;
     vertical-align: baseline;
     font-style: normal;
+	font-variant: small-caps;
+	font-size: 1.3em;
+	margin-bottom: .5em;
 }
-#sidemenu a:hover{
+#sidemenu a:hover, #sidemenu a:active{
     color: #1A3F7E;
     padding: 0 14px;
     background: #EEE;
@@ -50,7 +52,7 @@
     border-bottom-color: #8E97A0;
     border-top: 1px solid white;
     box-shadow: 0 -1px 0 #AFBAC6;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .buttonLink{
@@ -73,17 +75,26 @@
 .defaultText { width: 300px; }
 .defaultTextActive { color: #3c3c3c; }
 
-#worksheetForm{
-    width:750px;
+#theContent{
+    width:760px;
     border: 1px solid #cccccc;
-    float:left;
-    margin: 0 10px;
+    float:right;
+    margin: 0px 10px 0 5px;
     text-align: left;
+    min-height:300px;
+    padding:15px 5px;
+    background-color: #efefef;
+}
+
+#theContent h2{
+	font-family: 'Helvetica Neue';
+	font-weight: 200;
 }
 
 .center{
     text-align: center;
 }
+.red{color:#880000}
 
 table.uiGrid{
     border: none;
@@ -93,9 +104,9 @@ table.uiGrid{
 }
 
 input{
-    width: 250px;
-    padding: 6px;
-    font-size:16px;
+    width: 200px;
+    padding: 4px;
+    font-size:13px;
 }
 
 td.label{
@@ -103,15 +114,41 @@ td.label{
     vertical-align: middle;
 }
 .table400{
-    width: 400px;
+    width: 0px;
 }
-#formBox{
+.formBox{
     padding-left: 0;
     vertical-align: middle;
 }
-#formBox>table tr:nth-child(even) {
+.formBox>table tr:nth-child(even) {
     background: none;
 }
-#formBox>table tr td {
+.formBox>table tr td {
     border: none;
+}
+.smallText label{
+	display: inline;
+}
+.smallText input{
+	width: 25px;
+}
+#commonControls{
+	/*float: right;*/
+	float: right;
+	width: 760px;
+    border: 1px solid #cccccc;
+    margin: 0 10px 5px 5px;
+    text-align: right;
+    padding:10px 5px;
+    background-color: #ccc;
+    border:1px solid #aaa;
+}
+#commonControls a{
+	margin-right:10px;
+}
+#contentWrapper a{
+	text-decoration: none;
+}
+#container{
+	float:left;
 }
