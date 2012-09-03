@@ -42,6 +42,7 @@
 	font-variant: small-caps;
 	font-size: 1.3em;
 	margin-bottom: .5em;
+	font-weight: 600;
 }
 #sidemenu a:hover, #sidemenu a:active{
     color: #1A3F7E;
@@ -107,6 +108,7 @@ input{
     width: 200px;
     padding: 4px;
     font-size:13px;
+    border-radius: 2px;
 }
 
 td.label{
@@ -130,7 +132,7 @@ td.label{
 	display: inline;
 }
 .smallText input{
-	width: 25px;
+	width: 45px;
 }
 #commonControls{
 	/*float: right;*/
@@ -146,9 +148,29 @@ td.label{
 #commonControls a{
 	margin-right:10px;
 }
+/*
 #contentWrapper a{
 	text-decoration: none;
 }
+*/
 #container{
 	float:left;
+}
+
+.flash{
+	width: 100%;
+	margin: auto;
+	padding: 5px 10px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.flash_error{
+	border: 1px solid #800;
+	background-color: #fdd8e0;
+	color: #b40c0c;
+}
+.flash_success{
+	border: 1px solid #046402;
+	background-color: #d6feed;
+	color: #1f5922;
 }

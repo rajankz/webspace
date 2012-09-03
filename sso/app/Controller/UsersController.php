@@ -81,22 +81,28 @@ class UsersController extends AppController{
         }
     }
     
+    /*   PASSWORD
+    $this->convertPasswords();
+    if ($this->request->data['User']['password'] == $this->request->data['User']['confirm_password']) {
+    
+    }else {
+        $this->data['User']['password'] = null;
+        $this->data['User']['confirm_password'] = null;
+        $this->flash('Passwords do not match.');
+    }
+    
+    */
+    
     function admin_updateUser() {
         $this->loadModel('Roles');
         $this->set('roles',$this->Roles->find('list',array('fields'=>array('role_name'))));
-        if (!empty($this->data)) {
-            $this->convertPasswords();
-            if ($this->request->data['User']['password'] == $this->request->data['User']['confirm_password']) {
-            
-                if($this->User->save($this->data)){
-                    $this->Session->setFlash('User data has been saved.','flashSuccess');
-                    $this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
-                }else {
-                    $this->data['User']['password'] = null;
-                    $this->data['User']['confirm_password'] = null;
-                    $this->flash('Passwords do not match.');
-                }
-            }
+        //debug($this->data);exit;
+        if (!empty($this->data) && $this->User->save($this->data)){
+            $this->Session->setFlash('User data has been saved.','flashSuccess');
+            $this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
+        }else{
+        	$this->Session->setFlash('User data NOT saved.','flashError');
+        	$this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
         }
     }
 

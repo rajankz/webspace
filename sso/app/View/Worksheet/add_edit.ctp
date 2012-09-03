@@ -1,4 +1,3 @@
-<?php echo $this->element('common'); ?>
 <?php echo $this->element('admin_sidemenu'); ?>
 
 <div id="theContent">

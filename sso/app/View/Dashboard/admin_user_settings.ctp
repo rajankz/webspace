@@ -1,5 +1,4 @@
 <?php echo $this->element('admin_sidemenu'); ?>
-<?php echo $this->element('common'); ?>
 <div id="theContent">
 <h2 class="center">User Settings</h2>
 <table>

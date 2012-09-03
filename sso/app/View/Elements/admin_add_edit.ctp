@@ -2,7 +2,7 @@
 <?php //echo $this->element('admin_sidemenu'); ?>
 
 <div id="theContent">
-<h2 class="center" xmlns="http://www.w3.org/1999/html">Create or Edit Worksheet</h2>
+<h2 class="center">Create or Edit Worksheet</h2>
 
 <?php echo $this->Form->create('Worksheet', array('action' => 'submit')); ?>
 <div class="formBox">

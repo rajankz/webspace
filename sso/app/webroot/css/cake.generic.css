@@ -32,12 +32,15 @@ body {
 }
 a {
 	color: #003d4c;
-	text-decoration: underline;
-	font-weight: bold;
+	color: #880000;
+	text-decoration: none;
+	/*font-weight: bold;*/
 }
 a:hover {
 	color: #367889;
+	color: #880000;
 	text-decoration:none;
+	text-decoration: underline;
 }
 a img {
 	border:none;
@@ -86,12 +89,14 @@ p {
     float: left;
     background: #fff;
     margin-bottom: 20px;
+    border-radius: 3px;
 }
 
 #header{
 	/*padding: 10px 20px;*/
     background: #fff;
     margin: 0 0 10px 0;
+    border-radius: 3px;
 }
 #header h1 {
 	line-height:20px;
@@ -369,7 +374,7 @@ option {
 input[type=checkbox] {
 	clear: left;
 	float: left;
-	margin: 0px 6px 7px 2px;
+	/*margin: 0px 6px 7px 2px;*/
 	width: auto;
 }
 div.checkbox label {
