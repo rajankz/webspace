@@ -100,7 +100,7 @@ class WorksheetsController extends AppController {
         $this->set('judicialBlockOptions', $judicialBlockOptions);
         
         $this->set('reviewerOptions',$this->Users->find('list',array('fields'=>array('Users.id','Users.fullName'),
-        	'conditions'=>array('Users.role'=>'reviewer')
+        	'conditions'=>array('Users.role'=>'reviewer', 'Users.is_active'=>true)
         )));
         
         $reviewsData = $this->Review->find('all',array(
@@ -149,26 +149,7 @@ class WorksheetsController extends AppController {
 			$this->handleReviewers();
 			$this->redirect(array('action'=>'index','admin'=>true));
 		}//end of worksheet save
-		
-		//if($this->Review
-		
-		
-		/*if($this->Worksheet->id == null){
-			$this->Worksheet->create();
-		}
-		*/
-		/*
-		if($this->WorksheetData->id == null){
-			$this->WorksheetData->create();
-		}
-		
-		$this->redirect(array('action'=>'index','admin'=>true));
-		/*
-		if($this->Worksheet->WorksheetData->save($worksheetData)){
-			$this->setflash('Saved Data sucessfully');
-			$this->redirect(array('action'=>'index','admin'=>true));
-		}
-		*/
+
 	}
 	
 	private function handleReviewers(){
@@ -240,75 +221,7 @@ class WorksheetsController extends AppController {
 
 			}
 	}
-	
-	/*
-	function admin_saveWorksheet(){
-		$worksheetData = $this->Session->read('worksheetData');
-		if(empty($worksheetData){
-			$this->Session->setFlash('Erro while saving. Empty form found!');
-			$this->redirect(array('action'=>'addEdit','admin'=>true));
-		}
-		if($this->Worksheet->id == null){
-			$this->Worksheet->create();
-		}
-		/*
-		if($this->Worksheet->WorksheetData->save($worksheetData)){
-			$this->setflash('Saved Data sucessfully');
-			$this->redirect(array('action'=>'index','admin'=>true));
-		}
-	}
-	
-	
-	/*
-		
-	function admin_submitWorksheet(){
-		debug('submit');
-		exit;
-	}
-	
 
-	
-	
-
-	
-	
-	/*
-
-	function creator_add(){
-		debug($this);
-		exit;
-		return $this->setAction('add_edit','creator'=>true);
-		//$this->redirect('controller'=>'worksheet','action'=>'add_edit');
-	}
-	function add(){
-		debug($this);exit;
-	}
-	function creator_edit(){
-		return $this->setAction('add_edit',$this->Worksheet);
-	}
-	
-	function admin_add(){
-		//debug('here');
-		//return $this->setAction('add_edit');
-	}
-	function admin_edit(){
-		return $this->setAction('add_edit',$this->Worksheet);
-	}
-
-	function add_edit($worksheet = null){
-		$this->set('worksheet',$worksheet);
-		$this->loadModelData();
-	}
-	
-	function index(){}
-	function creator_index(){}
-	
-
-	//public function beforeFilter(){
-	//	$this->loadModelData();
-	//}
-
-*/
 }
 
 ?>
