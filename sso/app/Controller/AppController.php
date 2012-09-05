@@ -34,7 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
     var $components = array('Session','Auth' );
-	var $helpers = array('Html', 'Form', 'Js');
+	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
 	var $loaded = false;
     var $financialBlock;

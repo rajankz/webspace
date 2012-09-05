@@ -1,3 +1,4 @@
+
 <?php echo $this->element('admin_sidemenu'); ?>
 <?php //echo $this->element('common'); ?>
 
@@ -122,6 +123,21 @@
 </div>
 
 <?php echo $this->Form->input('Worksheet.statusId', array('type'=>'hidden', 'value'=>($worksheet==null?'0':$worksheet['Worksheet']['statusId']))); ?>
+
+
+<div class="formBox">
+<?php
+
+	if($this->Session->request->params['admin']){
+		echo $this->element('admin_review_controls');
+	}
+	else if($this->Session->request->params['creator']){
+		echo $this->element('creator_sidemenu');
+	}
+	
+?>
+</div>
+
 
 <div class="formBox">
 <?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
