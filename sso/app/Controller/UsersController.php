@@ -36,13 +36,13 @@ class UsersController extends AppController{
                 $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>true));
                 break 1;
             case 'reviewer':
-                $this->redirect(array('controller'=>'users','action'=>'dashboard','admin'=>false,'creator'=>false));
+                $this->redirect(array('controller'=>'dashboard','action'=>'index','reviewer'=>true));
                 break 1;
 	        case 'creator':
-		        $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>false,'creator'=>true));
+		        $this->redirect(array('controller'=>'dashboard','action'=>'index','creator'=>true));
 		        break 1;
             default:
-                $this->redirect(array('controller'=>'users','action'=>'login','admin'=>false));
+                $this->redirect(array('controller'=>'users','action'=>'login','admin'=>false,'creator'=>false,'reviewer'=>false));
         }
     }
 
@@ -115,6 +115,10 @@ class UsersController extends AppController{
 	}
 
 	function creator_logout(){
+		$this->redirect($this->Auth->logout());
+	}
+	
+	function reviewer_logout(){
 		$this->redirect($this->Auth->logout());
 	}
 

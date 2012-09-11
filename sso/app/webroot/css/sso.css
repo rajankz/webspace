@@ -163,6 +163,9 @@ td.label{
 	padding: 5px 10px;
 	text-align: center;
 	margin-bottom: 4px;
+	width:  750px;
+	margin-right: 10px;
+	float: right;
 }
 .flash_error{
 	border: 1px solid #800;

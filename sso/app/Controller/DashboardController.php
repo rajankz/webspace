@@ -10,6 +10,9 @@ class DashboardController extends AppController{
 		$this->loadModel('User');
 		$this->set('users',$this->User->find('all'));
 	}
+	function admin_reviews(){
+		$this->redirect(array('controller'=>'review', 'action'=>'index'));
+	}
 	function admin_userEdit(){
 		$this->loadModel('Users');
 		$editUserId = $this->params->named['userId'];
@@ -26,5 +29,11 @@ class DashboardController extends AppController{
 	function admin_settings(){}
 	function creator_index(){}
 	function creator_worksheets(){}
+	
+	function reviewer_index(){}
+	function reviewer_reviews(){
+		$this->redirect(array('controller'=>'review', 'action'=>'index'));
+	}
+	
 }
 ?>

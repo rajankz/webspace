@@ -8700,3 +8700,278 @@
 #11 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #12 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2012-09-05 16:41:47 Error: [MissingActionException] Action DashboardController::admin_reviews() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-05 16:42:45 Error: [MissingControllerException] Controller class ReviewController could not be found.
+#0 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-05 16:51:24 Error: [MissingActionException] Action ReviewController::admin_editWorksheet() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-05 17:08:41 Error: [MissingTableException] Table status_codes for model StatusCodes was not found in datasource default.
+#0 /Volumes/data/webspace/sso/lib/Cake/Model/Model.php(3180): Model->setSource('status_codes')
+#1 /Volumes/data/webspace/sso/lib/Cake/Model/Model.php(2631): Model->getDataSource()
+#2 /Volumes/data/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#3 /Volumes/data/webspace/sso/app/Controller/AppController.php(52): AppModel->find('list', Array)
+#4 /Volumes/data/webspace/sso/app/Controller/AppController.php(77): AppController->loadModelData()
+#5 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#6 /Volumes/data/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#7 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#9 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#10 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-09-05 17:17:26 Error: Fatal Error (1): Call to undefined method SessionComponent::set() in [/Volumes/data/webspace/sso/app/Controller/AppController.php, line 57]
+2012-09-05 17:17:26 Error: [FatalErrorException] Call to undefined method SessionComponent::set()
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/data/w...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/data/w...', 57, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/data/w...', 57, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-05 17:25:11 Error: Fatal Error (1): Call to undefined method ReviewController::loadModer() in [/Volumes/data/webspace/sso/app/Controller/AppController.php, line 49]
+2012-09-05 17:25:11 Error: [FatalErrorException] Call to undefined method ReviewController::loadModer()
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/data/w...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/data/w...', 49, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/data/w...', 49, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-05 17:25:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/data/webspace/sso/app/Controller/AppController.php, line 50]
+2012-09-05 17:25:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/data/w...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/data/w...', 50, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/data/w...', 50, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-05 17:51:05 Error: Fatal Error (4): syntax error, unexpected T_GLOBAL, expecting T_FUNCTION in [/Volumes/data/webspace/sso/app/Controller/AppController.php, line 39]
+2012-09-05 17:51:05 Error: [FatalErrorException] syntax error, unexpected T_GLOBAL, expecting T_FUNCTION
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 39, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 39, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-05 17:51:19 Error: Fatal Error (4): syntax error, unexpected T_GLOBAL, expecting T_FUNCTION in [/Volumes/data/webspace/sso/app/Controller/AppController.php, line 39]
+2012-09-05 17:51:19 Error: [FatalErrorException] syntax error, unexpected T_GLOBAL, expecting T_FUNCTION
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 39, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 39, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-05 18:08:33 Error: [MissingHelperException] Helper class viewvarsHelper could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('viewvars')
+#1 /Volumes/data/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('viewvars')
+#2 /Volumes/data/webspace/sso/app/View/Worksheet/admin_index.ctp(24): View->__get('viewvars')
+#3 /Volumes/data/webspace/sso/lib/Cake/View/View.php(920): include('/Volumes/data/w...')
+#4 /Volumes/data/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Volumes/data/w...', Array)
+#5 /Volumes/data/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Volumes/data/w...')
+#6 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-07 18:48:40 Error: [MissingControllerException] Controller class DashoardController could not be found.
+#0 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-08 23:18:42 Error: [MissingControllerException] Controller class DashoardController could not be found.
+#0 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-08 23:19:04 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:19:04 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:19:05 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:19:05 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:19:06 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:19:06 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:19:06 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:19:06 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:19:06 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:19:06 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:20:19 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 25]
+2012-09-08 23:20:19 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:20:19 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 25]
+2012-09-08 23:20:19 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:20:20 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 25]
+2012-09-08 23:20:20 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:20:20 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 25]
+2012-09-08 23:20:20 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:20:21 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 25]
+2012-09-08 23:20:21 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 25, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:21:26 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Review/reviewer_index.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-08 23:22:04 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 12]
+2012-09-08 23:22:04 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:22:43 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 12]
+2012-09-08 23:22:43 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:22:44 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 12]
+2012-09-08 23:22:44 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 12, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:23:06 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:23:06 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:23:06 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:23:06 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:23:07 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:23:07 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:23:07 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:23:07 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-08 23:23:08 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 24]
+2012-09-08 23:23:08 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 24, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-09 00:17:06 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Review/reviewer_index.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-09 00:17:59 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Review/reviewer_index.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-09 00:24:41 Error: [MissingActionException] Action WorksheetController::reviewer_admin_editWorksheet() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-09 00:28:32 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 28]
+2012-09-09 00:28:32 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 28, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 28, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-09 00:28:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Volumes/data/webspace/sso/app/Controller/ReviewController.php, line 28]
+2012-09-09 00:28:39 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 28, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 28, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-09 00:32:53 Error: [MissingActionException] Action WorksheetController::reviewer_editReview() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

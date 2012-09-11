@@ -36,18 +36,33 @@ class AppController extends Controller {
     var $components = array('Session','Auth' );
 	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
-	var $loaded = false;
+	//global $loaded = false;
     var $financialBlock;
 
 
 	private function loadModelData(){
+		//debug($this->loaded);
 		if($this->loaded)
 			return;
+		//debug($this);//exit;
 		$this->loadModel('Roles');
+		
+		$this->loadModel('Users');
+		$this->set('userOptions',$this->Users->find('list',array('fields'=>array('Users.id','Users.fullName'))));
+		
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+		
+		$this->loadModel('StatusCodes');
+		$this->set('reviewSC',$this->StatusCodes->find('list', array('fields'=>array('StatusCodes.order','StatusCodes.status'),
+				'conditions'=>array('StatusCodes.type'=>'review')
+		)));
+		$this->set('worksheetSC',$this->StatusCodes->find('list', array('fields'=>array('StatusCodes.order','StatusCodes.status'),
+				'conditions'=>array('StatusCodes.type'=>'worksheet')
+		)));
 
 		$this->loaded = true;
+		//debug($this);
 	}
 
 
@@ -68,7 +83,7 @@ class AppController extends Controller {
             ),
             'Form'
         );
-	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false);
+	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
     }
 
@@ -78,6 +93,9 @@ class AppController extends Controller {
         }
 	    if($this->params['prefix']=='creator' && ($user['role']!='creator')){
 		    return false;
+	    }
+	    if($this->params['prefix']=='reviewer' && ($user['role']!='reviewer')){
+	        return false;
 	    }
         return true;
     }
