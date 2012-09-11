@@ -221,6 +221,37 @@ class WorksheetsController extends AppController {
 
 			}
 	}
+	
+	
+	function reviewer_editReview(){
+//		debug($this->params);exit;
+		$worksheetId = $this->params->named['worksheetId'];
+		$reviewId=$this->params->named['id'];
+		if(empty($reviewId)){
+			$this->Session->setFlash('Review Information is Inaccessible','flashError');
+			$this->redirect(array('controller'=>'review','action'=>'index'));
+		}
+		$this->loadModel('Review');
+		$reviewData = $this->Review->findById($reviewId);
+		//debug($reviewData['Review']['reviewerId']);
+		if($reviewData['Review']['reviewerId']!=$this->Auth->user('id')){
+			$this->Session->setFlash('You do not have access to that review','flashError');
+			$this->redirect(array('controller'=>'review','action'=>'index'));
+		}
+		if(empty($worksheetId)){
+			$this->Session->setFlash('Not a valid worksheet. This worksheet could have been scrapped','flashError');
+			$this->redirect(array('controller'=>'review','action'=>'index'));
+			
+		}
+		if($reviewData['Review']['worksheetId']!=$worksheetId){
+			$this->Session->setFlash('This worksheet cannot be opened. Please contact Administrator','flashError');
+			$this->redirect(array('controller'=>'review','action'=>'index'));
+		}
+		
+		$worksheetData = $this->Worksheet->findById($worksheetId);
+		$this->set('worksheetData',$worksheetData['Worksheet']);
+		
+	}
 
 }
 

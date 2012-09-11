@@ -95,7 +95,8 @@
 .center{
     text-align: center;
 }
-.red{color:#880000}
+.red{color:#880000;text-shadow: 1px 1px 0 #fff;}
+.grey{color:#444;text-shadow: 1px 1px 0 #fff;}
 
 table.uiGrid{
     border: none;
@@ -177,3 +178,27 @@ td.label{
 	background-color: #d6feed;
 	color: #1f5922;
 }
+.floatLeft{float: left;}
+.floatRight{float: right;}
+
+table.review th{
+	font-size: 1.2em;
+	font-weight: 400;
+}
+.reviewSections{
+	float: left;
+	border: 1px solid #357176;
+	width: 230px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+.reviewHeader{
+	background-color: #357176;
+	color: #e3fbec;
+	padding: 3px;
+	font-weight: 400;
+	text-shadow: 0px 0px 0px #fff;
+}
+.rtAlign{text-align: right;}
+.ltAlign{text-align: left;}

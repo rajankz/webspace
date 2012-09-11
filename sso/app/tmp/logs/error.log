@@ -8975,3 +8975,376 @@
 #1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-09-11 14:30:27 Error: [MissingActionException] Action WorksheetController::reviewer_editReview() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-11 14:31:51 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 14:32:18 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 14:35:43 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 229]
+2012-09-11 14:35:43 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 229, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 229, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:36:04 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 14:36:11 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 14:50:08 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 14:52:02 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 14:52:02 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:52:02 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 14:52:02 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:52:43 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 14:52:43 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:52:43 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 14:52:43 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:52:44 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 14:52:44 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:05 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:05 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:10 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:10 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:11 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:11 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:11 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:11 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:12 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:12 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:53:40 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 235]
+2012-09-11 14:53:40 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 235)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 235, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:54:06 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 239]
+2012-09-11 14:54:06 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:54:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 239]
+2012-09-11 14:54:12 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:54:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 239]
+2012-09-11 14:54:12 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:54:13 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 239]
+2012-09-11 14:54:13 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 14:54:13 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 239]
+2012-09-11 14:54:13 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 239, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 15:04:00 Error: Fatal Error (4): syntax error, unexpected '}' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 236]
+2012-09-11 15:04:00 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 236)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 236, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 236, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 15:10:44 Error: Fatal Error (1): Call to a member function setId() on a non-object in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 15:10:44 Error: [FatalErrorException] Call to a member function setId() on a non-object
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 15:12:45 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 15:12:45 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 15:12:47 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 234]
+2012-09-11 15:12:47 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/data/w...', 234)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/data/w...', 234, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 15:13:06 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:13:28 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:15:05 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:15:35 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:15:50 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:16:00 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:16:59 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:35:41 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 15:37:20 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 16:08:19 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 16:08:58 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-11 16:09:21 Error: Fatal Error (4): syntax error, unexpected '<' in [/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 56]
+2012-09-11 16:09:21 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 56, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 56, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 16:15:09 Error: [MissingHelperException] Helper class worksheetDataHelper could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('worksheetData')
+#1 /Volumes/data/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('worksheetData')
+#2 /Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp(8): View->__get('worksheetData')
+#3 /Volumes/data/webspace/sso/lib/Cake/View/View.php(920): include('/Volumes/data/w...')
+#4 /Volumes/data/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Volumes/data/w...', Array)
+#5 /Volumes/data/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Volumes/data/w...')
+#6 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-11 16:40:47 Error: Fatal Error (4): syntax error, unexpected '[' in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 251]
+2012-09-11 16:40:47 Error: [FatalErrorException] syntax error, unexpected '['
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 251)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 251, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 251, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 17:57:35 Error: Fatal Error (4): syntax error, unexpected '<' in [/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 16]
+2012-09-11 17:57:35 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 17:57:47 Error: Fatal Error (4): syntax error, unexpected '<' in [/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 16]
+2012-09-11 17:57:47 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 17:57:48 Error: Fatal Error (4): syntax error, unexpected '<' in [/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 16]
+2012-09-11 17:57:48 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 17:57:48 Error: Fatal Error (4): syntax error, unexpected '<' in [/Volumes/data/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 16]
+2012-09-11 17:57:48 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/data/w...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/data/w...', 16, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-11 18:30:04 Error: [MissingActionException] Action UserController::reviewer_login() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-11 18:30:06 Error: [MissingActionException] Action UserController::reviewer_login() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-11 18:30:11 Error: [MissingActionException] Action UserController::reviewer_login() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-11 18:30:17 Error: [MissingActionException] Action UserController::reviewer_login() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
