@@ -15,6 +15,7 @@ Page: <?php echo $this->Paginator->counter(); ?>
 	<?php foreach($reviews as $review): ?>
 	<tr>
 	<td><?php
+	//debug($review['Review']['statusCode']);//exit;
 		echo $this->Html->link(h($review['Review']['worksheetId']), array('controller'=>'worksheets','action'=>'reviewer_editReview','id'=>$review['Review']['id'],'worksheetId'=>$review['Review']['worksheetId'])); ?> </td>
 		<td><?php echo h($this->viewVars['userOptions'][$review['Review']['reviewerId']]); ?></td>
 		<td><?php echo h($this->viewVars['reviewSC'][$review['Review']['statusCode']]); ?></td>

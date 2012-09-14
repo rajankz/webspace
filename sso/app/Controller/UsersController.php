@@ -29,6 +29,10 @@ class UsersController extends AppController{
     function creator_login(){
         $this->redirect(array('action'=>'login','creator'=>false));
     }
+    
+    function reviewer_login(){
+        $this->redirect(array('action'=>'login','reviewer'=>false));
+    }
 
     function index(){
         switch($this->Auth->user('role')){

@@ -188,7 +188,7 @@ table.review th{
 .reviewSections{
 	float: left;
 	border: 1px solid #357176;
-	width: 230px;
+	width: 240px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	border-radius: 2px;
@@ -202,3 +202,6 @@ table.review th{
 }
 .rtAlign{text-align: right;}
 .ltAlign{text-align: left;}
+.reviewerComments{
+	padding: 5px;
+}

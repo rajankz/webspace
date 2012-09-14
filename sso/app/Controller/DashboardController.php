@@ -11,7 +11,7 @@ class DashboardController extends AppController{
 		$this->set('users',$this->User->find('all'));
 	}
 	function admin_reviews(){
-		$this->redirect(array('controller'=>'review', 'action'=>'index'));
+		$this->redirect(array('controller'=>'reviews', 'action'=>'index'));
 	}
 	function admin_userEdit(){
 		$this->loadModel('Users');
@@ -32,7 +32,7 @@ class DashboardController extends AppController{
 	
 	function reviewer_index(){}
 	function reviewer_reviews(){
-		$this->redirect(array('controller'=>'review', 'action'=>'index'));
+		$this->redirect(array('controller'=>'reviews', 'action'=>'index'));
 	}
 	
 }

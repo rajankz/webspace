@@ -224,7 +224,7 @@ class WorksheetsController extends AppController {
 	
 	
 	function reviewer_editReview(){
-//		debug($this->params);exit;
+		//debug($this->Session);exit;
 		$worksheetId = $this->params->named['worksheetId'];
 		$reviewId=$this->params->named['id'];
 		if(empty($reviewId)){
@@ -250,7 +250,29 @@ class WorksheetsController extends AppController {
 		
 		$worksheetData = $this->Worksheet->findById($worksheetId);
 		$this->set('worksheetData',$worksheetData['Worksheet']);
+		//debug('hello');exit;
+		//$this->loadModel('Review');
+		$allReviewsData = $this->Review->find('all',array(
+		'conditions'=>array('worksheetId'=>$worksheetId, 'invalidReview'=>false)));
+		//debug($allReviewsData);exit;
+		$this->set('allReviewsData',$allReviewsData);
+		$this->set('userId',$this->Auth->user('id'));
+		$this->loadReviewerDecisionCodes();
 		
+		
+	}
+	
+	private function loadReviewerDecisionCodes(){
+		$this->loadModel('SelectOptions');
+		$reviewerDecisionCodeOptions = array();
+		$reviewerDecisionCodes = $this->SelectOptions->find('all',array(
+		    'fields'=>array('SelectOptions.code', 'SelectOptions.name'),
+			'conditions'=>array('SelectOptions.type'=>'decision')
+		));
+		foreach ($reviewerDecisionCodes as $row) {
+			$reviewerDecisionCodeOptions[$row['SelectOptions']['code']] = $row['SelectOptions']['code'] .' - '. $row['SelectOptions']['name'];
+		}
+		$this->set('reviewerDecisionCodeOptions', $reviewerDecisionCodeOptions);
 	}
 
 }

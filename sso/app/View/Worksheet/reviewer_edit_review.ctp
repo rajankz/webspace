@@ -52,7 +52,7 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 470px;">
+<div class="reviewSections" style="width: 490px;">
 	<div class="reviewHeader">Major</div>
 <table class="review">
 	<tr><td class="ltAlign" style="width:120px">Current Major :</td><td><?= $worksheetData['currentMajor']; ?></td></tr>
@@ -60,7 +60,7 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 350px">
+<div class="reviewSections" style="width: 365px">
 	<div class="reviewHeader">Notes</div>
 <table class="review">
 	<?php if($worksheetData['nonDegreeSeeking']) ?>
@@ -78,7 +78,7 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 350px;">
+<div class="reviewSections" style="width: 365px;">
 	<div class="reviewHeader">Additional Comments</div>
 	<?php
 	if(empty($worksheetData['additionalComments']))
@@ -86,6 +86,56 @@
 	else ?>
 		<pre style="max-height: 130px;overflow-y: scroll;"><?= $worksheetData['additionalComments']; ?></pre>
 </div> <!-- reviewSections -->
+
+<?php foreach($allReviewsData as $oneReviewArray){
+$oneReview = $oneReviewArray['Review'];
+switch($oneReview['reviewOrder']){
+case '1':$reviewOrder='First';break 1;
+case '2':$reviewOrder='Second';break 1;
+case '3':$reviewOrder='Third';break 1;
+} 
+switch($oneReview['statusCode']){
+	case '1':
+	//debug($userId);exit;
+	$disabled=($oneReview['reviewerId']==$userId?false:true);
+?>
+
+<div class="reviewSections" style="width: 740px;">
+	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
+	<?php echo $this->Form->create('Review', array('action' => 'submit')); ?>
+	<div class="input text reviewerComments">
+	<?php echo $this->Form->label('reviewerComments'); ?>
+	<?php echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
+	</div>
+	<div>
+		<span class="label">Reviewer Decision Code:</span>
+		<span><?php echo $this->Form->input('Review.'.$oneReview['reviewOrder'].'.letterCode',array('disabled'=>$disabled, 'div'=>false,'label'=>false,'type'=>'select','options'=>array($reviewerDecisionCodeOptions))); ?></span>
+	</div>
+	<?php echo $this->Form->input('Review.'.$oneReview['reviewOrder'].'.id',array('type'=>'hidden','value'=>$oneReview['id']));?>
+	<?php //todo: if all fields are filled in	
+	echo $this->Form->submit('Submit Review',array('class'=>'submit','disabled'=>$disabled));	?>
+	<?php echo $this->Form->end(); ?>
+</div>
+<?php	
+	break 1;
+	case '2':
+	case '3':
+?>
+<div class="reviewSections" style="width: 740px;">
+	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
+	
+</div>
+<?php break 1;
+	case '4':
+?>
+<div class="reviewSections" style="width: 740px;">
+	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
+	
+</div>
+<?php break 1;
+}//switch
+} //foreach
+?>
 
 </div> <!-- theContent -->
 
