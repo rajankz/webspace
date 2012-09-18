@@ -90,49 +90,71 @@
 <?php foreach($allReviewsData as $oneReviewArray){
 $oneReview = $oneReviewArray['Review'];
 switch($oneReview['reviewOrder']){
-case '1':$reviewOrder='First';break 1;
-case '2':$reviewOrder='Second';break 1;
-case '3':$reviewOrder='Third';break 1;
+case '1':$reviewOrderText='First';break 1;
+case '2':$reviewOrderText='Second';break 1;
+case '3':$reviewOrderText='Third';break 1;
 } 
+$currentReviewer=($oneReview['reviewerId']==$userId?true:false);
 switch($oneReview['statusCode']){
-	case '1':
-	//debug($userId);exit;
-	$disabled=($oneReview['reviewerId']==$userId?false:true);
+	case '2':
+	$disabled = !$currentReviewer;
 ?>
 
 <div class="reviewSections" style="width: 740px;">
-	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
+	<div class="reviewHeader"><?=$reviewOrderText?> Review</div>
 	<?php echo $this->Form->create('Review', array('action' => 'submit')); ?>
 	<div class="input text reviewerComments">
 	<?php echo $this->Form->label('reviewerComments'); ?>
-	<?php echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
+	<?php  
+	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
 	</div>
 	<div>
 		<span class="label">Reviewer Decision Code:</span>
-		<span><?php echo $this->Form->input('Review.'.$oneReview['reviewOrder'].'.letterCode',array('disabled'=>$disabled, 'div'=>false,'label'=>false,'type'=>'select','options'=>array($reviewerDecisionCodeOptions))); ?></span>
+		<span><?php echo $this->Form->input('Review.'.$oneReview['reviewOrder'].'.letterCode',array('disabled'=>$disabled,'empty'=>'', 'div'=>false,'label'=>false,'type'=>'select','options'=>array($reviewerDecisionCodeOptions))); ?></span>
 	</div>
 	<?php echo $this->Form->input('Review.'.$oneReview['reviewOrder'].'.id',array('type'=>'hidden','value'=>$oneReview['id']));?>
-	<?php //todo: if all fields are filled in	
-	echo $this->Form->submit('Submit Review',array('class'=>'submit','disabled'=>$disabled));	?>
+	<?php 
+	//debug($this->data);exit;
+	//if($this->data['Review'][$oneReview['reviewOrder']]['letterCode'] == '' ||
+	//$this->data['Review'][$oneReview['reviewOrder']]['review'] == '')
+	//	echo $this->Form->submit('Submit Review',array('class'=>'submit','disabled'=>true));
+	//else
+	if(!$disabled){
+		echo $this->Form->input('id',array('type'=>'hidden','value'=>$oneReview['id']));
+		echo $this->Form->input('reviewOrder',array('type'=>'hidden','value'=>$oneReview['reviewOrder']));
+		echo $this->Form->input('worksheetId',array('type'=>'hidden','value'=>$oneReview['worksheetId']));
+		echo $this->Form->submit('Submit Review',array('class'=>'submit'));	}?>
 	<?php echo $this->Form->end(); ?>
 </div>
-<?php	
+<?php
+	if($currentReviewer)
+		break 2;	
 	break 1;
-	case '2':
 	case '3':
 ?>
 <div class="reviewSections" style="width: 740px;">
-	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
+	<div class="reviewHeader"><?=$reviewOrderText?> Review</div>
+	
+	<div class="input text reviewText">
+	<?php echo $this->Form->label('reviewerComments'); ?>
+	<pre style="max-height: 60px;overflow-y: scroll;padding:5px 10px;border: 0;"><?= $oneReview['review'] ?></pre>
+	</div>
+	<div class="input text reviewText">
+		<span class="label">Reviewer Decision Code:</span>
+		<span><?php echo $oneReview['letterCode']; ?></span>
+	</div>
+	
+	<div class="input text reviewText">
+		<span class="label">Reviewed Date:</span>
+		<span><?php echo $oneReview['reviewDate']; ?></span>
+	</div>
+	
 	
 </div>
-<?php break 1;
-	case '4':
-?>
-<div class="reviewSections" style="width: 740px;">
-	<div class="reviewHeader"><?=$reviewOrder?> Review</div>
-	
-</div>
-<?php break 1;
+<?php 
+	if($currentReviewer)
+		break 2;
+	break 1;
 }//switch
 } //foreach
 ?>

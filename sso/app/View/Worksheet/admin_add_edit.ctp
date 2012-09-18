@@ -125,24 +125,24 @@
 <?php echo $this->Form->input('Worksheet.statusId', array('type'=>'hidden', 'value'=>($worksheet==null?'0':$worksheet['Worksheet']['statusId']))); ?>
 
 
-<div class="formBox">
 <?php
-
 	if($this->Session->request->params['admin']){
+		?><div class="formBox"><?php
 		echo $this->element('admin_review_controls');
+		?></div><?php
 	}
-	else if($this->Session->request->params['creator']){
-		echo $this->element('creator_sidemenu');
-	}
-	
 ?>
-</div>
+
 
 
 <div class="formBox">
 <?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
-<?php //if(!empty($id))
-		echo $this->Form->submit('Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
+<?php
+	if($this->Session->request->params['admin']){
+		echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit'));
+	}else if($this->Session->request->params['creator']){
+		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
+	}	
 ?>
 </div>
 

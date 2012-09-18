@@ -178,6 +178,11 @@ td.label{
 	background-color: #d6feed;
 	color: #1f5922;
 }
+.flash_info{
+	border: 1px solid #7f5803;
+	background-color: #fdf5aa;
+	color: #a35402;
+}
 .floatLeft{float: left;}
 .floatRight{float: right;}
 
@@ -203,5 +208,8 @@ table.review th{
 .rtAlign{text-align: right;}
 .ltAlign{text-align: left;}
 .reviewerComments{
+	padding: 5px;
+}
+.reviewText{
 	padding: 5px;
 }

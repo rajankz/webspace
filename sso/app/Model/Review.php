@@ -10,6 +10,15 @@ class Review extends AppModel{
 	var $name = "Review";
 	var $useTable = "reviews";
 
+
+	var $belongsTo = array(
+	'Worksheet' => array(
+		'className'     => 'Worksheet',
+		'foreignKey'    => 'worksheetId',
+		'fields'=>array('Worksheet.firstName','Worksheet.lastName')
+		)
+	); 
+	
 }
 
 ?>

@@ -13,6 +13,8 @@ class WorksheetsController extends AppController {
 	);
 	var $worksheetId=null;
 	
+	/** COMMON **/
+	
 	public function isAuthorized($user){
 	     if(in_array($this->action, array('addEdit'))){
 	          if($user['role'] != 'admin' || $user['role'] != 'creator'){
@@ -20,55 +22,6 @@ class WorksheetsController extends AppController {
 	          }
 	     }
 	     return true;
-	}
-	
-	function admin_index(){
-		//$this->set('worksheets',$this->Worksheet->find('all'));
-		$data = $this->paginate('Worksheet');
-		$this->set('worksheets',$data);
-	}
-	
-	function admin_addWorksheet(){
-		$this->redirect(array('action'=>'addEdit','admin'=>true));
-	}
-	
-	function admin_editWorksheet(){
-		$id=$this->params['named']['id'];
-		$this->redirect(array('action'=>'addEdit','admin'=>true,$id));
-	}
-	
-	function admin_deleteWorksheets(){
-		debug($this);
-	
-	}
-	
-	function admin_deleteWorksheet(){
-		if(empty($this->request['named']['id'])){
-			$this->Session->setFlash('Invalid or No Worksheet ID passed',true);
-			$this->redirect(array('action'=>'index','admin'=>true));
-		}
-		if($this->Worksheet->delete($this->request['named']['id'])){
-			$this->Session->setFlash('Worksheet Deleted',true);
-			$this->redirect(array('action'=>'index','admin'=>true));
-		}
-		
-	
-	}
-	
-	function admin_addEdit($id=null){
-		//debug($this);exit;
-		if($id==null ){
-			$this->set('worksheet',null);
-		}else{
-			$worksheetId = $id;
-			$worksheetData = $this->Worksheet->findById($id);
-			if(empty($worksheetData)){
-				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
-				$this->redirect(array('action'=>'index','admin'=>true));
-			}
-			$this->set('worksheet',$worksheetData);
-		}
-		$this->loadModelData();
 	}
 	
 	function loadModelData(){
@@ -113,6 +66,53 @@ class WorksheetsController extends AppController {
         
 	}
 	
+	/** ADMIN  **/
+	
+	function admin_index(){
+		$data = $this->paginate('Worksheet');
+		$this->set('worksheets',$data);
+	}
+	
+	function admin_addWorksheet(){
+		$this->redirect(array('action'=>'addEdit','admin'=>true));
+	}
+	
+	function admin_editWorksheet(){
+		$id=$this->params['named']['id'];
+		$this->redirect(array('action'=>'addEdit','admin'=>true,$id));
+	}
+	
+	function admin_deleteWorksheets(){
+		debug($this);
+	
+	}
+	
+	function admin_deleteWorksheet(){
+		if(empty($this->request['named']['id'])){
+			$this->Session->setFlash('Invalid or No Worksheet ID passed',true);
+			$this->redirect(array('action'=>'index','admin'=>true));
+		}
+		if($this->Worksheet->delete($this->request['named']['id'])){
+			$this->Session->setFlash('Worksheet Deleted',true);
+			$this->redirect(array('action'=>'index','admin'=>true));
+		}
+	}
+	
+	function admin_addEdit($id=null){
+		if($id==null ){
+			$this->set('worksheet',null);
+		}else{
+			$worksheetId = $id;
+			$worksheetData = $this->Worksheet->findById($id);
+			if(empty($worksheetData)){
+				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
+				$this->redirect(array('action'=>'index','admin'=>true));
+			}
+			$this->set('worksheet',$worksheetData);
+		}
+		$this->loadModelData();
+	}
+	
 	function admin_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
 		$this->Session->write('reviewData',$this->params['data']['Review']);
@@ -122,6 +122,50 @@ class WorksheetsController extends AppController {
 		}else{
 			$this->redirect(array('action'=>'submitWorksheet','admin'=>true));
 		}	
+	}
+	
+	function admin_submitWorksheet(){
+		
+		$worksheetData = $this->Session->read('worksheetData');
+		$this->loadModel('Review');
+		
+		if(empty($worksheetData['uid'])){
+			$this->Session->setFlash('We need University ID to save/submit form.');
+			$this->redirect(array('action'=>'addEdit','admin'=>true));
+		}
+		
+		if(empty($worksheetData['id'])){
+			$this->Worksheet->create();
+			$this->Session->write('worksheetId',$this->Worksheet->id);
+		}
+		
+		if($worksheetData['statusId']=='0' || $worksheetData['statusId']=='1'){
+			$worksheetData['statusId']='2';
+		}
+		
+		
+		if($this->Worksheet->save($worksheetData)){
+			$this->Session->setFlash('Saved Data sucessfully','flashSuccess');
+			$this->handleReviewers();
+		}//end of worksheet save
+		
+		
+		
+		$worksheetId = $this->Session->read('worksheetId');
+		$this->loadModel('Review');
+		$firstReview = $this->Review->find('all',array(
+		'conditions'=>array('worksheetId'=>$worksheetId,'reviewOrder'=>'1')
+		));
+		if(!empty($firstReview)){
+			$firstReview['Review']['statusCode']='2';
+			$this->Review->save($firstReview);
+		}else{
+			$this->Session->setFlash('Reviewers Not Assigned','flashError');
+			$this->redirect(array('action'=>'index','admin'=>true));
+		}
+		
+		$this->redirect(array('action'=>'index','admin'=>true));
+		
 	}
 	
 	function admin_saveWorksheet(){
@@ -137,6 +181,7 @@ class WorksheetsController extends AppController {
 		
 		if(empty($worksheetData['id'])){
 			$this->Worksheet->create();
+			$this->Session->write('worksheetId',$this->Worksheet->id);
 		}
 		
 		if($worksheetData['statusId']=='0' || $worksheetData['statusId']=='1'){
@@ -154,77 +199,107 @@ class WorksheetsController extends AppController {
 	
 	private function handleReviewers(){
 		
-			$reviewData = $this->Session->read('reviewData');
-			//debug($reviewData);exit;
-			if(!empty($reviewData)){
-				$reviewFirst = array();$reviewSecond=array();$reviewThird=array();
-				
-				if(!empty($reviewData['firstReviewerId'])){
-					if(empty($reviewData['Id1'])){
-						$this->Review->create();
-					}else{
-						$this->Review->id = $reviewData['Id1'];
-					}
-					$reviewFirst['reviewerId']=$reviewData['firstReviewerId'];
-					$reviewFirst['worksheetId']=$this->Worksheet->id;
-					$reviewFirst['reviewOrder']='01';
-					if(!$this->Review->save($reviewFirst)){
-						$this->Session->setFlash('Reviewer1 Data Not Saved','flashError');
-					}
+		$reviewData = $this->Session->read('reviewData');
+		//debug($reviewData);exit;
+		if(!empty($reviewData)){
+			$reviewFirst = array();$reviewSecond=array();$reviewThird=array();
+			
+			if(!empty($reviewData['firstReviewerId'])){
+				if(empty($reviewData['Id1'])){
+					$this->Review->create();
 				}else{
-					if(!empty($reviewData['Id1'])){
-						if(!$this->Review->delete($reviewData['Id1']))
-							$this->Session->setFlash('Unable to remove Reviewer1','flashError');
-					}
+					$this->Review->id = $reviewData['Id1'];
 				}
-				
-				
-				
-				if(!empty($reviewData['secondReviewerId'])){
-					if(empty($reviewData['Id2'])){
-						$this->Review->create();
-					}else{
-						$this->Review->id = $reviewData['Id2'];
-					}
-					$reviewSecond['reviewerId']=$reviewData['secondReviewerId'];
-					$reviewSecond['worksheetId']=$this->Worksheet->id;
-					$reviewSecond['reviewOrder']='02';
-					if(!$this->Review->save($reviewSecond)){
-						$this->Session->setFlash('Reviewer Data Not Saved','flashError');
-					}
-				}else{
-					if(!empty($reviewData['Id2'])){
-						if(!$this->Review->delete($reviewData['Id2']))
-							$this->Session->setFlash('Unable to remove Reviewer2','flashError');
-					}
+				$reviewFirst['reviewerId']=$reviewData['firstReviewerId'];
+				$reviewFirst['worksheetId']=$this->Worksheet->id;
+				$reviewFirst['reviewOrder']='01';
+				if(!$this->Review->save($reviewFirst)){
+					$this->Session->setFlash('Reviewer1 Data Not Saved','flashError');
 				}
-				
-					
-				
-				if(!empty($reviewData['thirdReviewerId'])){
-					if(empty($reviewData['Id3'])){
-						$this->Review->create();
-					}else{
-						$this->Review->id = $reviewData['Id3'];
-					}
-					$reviewThird['reviewerId']=$reviewData['thirdReviewerId'];
-					$reviewThird['worksheetId']=$this->Worksheet->id;
-					$reviewThird['reviewOrder']='03';
-					if(!$this->Review->save($reviewThird))
-						$this->Session->setFlash('Reviewer Data Not Saved','flashError');
-				}else{
-					if(!empty($reviewData['Id3'])){
-						if(!$this->Review->delete($reviewData['Id3']))
-							$this->Session->setFlash('Unable to remove Reviewer3','flashError');
-					}
+			}else{
+				if(!empty($reviewData['Id1'])){
+					if(!$this->Review->delete($reviewData['Id1']))
+						$this->Session->setFlash('Unable to remove Reviewer1','flashError');
 				}
-
 			}
+			
+			if(!empty($reviewData['secondReviewerId'])){
+				if(empty($reviewData['Id2'])){
+					$this->Review->create();
+				}else{
+					$this->Review->id = $reviewData['Id2'];
+				}
+				$reviewSecond['reviewerId']=$reviewData['secondReviewerId'];
+				$reviewSecond['worksheetId']=$this->Worksheet->id;
+				$reviewSecond['reviewOrder']='02';
+				if(!$this->Review->save($reviewSecond)){
+					$this->Session->setFlash('Reviewer Data Not Saved','flashError');
+				}
+			}else{
+				if(!empty($reviewData['Id2'])){
+					if(!$this->Review->delete($reviewData['Id2']))
+						$this->Session->setFlash('Unable to remove Reviewer2','flashError');
+				}
+			}
+			
+			if(!empty($reviewData['thirdReviewerId'])){
+				if(empty($reviewData['Id3'])){
+					$this->Review->create();
+				}else{
+					$this->Review->id = $reviewData['Id3'];
+				}
+				$reviewThird['reviewerId']=$reviewData['thirdReviewerId'];
+				$reviewThird['worksheetId']=$this->Worksheet->id;
+				$reviewThird['reviewOrder']='03';
+				if(!$this->Review->save($reviewThird))
+					$this->Session->setFlash('Reviewer Data Not Saved','flashError');
+			}else{
+				if(!empty($reviewData['Id3'])){
+					if(!$this->Review->delete($reviewData['Id3']))
+						$this->Session->setFlash('Unable to remove Reviewer3','flashError');
+				}
+			}
+
+		}
+	}
+	
+	/** CREATOR  **/
+	function creator_submitWorksheetForm(){
+		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
+
+		if(isset($this->params['data']['saveButton'])){
+			$this->redirect(array('action'=>'saveWorksheet','creator'=>true));
+		}else{
+			$this->redirect(array('action'=>'submitWorksheet','creator'=>true));
+		}	
+	}
+	
+	function creator_submitWorksheet(){
+		$worksheetData = $this->Session->read('worksheetData');
+		
+		if(empty($worksheetData['uid'])){
+			$this->Session->setFlash('We need University ID to save/submit form.');
+			$this->redirect(array('action'=>'addEdit','admin'=>true));
+		}
+		if(empty($worksheetData['id'])){
+			$this->Worksheet->create();
+			$this->Session->write('worksheetId',$this->Worksheet->id);
+		}
+		if($worksheetData['statusId']=='0' || $worksheetData['statusId']=='1'){
+			$worksheetData['statusId']='2';
+		}
+		if($this->Worksheet->save($worksheetData)){
+			$this->Session->setFlash('Saved Data sucessfully','flashSuccess');
+			$this->handleReviewers();
+		}//end of worksheet save
+		$this->redirect(array('action'=>'index','creator'=>true));		
 	}
 	
 	
+	/** REVIEWER  **/
+	
 	function reviewer_editReview(){
-		//debug($this->Session);exit;
+		//debug($this);exit;
 		$worksheetId = $this->params->named['worksheetId'];
 		$reviewId=$this->params->named['id'];
 		if(empty($reviewId)){

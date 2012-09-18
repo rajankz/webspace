@@ -57,6 +57,16 @@ class UsersController extends AppController{
 	function beforeFilter(){
         parent::beforeFilter();
 	}
+	
+	function admin_updatePwd(){
+		if(empty($this->data['User']['newPassword'])||empty($this->data['User']['confirmNewPassword'])){
+			$this->Session->setFlash('Fields cannot be empty','flashInformation');
+			$this->redirect(array('controller'=>'dashboard','action'=>'changePwd','userId'=>$this->data['User']['id']));
+		}
+		//else
+//		$userData = $this->User->findById(
+	
+	}
 
     function admin_register() {
         $this->loadModel('Roles');
@@ -66,22 +76,26 @@ class UsersController extends AppController{
             if ($this->data['User']['password'] == $this->data['User']['confirm_password']) {
                 $this->User->create();
                 if($this->User->save($this->data)){
-                    $this->flash('Your new user has been created.','/users/index' );
+                    $this->Session->setFlash('New user added sucessfully.','flashSuccess' );
                 }else {
+                	//$this->Session->setFlash('Unable to create user.','flashError' );
                     $this->data['User']['password'] = null;
                     $this->data['User']['confirm_password'] = null;
                 }
-                $this->redirect(array('action' => 'login'));
-            }
-        }
+                $this->redirect(array('controller'=>'dashboard','action' => 'userSettings'));
+            }  
+        }else{
+        	//$this->Session->setFlash('You need to fill all fields.','flashError' );
+        	//$this->redirect(array('action' => 'register'));
+        }        
     }
 
     private function convertPasswords() {
-        if(!empty( $this->data['User']['password'] ) ){
-                $this->request->data['User']['password'] = $this->Auth->password($this->data['User']['password'] );
+        if(!empty( $this->data['User']['newPassword'] ) ){
+                $this->request->data['User']['newPassword'] = $this->Auth->password($this->data['User']['newPassword'] );
         }
-        if(!empty( $this->data['User']['confirm_password'] ) ){
-            $this->request->data['User']['confirm_password'] = $this->Auth->password( $this->data['User']['confirm_password'] );
+        if(!empty( $this->data['User']['confirmNewPassword'] ) ){
+            $this->request->data['User']['confirmNewPassword'] = $this->Auth->password( $this->data['User']['confirmNewPassword'] );
         }
     }
     
@@ -100,14 +114,23 @@ class UsersController extends AppController{
     function admin_updateUser() {
         $this->loadModel('Roles');
         $this->set('roles',$this->Roles->find('list',array('fields'=>array('role_name'))));
-        //debug($this->data);exit;
-        if (!empty($this->data) && $this->User->save($this->data)){
-            $this->Session->setFlash('User data has been saved.','flashSuccess');
-            $this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
-        }else{
-        	$this->Session->setFlash('User data NOT saved.','flashError');
-        	$this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
+        if (!empty($this->data)){
+        	//debug($this->User);exit;
+        	//$userData = $this->User->findById($this->data['User']['id']);
+        	
+        	//$form = $this->User->read(null, $this->data['User']['id']);
+        	
+        	//$this->User->id = $this->data['User']['id'];
+        	//debug($this->data['User']);exit;
+        	//unset($this->User->password);
+			//debug($this->User);exit;
+        	if($this->User->save($this->data)){
+	            $this->Session->setFlash('User data has been saved.','flashSuccess');
+    	    }else{
+        		$this->Session->setFlash('User data NOT saved.','flashError');
+        	}
         }
+        $this->redirect(array('controller'=>'dashboard','action'=>'userSettings'));
     }
 
     function logout(){

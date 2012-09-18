@@ -16,7 +16,7 @@ class User extends AppModel{
                 'rule' => 'isUnique',
                 'message' => 'This username is already taken'
             )
-        ),
+        )/*,
         'password' => array(
             array(
                 'rule' => 'notEmpty',
@@ -32,17 +32,28 @@ class User extends AppModel{
                 'rule' => array('passCompare'),
                 'message' => 'The passwords do not match'
             )
-        )
+        )*/
     );
 
+	function beforeValidate(){
+		//debug($this->User);
+		//debug($this->data);exit;
+		//if(empty($this->data['User']['password']))
+			unset($this->data['User']['password']);
+	}
     public function passCompare() {
-        return ($this->data[$this->alias]['password'] === $this->data[$this->alias]['confirm_password']);
+        //return ($this->data['User']['newPassword'] === $this->data['User']['confirmNewPassword']);
     }
 
     public function beforeSave() {
         //$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
         return true;
     }
+    
+    
+    
+    
+    
 
 }
 ?>

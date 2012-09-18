@@ -7,8 +7,7 @@
 Page: <?php echo $this->Paginator->counter(); ?>
 <table>
 	<tr>
-		<th><?php echo $this->Paginator->sort('worksheetId', 'Worksheet ID'); ?></th>
-		<th><?php echo $this->Paginator->sort('reviewerId', 'Reviewer ID');?></th>
+		<th><?php echo $this->Paginator->sort('Worksheet.firstName', 'Applicant Name'); ?></th>
 		<th><?php echo $this->Paginator->sort('statusCode', 'Status');?></th>
 		<th><?php echo $this->Paginator->sort('reviewOrder','Review Order');?></th>
 	</tr>
@@ -16,8 +15,9 @@ Page: <?php echo $this->Paginator->counter(); ?>
 	<tr>
 	<td><?php
 	//debug($review['Review']['statusCode']);//exit;
-		echo $this->Html->link(h($review['Review']['worksheetId']), array('controller'=>'worksheets','action'=>'reviewer_editReview','id'=>$review['Review']['id'],'worksheetId'=>$review['Review']['worksheetId'])); ?> </td>
-		<td><?php echo h($this->viewVars['userOptions'][$review['Review']['reviewerId']]); ?></td>
+		echo $this->Html->link(/*h($review['Review']['worksheetId']), */
+		h($review['Worksheet']['firstName']." ".$review['Worksheet']['lastName']),
+		array('controller'=>'worksheets','action'=>'reviewer_editReview','id'=>$review['Review']['id'],'worksheetId'=>$review['Review']['worksheetId'])); ?> </td>
 		<td><?php echo h($this->viewVars['reviewSC'][$review['Review']['statusCode']]); ?></td>
 		<td><?php echo h($review['Review']['reviewOrder']); ?></td>	
 	</tr>

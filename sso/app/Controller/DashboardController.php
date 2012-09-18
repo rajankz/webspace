@@ -22,6 +22,8 @@ class DashboardController extends AppController{
 		$this->set('userEdit',$userEdit);
 		//debug($userEdit);		
 	}
+	function admin_changePwd(){}
+	function admin_updatePwd(){}
 	function admin_worksheets(){
 		$this->redirect(array('controller'=>'worksheets','action'=>'index'));		
 	}

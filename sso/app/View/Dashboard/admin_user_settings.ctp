@@ -31,4 +31,9 @@ foreach($users as $user)
 ?>
 </table>
 
+<?php
+echo $this->Form->create('User', array('action' => 'register'));
+echo $this->Form->submit('Add User');
+echo $this->Form->end();
+?>
 </div>
