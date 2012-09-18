@@ -10237,3 +10237,64 @@
 #3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-09-18 20:28:41 Error: [MissingActionException] Action WorksheetController::creator_add() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:33:46 Error: [MissingActionException] Action WorksheetController::creator_index() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:42:41 Error: [MissingActionException] Action WorksheetController::creator_admin_editWorksheet() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:44:07 Error: [MissingActionException] Action WorksheetController::creator_editWorksheet() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:45:06 Error: Fatal Error (64): Cannot redeclare WorksheetsController::admin_editWorksheet() in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 85]
+2012-09-18 20:45:06 Error: [FatalErrorException] Cannot redeclare WorksheetsController::admin_editWorksheet()
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Volumes/data/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Volumes/data/w...', 85, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Volumes/data/w...', 85, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-18 20:45:09 Error: Fatal Error (64): Cannot redeclare WorksheetsController::admin_editWorksheet() in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 85]
+2012-09-18 20:45:09 Error: [FatalErrorException] Cannot redeclare WorksheetsController::admin_editWorksheet()
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Volumes/data/w...', 85)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Volumes/data/w...', 85, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Volumes/data/w...', 85, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-18 20:45:23 Error: [MissingActionException] Action WorksheetController::creator_editWorksheet() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:45:48 Error: [MissingActionException] Action WorksheetController::creator_addEdit() could not be found.
+#0 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-18 20:48:22 Error: Fatal Error (1): Call to undefined function addEdit() in [/Volumes/data/webspace/sso/app/Controller/WorksheetsController.php, line 119]
+2012-09-18 20:48:22 Error: [FatalErrorException] Call to undefined function addEdit()
+#0 /Volumes/data/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/data/w...', 119)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/data/w...', 119, Array)
+#2 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/data/w...', 119, Array)
+#3 /Volumes/data/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-18 20:48:31 Error: [MissingViewException] View file "/Volumes/data/webspace/sso/app/View/Worksheet/creator_add_edit.ctp" is missing.
+#0 /Volumes/data/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Volumes/data/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

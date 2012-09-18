@@ -30,7 +30,9 @@ class DashboardController extends AppController{
 	function admin_addWorksheet(){}
 	function admin_settings(){}
 	function creator_index(){}
-	function creator_worksheets(){}
+	function creator_worksheets(){
+		$this->redirect(array('controller'=>'worksheets','action'=>'index'));		
+	}
 	
 	function reviewer_index(){}
 	function reviewer_reviews(){

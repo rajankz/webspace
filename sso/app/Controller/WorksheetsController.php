@@ -82,6 +82,8 @@ class WorksheetsController extends AppController {
 		$this->redirect(array('action'=>'addEdit','admin'=>true,$id));
 	}
 	
+
+	
 	function admin_deleteWorksheets(){
 		debug($this);
 	
@@ -98,7 +100,7 @@ class WorksheetsController extends AppController {
 		}
 	}
 	
-	function admin_addEdit($id=null){
+	function addEdit($id=null){
 		if($id==null ){
 			$this->set('worksheet',null);
 		}else{
@@ -111,6 +113,10 @@ class WorksheetsController extends AppController {
 			$this->set('worksheet',$worksheetData);
 		}
 		$this->loadModelData();
+	}
+	
+	function creator_addEdit($id=null){
+		$this->addEdit($id);
 	}
 	
 	function admin_submitWorksheetForm(){
@@ -264,6 +270,11 @@ class WorksheetsController extends AppController {
 	}
 	
 	/** CREATOR  **/
+	function creator_index(){
+		$data = $this->paginate('Worksheet');
+		$this->set('worksheets',$data);
+	}
+	
 	function creator_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
 
@@ -272,6 +283,11 @@ class WorksheetsController extends AppController {
 		}else{
 			$this->redirect(array('action'=>'submitWorksheet','creator'=>true));
 		}	
+	}
+	
+	function creator_editWorksheet(){
+		$id=$this->params['named']['id'];
+		$this->redirect(array('action'=>'addEdit','creator'=>true,$id));
 	}
 	
 	function creator_submitWorksheet(){
