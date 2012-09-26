@@ -62,13 +62,16 @@
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-            Student Success Office<br>
+			<?php //echo $this->Html->link(
+                //$this->Html->image('webglobelg.gif',array('alt' => 'University of Maryland', 'border' => '0', 'class'=>'floatLeft')),'http://www.umd.edu', array('target' => '_self', 'escape' => false));?>
+
+            <h3>Student Success Office</h3><hr style="width:80%" /><br />
             0110 Hornbake Library<br>
             <a href="http://www.ugst.umd.edu" class="blackonwhite">Office of Undergraduate Studies<br>
-            </a> <a href="http://www.umd.edu" class="blackonwhite">University of Maryland</a>,
+            </a> <a href="http://www.umd.edu" class="blackonwhite">University of Maryland</a><br />
             College Park, MD 20742 <br>
-            <a href="mailto:rr-admit@umd.edu " class="blackonwhite">rr-admit@umd.edu </a>
             </p>
+            <?php echo $this->element('sql_dump'); ?>
 		</div>
 	</div>
 </div>

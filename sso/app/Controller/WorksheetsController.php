@@ -14,7 +14,6 @@ class WorksheetsController extends AppController {
 	var $worksheetId=null;
 	
 	/** COMMON **/
-	
 	public function isAuthorized($user){
 	     if(in_array($this->action, array('addEdit'))){
 	          if($user['role'] != 'admin' || $user['role'] != 'creator'){
@@ -23,7 +22,6 @@ class WorksheetsController extends AppController {
 	     }
 	     return true;
 	}
-	
 	function loadModelData(){
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
@@ -67,21 +65,39 @@ class WorksheetsController extends AppController {
 	}
 	
 	/** ADMIN  **/
-	
 	function admin_index(){
 		$data = $this->paginate('Worksheet');
 		$this->set('worksheets',$data);
+		$this->loadModel('User');
+		$this->set('reviewers',$this->User->find('list', 
+		array(
+		'fields'=>array('User.id','User.fullName'),
+		'conditions'=>array('role'=>'reviewer'))));
 	}
-	
 	function admin_addWorksheet(){
 		$this->redirect(array('action'=>'addEdit','admin'=>true));
 	}
-	
 	function admin_editWorksheet(){
 		$id=$this->params['named']['id'];
 		$this->redirect(array('action'=>'addEdit','admin'=>true,$id));
 	}
-	
+	function admin_addEdit($id=null){
+		$this->addEdit($id);
+	}
+	function addEdit($id=null){
+		if($id==null ){
+			$this->set('worksheet',null);
+		}else{
+			$worksheetId = $id;
+			$worksheetData = $this->Worksheet->findById($id);
+			if(empty($worksheetData)){
+				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
+				$this->redirect(array('action'=>'index','admin'=>true));
+			}
+			$this->set('worksheet',$worksheetData);
+		}
+		$this->loadModelData();
+	}
 
 	
 	function admin_deleteWorksheets(){
@@ -100,20 +116,7 @@ class WorksheetsController extends AppController {
 		}
 	}
 	
-	function addEdit($id=null){
-		if($id==null ){
-			$this->set('worksheet',null);
-		}else{
-			$worksheetId = $id;
-			$worksheetData = $this->Worksheet->findById($id);
-			if(empty($worksheetData)){
-				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
-				$this->redirect(array('action'=>'index','admin'=>true));
-			}
-			$this->set('worksheet',$worksheetData);
-		}
-		$this->loadModelData();
-	}
+
 	
 	function creator_addEdit($id=null){
 		$this->addEdit($id);
@@ -152,22 +155,26 @@ class WorksheetsController extends AppController {
 		
 		if($this->Worksheet->save($worksheetData)){
 			$this->Session->setFlash('Saved Data sucessfully','flashSuccess');
-			$this->handleReviewers();
+			//$this->handleReviewers();
 		}//end of worksheet save
 		
 		
 		
-		$worksheetId = $this->Session->read('worksheetId');
+		$worksheetId = $this->Worksheet->id;
 		$this->loadModel('Review');
-		$firstReview = $this->Review->find('all',array(
+		$firstReviewArray = $this->Review->find('all',array(
 		'conditions'=>array('worksheetId'=>$worksheetId,'reviewOrder'=>'1')
 		));
+		//extract first element of array
+		foreach ($firstReviewArray as $firstReview) {	}
 		if(!empty($firstReview)){
 			$firstReview['Review']['statusCode']='2';
 			$this->Review->save($firstReview);
+			$this->Worksheet->saveField('assignedToId',$firstReview['Review']['reviewerId']);
+			$this->Worksheet->saveField('statusId','3');
 		}else{
 			$this->Session->setFlash('Reviewers Not Assigned','flashError');
-			$this->redirect(array('action'=>'index','admin'=>true));
+			$this->redirect(array('action'=>'addEdit','admin'=>true,$worksheetId));
 		}
 		
 		$this->redirect(array('action'=>'index','admin'=>true));

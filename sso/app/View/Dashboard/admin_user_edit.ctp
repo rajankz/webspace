@@ -8,7 +8,7 @@ echo $this->Form->input('username', array('value'=>$userEdit['Users']['username'
 ?>
 <div style="margin-bottom: 0;"><?php
 
-echo $this->Html->link('Change Password',array('action'=>'changePwd','userId'=>$userEdit['Users']['id'])); 
+echo $this->Html->link('Change Password',array('action'=>'changePwd','userId'=>$userEdit['Users']['id'],'username'=>$userEdit['Users']['username'])); 
 ?></div><?php
 echo $this->Form->input('fullName',array('value'=>$userEdit['Users']['fullName']));
 echo $this->Form->input('emailId',array('value'=>$userEdit['Users']['emailId']));

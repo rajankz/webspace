@@ -67,6 +67,7 @@ class AppController extends Controller {
 
 
 	public function index(){
+		//debug($this);exit;
 		if($this->Auth->loggedIn()){
 			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
 		}else{

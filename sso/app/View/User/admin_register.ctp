@@ -1,4 +1,6 @@
-<h2 style="text-align: center">Register User</h2>
+<?php echo $this->element('admin_sidemenu'); ?>
+<div id="theContent">
+<h2 class="center">Register User</h2>
 <?php
 echo $this->Form->create('User', array('action' => 'register'));
 echo $this->Form->input('fullName');
@@ -10,3 +12,4 @@ echo $this->Form->input('User.role',array('type'=>'select','options'=>$roleOptio
 echo $this->Form->submit();
 echo $this->Form->end();
 ?>
+</div>

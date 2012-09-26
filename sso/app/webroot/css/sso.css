@@ -184,6 +184,7 @@ td.label{
 	color: #a35402;
 }
 .floatLeft{float: left;}
+.alignLeft{text-align: left;}
 .floatRight{float: right;}
 
 table.review th{
@@ -212,4 +213,33 @@ table.review th{
 }
 .reviewText{
 	padding: 5px;
+}
+
+a.buttonLink,input.buttonLink, button.buttonLink{
+	border: 1px solid #EDA42E;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4);
+	background: #FEC965;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEC965),color-stop(100%,#FEBC3E));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec965',endColorstr='#febc3e',GradientType=0);
+	text-shadow: 0 1px 0 #EDA42E;
+	-webkit-font-smoothing: antialiased;
+	
+	display: inline-block;
+	
+	margin: 0;
+	border: 1px solid #FEC965;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px 5px 4px;
+	background: #FEC965;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.334em;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	
 }

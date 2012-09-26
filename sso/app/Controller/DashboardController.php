@@ -2,8 +2,9 @@
 
 class DashboardController extends AppController{
 
+	/** ADMIN **/
 	function admin_index(){
-		//$this->redirect(array('controller'=>'dashboard','action'=>'worksheets','admin'=>true));
+		$this->redirect(array('controller'=>'dashboard','action'=>'worksheets','admin'=>true));
 	}
 	function admin_preferences(){}
 	function admin_userSettings(){
@@ -16,11 +17,9 @@ class DashboardController extends AppController{
 	function admin_userEdit(){
 		$this->loadModel('Users');
 		$editUserId = $this->params->named['userId'];
-		//debug($editUserId);
 		$userEdit = $this->Users->find('first',
 		array('conditions'=>array('id'=>$editUserId)));
-		$this->set('userEdit',$userEdit);
-		//debug($userEdit);		
+		$this->set('userEdit',$userEdit);	
 	}
 	function admin_changePwd(){}
 	function admin_updatePwd(){}
@@ -29,11 +28,14 @@ class DashboardController extends AppController{
 	}
 	function admin_addWorksheet(){}
 	function admin_settings(){}
+	
+	/** CREATOR **/
 	function creator_index(){}
 	function creator_worksheets(){
 		$this->redirect(array('controller'=>'worksheets','action'=>'index'));		
 	}
 	
+	/** REVIEWER **/
 	function reviewer_index(){}
 	function reviewer_reviews(){
 		$this->redirect(array('controller'=>'reviews', 'action'=>'index'));

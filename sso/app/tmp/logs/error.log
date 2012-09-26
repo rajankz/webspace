@@ -10298,3 +10298,251 @@
 #3 /Volumes/data/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #4 /Volumes/data/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-09-21 02:24:56 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-21 02:25:06 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-21 16:58:25 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 17:06:19 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 17:31:26 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 18:26:04 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 18:34:05 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 73]
+2012-09-21 18:34:05 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 73, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 73, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 18:34:17 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 73]
+2012-09-21 18:34:17 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 73, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 73, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:35 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:35 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:35 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:35 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:43 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:43 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:43 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:43 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:49 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:49 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:24:49 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:24:49 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:25:11 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:25:11 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:25:58 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:25:58 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:25:58 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 113]
+2012-09-22 00:25:58 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 113, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:26:59 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 114]
+2012-09-22 00:26:59 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:27:22 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 114]
+2012-09-22 00:27:22 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:27:26 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 114]
+2012-09-22 00:27:26 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 00:27:44 Error: Fatal Error (4): syntax error, unexpected T_PRIVATE in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 114]
+2012-09-22 00:27:44 Error: [FatalErrorException] syntax error, unexpected T_PRIVATE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 114, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-25 13:41:10 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 13:41:18 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 13:42:38 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 13:42:39 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 13:42:42 Error: [MissingActionException] Action WorksheetController::admin_addEdit() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 15:49:55 Error: [MissingActionException] Action UserController::apple-touch-icon-precomposed.png() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 15:49:55 Error: [MissingActionException] Action UserController::apple-touch-icon.png() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-25 16:05:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-25 16:05:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-25 16:06:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-25 16:06:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-25 17:04:38 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-25 17:09:31 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/User/admin_update_pwd.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-25 19:34:14 Error: [MissingHelperException] Helper class submittedDataHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('submittedData')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('submittedData')
+#2 /Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp(109): View->__get('submittedData')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-25 21:08:07 Error: [MissingHelperException] Helper class reviewHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('review')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('review')
+#2 /Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp(109): View->__get('review')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-26 02:09:15 Error: [MissingActionException] Action UserController::admin_settings() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

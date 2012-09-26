@@ -38,7 +38,10 @@ class ReviewsController extends AppController {
 
 		if($submittedData['review']=='' || $submittedData['letterCode']==''){
 			$this->Session->setFlash('Please fill in both review fields.','flashInformation');
+			//debug($submittedData);
+			$this->set('submittedData',$submittedData);
 			
+			//$this->redirect($this->referer());
 			$this->redirect(array('controller'=>'worksheets','action'=>'reviewer_editReview','id'=>$this->params['data']['Review']['id'],'worksheetId'=>$this->params['data']['Review']['worksheetId']));
 			
 		}
