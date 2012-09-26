@@ -105,9 +105,11 @@
 
 <div class="formBox">
 <?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
-<?php	//if($this->Worksheet != null)
-echo $this->Form->submit('Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
-?>
+<?php echo $this->Form->submit('Submit Worksheet',array('name'=>'submitButton','class'=>'submit')); ?>
+<?php 
+
+echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
+
 </div>
 <?php echo $this->Form->end(); ?>
 

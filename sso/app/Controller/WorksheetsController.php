@@ -8,7 +8,7 @@ class WorksheetsController extends AppController {
 	var $name = 'Worksheet';
 	var $useTable = 'worksheets';
 	var $paginate = array(
-		'limit' => 2,
+		'limit' => 10,
 		'order' => array('Worksheet.id' => 'asc')
 	);
 	var $worksheetId=null;
@@ -106,12 +106,16 @@ class WorksheetsController extends AppController {
 	}
 	
 	function admin_deleteWorksheet(){
-		if(empty($this->request['named']['id'])){
-			$this->Session->setFlash('Invalid or No Worksheet ID passed',true);
-			$this->redirect(array('action'=>'index','admin'=>true));
+		$worksheetData = $this->Session->read('worksheetData');
+		$worksheetId = "";
+		if(!empty($worksheetData))
+			$worksheetId = $worksheetData['id'];
+		if(empty($worksheetId)){
+			$this->Session->setFlash('Invalid or No Worksheet ID passed','flashError');
+			$this->redirect($this->referer());
 		}
-		if($this->Worksheet->delete($this->request['named']['id'])){
-			$this->Session->setFlash('Worksheet Deleted',true);
+		if($this->Worksheet->delete($worksheetId)){
+			$this->Session->setFlash('Worksheet Deleted','flashSuccess');
 			$this->redirect(array('action'=>'index','admin'=>true));
 		}
 	}
@@ -126,8 +130,10 @@ class WorksheetsController extends AppController {
 
 		if(isset($this->params['data']['saveButton'])){
 			$this->redirect(array('action'=>'saveWorksheet','admin'=>true));
-		}else{
+		}else if(isset($this->params['data']['submitButton'])){
 			$this->redirect(array('action'=>'submitWorksheet','admin'=>true));
+		}else if(isset($this->params['data']['deleteButton'])){
+			$this->redirect(array('action'=>'deleteWorksheet','admin'=>true));
 		}	
 	}
 	

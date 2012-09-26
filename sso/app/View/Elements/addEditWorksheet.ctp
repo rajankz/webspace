@@ -133,6 +133,9 @@
 <?php
 	if(!empty($this->Session->request->params['admin'])){
 		echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit'));
+		if(!empty($id)){
+		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'submit'));	
+		}
 	}else if($this->Session->request->params['creator']){
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
 	}	

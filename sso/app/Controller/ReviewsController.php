@@ -9,7 +9,7 @@ class ReviewsController extends AppController {
 	var $useTable = 'reviews';
 	
 	var $paginate = array(
-		'limit' => 2,
+		'limit' => 10,
 		'order' => array('Review.id' => 'asc'),
 		'conditions'=>array('Review.invalidReview'=>false)
 	);
