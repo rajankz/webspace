@@ -10546,3 +10546,160 @@
 #1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-09-26 02:28:11 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 81]
+2012-09-26 02:28:11 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 81)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 81, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 81, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 02:29:36 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 83]
+2012-09-26 02:29:36 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 83, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 83, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 02:30:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 84]
+2012-09-26 02:30:20 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 84, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 84, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 02:31:10 Error: Fatal Error (1): Call to undefined function updateStatuses() in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 55]
+2012-09-26 02:31:10 Error: [FatalErrorException] Call to undefined function updateStatuses()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 55, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 55, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 02:31:31 Error: Fatal Error (1): Call to undefined function assignToNextReviewer() in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 56]
+2012-09-26 02:31:31 Error: [FatalErrorException] Call to undefined function assignToNextReviewer()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 56, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 56, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 02:31:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Review.' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT DISTINCT...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT DISTINCT...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT DISTINCT...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Review), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('first', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(600): AppModel->find('first', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(784): DboSource->query('findByWorksheet...', Array, Object(Review))
+#8 [internal function]: Model->__call('findByWorksheet...', Array)
+#9 /Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php(77): Review->findByWorksheetId('2', Array)
+#10 /Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php(56): ReviewsController->assignToNextReviewer('2')
+#11 [internal function]: ReviewsController->reviewer_submit()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ReviewsController), Array)
+#13 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewsController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-09-26 02:59:36 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 87]
+2012-09-26 02:59:36 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 87, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 87, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 03:39:03 Error: Fatal Error (1): Call to a member function saveField() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 84]
+2012-09-26 03:39:03 Error: [FatalErrorException] Call to a member function saveField() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 84, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 84, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 03:50:55 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 85]
+2012-09-26 03:50:55 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 85, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 85, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 03:51:13 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 85]
+2012-09-26 03:51:13 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 85, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 85, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 03:54:43 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 86]
+2012-09-26 03:54:43 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 86, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 86, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 03:55:14 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 86]
+2012-09-26 03:55:14 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 86, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 86, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 04:06:34 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 103]
+2012-09-26 04:06:34 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 103)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 04:28:08 Error: [MissingControllerException] Controller class ReviewController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-26 04:38:52 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 172]
+2012-09-26 04:38:52 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 172)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 172, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 172, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-26 14:46:35 Error: [MissingActionException] Action UserController::admin_reviews() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-26 14:47:30 Error: [MissingActionException] Action WorksheetController::creator_add() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-26 14:48:51 Error: [MissingActionException] Action WorksheetController::creator_add() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-26 14:48:55 Error: [MissingActionException] Action WorksheetController::creator_addWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-26 14:51:39 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/creator_add_edit.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-26 15:23:32 Error: [MissingActionException] Action UserController::admin_reviews() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

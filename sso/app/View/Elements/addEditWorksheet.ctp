@@ -119,7 +119,7 @@
 
 
 <?php
-	if($this->Session->request->params['admin']){
+	if(!empty($this->Session->request->params['admin'])){
 		?><div class="formBox"><?php
 		echo $this->element('admin_review_controls');
 		?></div><?php
@@ -131,7 +131,7 @@
 <div class="formBox">
 <?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
 <?php
-	if($this->Session->request->params['admin']){
+	if(!empty($this->Session->request->params['admin'])){
 		echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit'));
 	}else if($this->Session->request->params['creator']){
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));

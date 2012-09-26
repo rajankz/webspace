@@ -118,9 +118,7 @@ class WorksheetsController extends AppController {
 	
 
 	
-	function creator_addEdit($id=null){
-		$this->addEdit($id);
-	}
+
 	
 	function admin_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
@@ -169,6 +167,7 @@ class WorksheetsController extends AppController {
 		foreach ($firstReviewArray as $firstReview) {	}
 		if(!empty($firstReview)){
 			$firstReview['Review']['statusCode']='2';
+			$firstReview['Review']['assignedDate']=date("Y-m-d H:i:s", time());
 			$this->Review->save($firstReview);
 			$this->Worksheet->saveField('assignedToId',$firstReview['Review']['reviewerId']);
 			$this->Worksheet->saveField('statusId','3');
@@ -292,10 +291,19 @@ class WorksheetsController extends AppController {
 		}	
 	}
 	
+	function creator_addWorksheet(){
+		$this->redirect(array('action'=>'addEdit','creator'=>true));
+	}
+	
 	function creator_editWorksheet(){
 		$id=$this->params['named']['id'];
 		$this->redirect(array('action'=>'addEdit','creator'=>true,$id));
 	}
+	
+	function creator_addEdit($id=null){
+		$this->addEdit($id);
+	}
+	
 	
 	function creator_submitWorksheet(){
 		$worksheetData = $this->Session->read('worksheetData');

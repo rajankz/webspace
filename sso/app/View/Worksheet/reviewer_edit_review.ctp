@@ -105,8 +105,8 @@ switch($oneReview['statusCode']){
 	<?php echo $this->Form->create('Review', array('action' => 'submit')); ?>
 	<div class="input text reviewerComments">
 	<?php echo $this->Form->label('reviewerComments'); ?>
-	<?php debug($this);
-	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled,'value'=>$review)); ?>
+	<?php //debug($this);
+	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
 	</div>
 	<div>
 		<span class="label">Reviewer Decision Code:</span>
