@@ -127,14 +127,15 @@ class WorksheetsController extends AppController {
 	function admin_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
 		$this->Session->write('reviewData',$this->params['data']['Review']);
-
+		
 		if(isset($this->params['data']['saveButton'])){
 			$this->redirect(array('action'=>'saveWorksheet','admin'=>true));
-		}else if(isset($this->params['data']['submitButton'])){
+		}else{ //if(isset($this->params['data']['submitButton'])){
+			
 			$this->redirect(array('action'=>'submitWorksheet','admin'=>true));
-		}else if(isset($this->params['data']['deleteButton'])){
+		}/*else if(isset($this->params['data']['deleteButton'])){
 			$this->redirect(array('action'=>'deleteWorksheet','admin'=>true));
-		}	
+		}	*/
 	}
 	
 	function admin_submitWorksheet(){
@@ -159,7 +160,7 @@ class WorksheetsController extends AppController {
 		
 		if($this->Worksheet->save($worksheetData)){
 			$this->Session->setFlash('Saved Data sucessfully','flashSuccess');
-			//$this->handleReviewers();
+			$this->handleReviewers();
 		}//end of worksheet save
 		
 		

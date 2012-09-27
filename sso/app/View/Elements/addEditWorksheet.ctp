@@ -1,11 +1,26 @@
-<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
-
 <?php
 	$id = "";
 	if($worksheet!=null)
 		$id=$worksheet['Worksheet']['id'];
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
 ?>
+
+<h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
+<a name="top"></a>
+<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
+<div id="navListContainer">
+<ul id="navList">
+<li><a href=<?php echo $this->here ?>#blocks>Blocks</a></li>
+<li><a href=<?php echo $this->here ?>#prior-reenroll>Prior Re-enrollment</a></li>
+<li><a href=<?php echo $this->here ?>#sso-feedback>SSO Feedback</a></li>
+<li><a href=<?php echo $this->here ?>#gpa>GPA</a></li>
+<li><a href=<?php echo $this->here ?>#major>Major</a></li>
+<li><a href=<?php echo $this->here ?>#notes>Additional Notes</a></li>
+<?php if(!empty($this->Session->request->params['admin'])){?>
+<li><a href=<?php echo $this->here ?>#reviews>Reviews</a></li>
+<?php } ?>
+</ul>
+</div>
 
 <div class="formBox">
 	<h3>Student Information</h3>
@@ -29,7 +44,7 @@
     </table>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="blocks"></a>
 	<h3>Blocks</h3>
 	<table class="uiGrid table400" cellspacing="0" cellpadding="1">
 		<tbody>
@@ -47,7 +62,7 @@
     <?php echo $this->Form->input('Worksheet.missingEssay', array('type'=>'checkbox', 'checked'=>$worksheet['Worksheet']['missingEssay'])); ?>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="prior-reenroll"></a>
     <h3>Prior Re-enrollment Decisions</h3>
 
 	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Re-enrollment Applications', 'value'=>$worksheet['Worksheet']['numReEnrollApps'])); ?>
@@ -62,7 +77,7 @@
 	
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="sso-feedback"></a>
 	<h3>Student Success Office Feedback</h3>
 	<?php echo $this->Form->input('Worksheet.creditsRepeated', array('label'=>'Repeated Credits (out of 18)', 'div'=>array('class'=>'smallText input text'),'maxlength'=>'2', 'value'=>$worksheet['Worksheet']['financialBlock'])); ?>
 	
@@ -73,7 +88,7 @@
 	<?php echo $this->Form->input('Worksheet.needPermToRepeatMoreThan18', array('type'=>'checkbox','label'=>'Needs permission to repeat more than 18 credits', 'checked'=>$worksheet['Worksheet']['needPermToRepeatMoreThan18'])); ?>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="gpa"></a>
 	<h3>GPA</h3>
 	<?php echo $this->Form->input('Worksheet.attemptedUMDCredits', array('label'=>'Attempted UMD Credits', 'value'=>$worksheet['Worksheet']['attemptedUMDCredits'])); ?>
 	<?php echo $this->Form->input('Worksheet.cgpa', array('label'=>'Cumulative GPA', 'value'=>$worksheet['Worksheet']['cgpa'])); ?>
@@ -88,13 +103,13 @@
 	</div><div style="clear: both;margin: 0;padding: 0;"></div>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="major"></a>
 	<h3>Major</h3>
 	<?php echo $this->Form->input('Worksheet.currentMajor',array('value'=>$worksheet['Worksheet']['currentMajor'])); ?>
 	<?php echo $this->Form->input('Worksheet.requestedMajor', array('label'=>'Requested Major (if applicable)', 'value'=>$worksheet['Worksheet']['requestedMajor'])); ?>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="notes"></a>
 	<h3>Additional Notes</h3>
 	<?php echo $this->Form->input('Worksheet.nonDegreeSeeking', array('type'=>'checkbox','label'=>'Non-degree seeking', 'checked'=>$worksheet['Worksheet']['nonDegreeSeeking'])); ?>
 	
@@ -120,7 +135,7 @@
 
 <?php
 	if(!empty($this->Session->request->params['admin'])){
-		?><div class="formBox"><?php
+		?><div class="formBox"><a name="reviews"></a> <?php
 		echo $this->element('admin_review_controls');
 		?></div><?php
 	}

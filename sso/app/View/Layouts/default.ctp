@@ -21,6 +21,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <?php $siteDescription = 'University of Maryland - Student Success Office'; ?>
 <head>
+	<base href="<?php echo $base_url ?>" />
+	<script type="text/javascript">
+	function changeFont(element,step)
+	{
+	    document.getElementById(element).style.fontSize =  (parseInt(document.getElementById(element).style.fontSize,10) + parseInt(step,10)) + 'px';
+	}
+	</script>
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $siteDescription; ?>
@@ -32,6 +39,8 @@
 		echo $this->Html->css('sso');
         echo '<link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-1020px.css" />';
         echo $this->Html->script('jquery-1.7.2.min.js');
+        echo $this->Html->script('jquery.validate.min.js');
+        echo $this->Html->script('additional-methods.min.js');
         echo $this->Html->script('functions.js');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -47,6 +56,11 @@
 
 	<div id="container">
 		<div id="header">
+            <div id="usability">
+               <a href="javascript:void(0);" onclick="changeFont('html','2');">A+</a>
+               <a href="javascript:void(0);" onclick="changeFont('html',-2);">A-</a>
+
+            </div>
             <div id="banner">
             <?php echo $this->Html->link(
                 $this->Html->image('sso-banner.jpg',array('alt' => $siteDescription, 'border' => '0')),
