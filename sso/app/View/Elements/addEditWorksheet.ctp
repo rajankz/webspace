@@ -1,3 +1,6 @@
+<h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
+<a name="top"></a>
+<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
 <?php
 	$id = "";
 	if($worksheet!=null)
@@ -5,9 +8,6 @@
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
 ?>
 
-<h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
-<a name="top"></a>
-<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
 <div id="navListContainer">
 <ul id="navList">
 <li><a href=<?php echo $this->here ?>#blocks>Blocks</a></li>
@@ -16,6 +16,7 @@
 <li><a href=<?php echo $this->here ?>#gpa>GPA</a></li>
 <li><a href=<?php echo $this->here ?>#major>Major</a></li>
 <li><a href=<?php echo $this->here ?>#notes>Additional Notes</a></li>
+<li><a href=<?php echo $this->here ?>#attachments>Attachments</a></li>
 <?php if(!empty($this->Session->request->params['admin'])){?>
 <li><a href=<?php echo $this->here ?>#reviews>Reviews</a></li>
 <?php } ?>
@@ -27,19 +28,29 @@
     <table class="uiGrid table400" cellspacing="0" cellpadding="1">
         <tbody>
             <tr>
-                <td class="label">University Id:</td>
-                <td><?php echo $this->Form->input('Worksheet.uid',array('label'=>false, 'div'=>false,
-                'value'=>$worksheet['Worksheet']['uid']
+                <td class="label alignLeft">University Id</td>
+                <td class="label alignLeft">Semester</td>
+            </tr>
+            
+            <tr>                
+	            <td><?php echo $this->Form->input('Worksheet.uid',array('label'=>false, 'div'=>false,
+                'value'=>$worksheet['Worksheet']['uid'], 'class'=>'fields'
                 )); ?></td>
+                
+                <td><?php echo $this->Form->input('Worksheet.sem',array('label'=>false, 'div'=>false, 'type'=>'select', 'options'=>array($semOptions), 'selected'=>$worksheet['Worksheet']['sem'])); ?></td>
+                
+                
             </tr>
             <tr>
-                <td class="label">First Name:</td>
-                <td><?php echo $this->Form->input('Worksheet.firstName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['firstName'])); ?></td>
+                <td class="label alignLeft">First Name</td>
+                <td class="label alignLeft">Last Name</td>
             </tr>
             <tr>
-                <td class="label">Last Name:</td>
-                <td><?php echo $this->Form->input('Worksheet.lastName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['lastName'])); ?></td>
+            	<td><?php echo $this->Form->input('Worksheet.firstName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['firstName'], 'class'=>'fields')); ?></td>
+                
+                <td><?php echo $this->Form->input('Worksheet.lastName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['lastName'], 'class'=>'fields')); ?></td>
             </tr>
+            
         </tbody>
     </table>
 </div>
@@ -65,15 +76,64 @@
 <div class="formBox"><a name="prior-reenroll"></a>
     <h3>Prior Re-enrollment Decisions</h3>
 
-	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Re-enrollment Applications', 'value'=>$worksheet['Worksheet']['numReEnrollApps'])); ?>
-	<?php echo $this->Form->input('Worksheet.numApprovals', array('label'=>'Number of Approvals (80, 86, 8A*, 8A, 8N)', 'value'=>$worksheet['Worksheet']['numApprovals'])); ?>
-	<?php echo $this->Form->input('Worksheet.numDenials', array('label'=>'Number of Denials (1A, 2A, 2F, 3A, 3F, 4X, 50)', 'value'=>$worksheet['Worksheet']['numDenials'])); ?>
-	<?php echo $this->Form->input('Worksheet.numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X)', 'value'=>$worksheet['Worksheet']['numPendingDecision'])); ?>
-	<?php echo $this->Form->input('Worksheet.numCancelledApps', array('label'=>'Number of Cancelled Applications (RC)', 'value'=>$worksheet['Worksheet']['numCancelledApps'])); ?>
+	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Re-enrollment Applications ', 'value'=>$worksheet['Worksheet']['numReEnrollApps'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numApprovals', array('label'=>'Number of Approvals (80, 86, 8A*, 8A, 8N) ', 'value'=>$worksheet['Worksheet']['numApprovals'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numDenials', array('label'=>'Number of Denials (1A, 2A, 2F, 3A, 3F, 4X, 50) ', 'value'=>$worksheet['Worksheet']['numDenials'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X) ', 'value'=>$worksheet['Worksheet']['numPendingDecision'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numCancelledApps', array('label'=>'Number of Cancelled Applications (RC) ', 'value'=>$worksheet['Worksheet']['numCancelledApps'], 'div'=>array('class'=>'smallText input text'))); ?>
 	
-	<?php //echo $this->Html->div('priorReEnrollmentDecisions'); ?>
+	<?php //debug($worksheet); ?>
+	<div id='priorSemesters'>
+	<table id="priorSems" style="width:300px;float:left">
+		<tr><th>Semester</th><th>Code</th></tr>
 	
-	<?php //echo $this->Html->Link('addSemester',$options=>array('onClick'=>'addOneSemester()')); ?>
+	
+	<?php
+		if(!empty($worksheet['Semester'])){
+			foreach($worksheet['Semester'] as $oneSemester){
+				//debug($oneSemester);
+				echo "<tr><td>";
+				echo $this->Form->input('Semester.'.$oneSemester['order'].'.sem',array('label'=>false,'div'=>false,'value'=>$oneSemester['sem']));
+				echo "</td><td>";
+				echo $this->Form->input('Semester.'.$oneSemester['order'].'.code',array('label'=>false,'div'=>false,'value'=>$oneSemester['code']));
+				echo "</td></tr>";
+				
+			}
+		}
+	?>
+		</table>	
+		<div style="clear:both;margin:0;padding:0"></div>
+	</div>
+	<?php echo $this->Form->input('SemesterCount',array('type'=>'hidden','value'=>$worksheet['Worksheet']['priorSemCount'])); ?>
+	<a href="javascript:void(0);" onclick="addOneSemester();">Add One Semester</a>
+	
+	<script type="text/javascript">
+		
+		function removeSem(semNum){
+			alert(semNum);
+		}
+	
+		function addOneSemester(){
+			var content = document.getElementById('priorSemesters').innerHTML;
+			var count=document.getElementById('WorksheetSemesterCount').value;
+			if(count == null || count=="")
+				count = 0;
+			count = parseInt(count);
+			count = count+1;
+			var oneNewSem = "";
+			oneNewSem += "<div class='noMargin' name='data[Semester]["+count+"]' id='Semester"+count+"'>";
+			oneNewSem += "Semester: ";
+			oneNewSem += "<input type='text' name='data[Semester]["+count+"][sem]' /> ";
+			oneNewSem += "Code: ";
+			oneNewSem += "<input type='text' name='data[Semester]["+count+"][code]' /> ";
+			oneNewSem += "<a href='javascript:void(0);' onclick='removeSem("+count+")'>X</a>";
+			oneNewSem += "</div>";
+			
+			content += oneNewSem;
+			document.getElementById('WorksheetSemesterCount').value = count;
+			document.getElementById('priorSemesters').innerHTML = content;
+		}
+	</script>
 	
 </div>
 
@@ -105,8 +165,8 @@
 
 <div class="formBox"><a name="major"></a>
 	<h3>Major</h3>
-	<?php echo $this->Form->input('Worksheet.currentMajor',array('value'=>$worksheet['Worksheet']['currentMajor'])); ?>
-	<?php echo $this->Form->input('Worksheet.requestedMajor', array('label'=>'Requested Major (if applicable)', 'value'=>$worksheet['Worksheet']['requestedMajor'])); ?>
+	<?php echo $this->Form->input('Worksheet.currentMajor',array('value'=>$worksheet['Worksheet']['currentMajor'], 'class'=>'fields')); ?>
+	<?php echo $this->Form->input('Worksheet.requestedMajor', array('label'=>'Requested Major (if applicable)', 'value'=>$worksheet['Worksheet']['requestedMajor'], 'class'=>'fields')); ?>
 </div>
 
 <div class="formBox"><a name="notes"></a>
@@ -130,6 +190,14 @@
 	
 </div>
 
+<div class="formBox"><a name="attachments"></a>
+	<h3>Attachments</h3>
+	<div id="attachmentList"></div>
+	
+	<?php echo $this->Form->input('Worksheet.currentMajor',array('value'=>$worksheet['Worksheet']['currentMajor'])); ?>
+	<?php echo $this->Form->input('Worksheet.requestedMajor', array('label'=>'Requested Major (if applicable)', 'value'=>$worksheet['Worksheet']['requestedMajor'])); ?>
+</div>
+
 <?php echo $this->Form->input('Worksheet.statusId', array('type'=>'hidden', 'value'=>($worksheet==null?'0':$worksheet['Worksheet']['statusId']))); ?>
 
 
@@ -138,20 +206,29 @@
 		?><div class="formBox"><a name="reviews"></a> <?php
 		echo $this->element('admin_review_controls');
 		?></div><?php
+		
+	if($worksheet['Worksheet']['statusId']>='6'){
+		echo $this->element('admin_final_decision');
+	}	
+		
 	}
 ?>
 
 
 
 <div class="formBox">
-<?php echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
+<?php if($worksheet['Worksheet']['statusId']<'2') echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
 <?php
 	if(!empty($this->Session->request->params['admin'])){
+		if($worksheet['Worksheet']['statusId']<'6')
 		echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit'));
+		else if($worksheet['Worksheet']['statusId']=='6')
+		echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit'));
 		if(!empty($id)){
-		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'submit'));	
+		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redButton submit floatRight'));	
 		}
 	}else if($this->Session->request->params['creator']){
+		if($worksheet['Worksheet']['statusId']<'2')
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
 	}	
 ?>

@@ -7,6 +7,7 @@
 class WorksheetsController extends AppController {
 	var $name = 'Worksheet';
 	var $useTable = 'worksheets';
+	var $cond=array("NOT"=>array('Worksheet.statusId'=>array('7')));
 	var $paginate = array(
 		'limit' => 10,
 		'order' => array('Worksheet.id' => 'asc')
@@ -22,13 +23,44 @@ class WorksheetsController extends AppController {
 	     }
 	     return true;
 	}
+	private function loadSemesterOptions(){
+		if(!ClassRegistry::isKeySet('SelectOptions')){
+			$this->loadModel('SelectOptions');
+		}
+		
+		$this->set('semOptions',$this->SelectOptions->find('list',	array(
+		'fields'=>array('SelectOptions.code', 'SelectOptions.name'),
+		'conditions'=>array('SelectOptions.type'=>'worksheet', 'SelectOptions.subtype'=>'semester')
+		)));
+	}
+	private function loadRoleOptions(){
+		if(!ClassRegistry::isKeySet('SelectOptions')){
+			$this->loadModel('SelectOptions');
+		}
+		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+	}
+	private function loadWorksheetStatuses(){
+		
+	}
+	function loadWorksheetSemesters(){
+		$this->loadModel('Semester');
+		$semesterData = $this->Semester->find('all', array(
+        	'conditions'=>array('Semester.worksheetId'=>$this->viewVars['worksheet']['Worksheet']['id'])));
+        //$semesterData = Set::combine($semesterData,'{n}.Semester.order')	
+        $this->set('semesterData',$semesterData);
+		
+	}
 	function loadModelData(){
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
 		$this->loadModel('Users');
 		$this->loadModel('Review');
+		$this->loadWorksheetSemesters();
 		
-		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
+
+		$this->loadRoleOptions();
+		$this->loadSemesterOptions();
+		
 
         $financialBlockOptions = array();
 		$financialBlocks = $this->SelectOptions->find('all',array(
@@ -63,17 +95,44 @@ class WorksheetsController extends AppController {
         $this->set('reviews',$reviewsData);
         
 	}
+	private function filterWorksheet(){
+		$filters = $this->Session->read('WorksheetFilters');
+		$uid = $filters['uid'];
+		
+		$studentName = $filters['name'];
+		$cond = array(
+			'uid LIKE'=>"%$uid%",
+			'OR'=>array(array('firstName LIKE' => "%$studentName%"),array('lastName LIKE' => "%$studentName%")),
+			//array('uid LIKE'=>"%$filters['uid']%")
+			
+		);
+		//debug($this->cond);
+		$this->Session->write('WorksheetConditions',$cond);
+		$this->paginate = null;
+		$this->redirect(array('action'=>'index'));
+	}
 	
 	/** ADMIN  **/
 	function admin_index(){
-		$data = $this->paginate('Worksheet');
+		if($this->Session->check('WorksheetConditions'))
+			$cond = $this->Session->read('WorksheetConditions');
+		//debug($cond);
+		$data = $this->paginate('Worksheet',$cond);
 		$this->set('worksheets',$data);
 		$this->loadModel('User');
 		$this->set('reviewers',$this->User->find('list', 
 		array(
 		'fields'=>array('User.id','User.fullName'),
 		'conditions'=>array('role'=>'reviewer'))));
+		$this->loadSemesterOptions();
+		
 	}
+	
+	function admin_filterWorksheet(){
+		$this->Session->write('WorksheetFilters',$this->data['WorksheetFilters']);
+		$this->filterWorksheet();
+	}
+	
 	function admin_addWorksheet(){
 		$this->redirect(array('action'=>'addEdit','admin'=>true));
 	}
@@ -127,15 +186,32 @@ class WorksheetsController extends AppController {
 	function admin_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
 		$this->Session->write('reviewData',$this->params['data']['Review']);
-		
+		//debug($this->params['data']['Worksheet']);exit;
 		if(isset($this->params['data']['saveButton'])){
 			$this->redirect(array('action'=>'saveWorksheet','admin'=>true));
-		}else{ //if(isset($this->params['data']['submitButton'])){
-			
+		}
+		if(isset($this->params['data']['submitButton'])){
 			$this->redirect(array('action'=>'submitWorksheet','admin'=>true));
-		}/*else if(isset($this->params['data']['deleteButton'])){
+		}
+		if(isset($this->params['data']['finalizeButton'])){
+			$this->redirect(array('action'=>'finalizeWorksheet','admin'=>true));
+		}
+		if(isset($this->params['data']['deleteButton'])){
 			$this->redirect(array('action'=>'deleteWorksheet','admin'=>true));
-		}	*/
+		}
+		
+	}
+	
+	function admin_finalizeWorksheet(){
+		$worksheetData = $this->Session->read('worksheetData');
+		//debug($worksheetData);exit;
+		if($worksheetData['statusId']=='6'){
+			$worksheetData['statusId']='7';
+		}
+		if($this->Worksheet->save($worksheetData)){
+			$this->Session->setFlash('Worksheet Finalized','flashSuccess');
+		}//end of worksheet save
+		$this->redirect(array('action'=>'index','admin'=>true));
 	}
 	
 	function admin_submitWorksheet(){
@@ -282,6 +358,8 @@ class WorksheetsController extends AppController {
 		}
 	}
 	
+	
+	
 	/** CREATOR  **/
 	function creator_index(){
 		$data = $this->paginate('Worksheet');
@@ -373,19 +451,6 @@ class WorksheetsController extends AppController {
 		$this->loadReviewerDecisionCodes();
 		
 		
-	}
-	
-	private function loadReviewerDecisionCodes(){
-		$this->loadModel('SelectOptions');
-		$reviewerDecisionCodeOptions = array();
-		$reviewerDecisionCodes = $this->SelectOptions->find('all',array(
-		    'fields'=>array('SelectOptions.code', 'SelectOptions.name'),
-			'conditions'=>array('SelectOptions.type'=>'decision')
-		));
-		foreach ($reviewerDecisionCodes as $row) {
-			$reviewerDecisionCodeOptions[$row['SelectOptions']['code']] = $row['SelectOptions']['code'] .' - '. $row['SelectOptions']['name'];
-		}
-		$this->set('reviewerDecisionCodeOptions', $reviewerDecisionCodeOptions);
 	}
 
 }

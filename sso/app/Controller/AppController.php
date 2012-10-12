@@ -53,6 +53,11 @@ class AppController extends Controller {
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
 		
+		$this->set('semOptions',$this->SelectOptions->find('list',	array(
+		'fields'=>array('SelectOptions.code', 'SelectOptions.name'),
+		'conditions'=>array('SelectOptions.type'=>'worksheet', 'SelectOptions.subtype'=>'semester')
+		)));
+		
 		$this->loadModel('StatusCodes');
 		$this->set('reviewSC',$this->StatusCodes->find('list', array('fields'=>array('StatusCodes.order','StatusCodes.status'),
 				'conditions'=>array('StatusCodes.type'=>'review')
@@ -60,9 +65,23 @@ class AppController extends Controller {
 		$this->set('worksheetSC',$this->StatusCodes->find('list', array('fields'=>array('StatusCodes.order','StatusCodes.status'),
 				'conditions'=>array('StatusCodes.type'=>'worksheet')
 		)));
+		
+		$this->loadReviewerDecisionCodes();
 
 		$this->loaded = true;
 		//debug($this);
+	}
+	private function loadReviewerDecisionCodes(){
+		$this->loadModel('SelectOptions');
+		$reviewerDecisionCodeOptions = array();
+		$reviewerDecisionCodes = $this->SelectOptions->find('all',array(
+		    'fields'=>array('SelectOptions.code', 'SelectOptions.name'),
+			'conditions'=>array('SelectOptions.type'=>'decision')
+		));
+		foreach ($reviewerDecisionCodes as $row) {
+			$reviewerDecisionCodeOptions[$row['SelectOptions']['code']] = $row['SelectOptions']['code'] .' - '. $row['SelectOptions']['name'];
+		}
+		$this->set('reviewerDecisionCodeOptions', $reviewerDecisionCodeOptions);
 	}
 
 

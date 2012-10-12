@@ -20,6 +20,20 @@ class Worksheet extends AppModel{
 			'message' => 'Student Name cannot be left blank'
 		)
 	);
+	
+	var $hasMany = array(
+	'Attachment' => array(
+		'className'     => 'Attachment',
+		'foreignKey'    => 'worksheet_id',
+		'fields'=>array('Attachment.file_name','Attachment.description')
+		),
+	'Semester'=>array(
+		'className'=>'Semester',
+		'foreignKey'=>'worksheetId',
+		'fields'=>array('Semester.order','Semester.sem','Semester.code')
+	)
+	
+	); 
 
 
 }

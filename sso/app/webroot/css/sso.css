@@ -56,6 +56,55 @@
     border-radius: 2px;
 }
 
+#navmenu{
+    width: 998px;
+    display: inline;
+    /*background: #C6D3E1;*/
+    float: left;
+    border: 1px solid #A4B8CD;
+    min-height: 33px;
+    box-shadow: 1px 1px 0 #fff;
+    margin: 5px 10px;
+	background-color: #dae0e7;
+	font: 400 12px Helvetica, 'lucida grande', sans-serif;
+	vertical-align: middle;
+}
+#navmenu a{
+	vertical-align: baseline;
+    box-shadow: none;
+    padding: 5px 15px;
+    color: #1A3F7E;
+    cursor: auto;
+    display: inline;
+    height: 33px;
+    line-height: 33px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(254, 254, 254), 1px 1px 1px #A4AFBA;
+    text-transform: capitalize;
+    vertical-align: baseline;
+    font-style: normal;
+	font-variant: small-caps;
+	font-size: 1.3em;
+	margin-bottom: .5em;
+	font-weight: 600;
+}
+#navmenu a:hover, #navmenu a:active{
+    color: #880000;
+    /*padding: 0 14px;
+    background: #EEE;
+    background-color: #EDEDED;
+    border: 1px solid #AFBAC6;
+    border-bottom-color: #8E97A0;
+    border-top: 1px solid white;
+    box-shadow: 0 -1px 0 #AFBAC6;
+    border-radius: 2px;*/
+}
+
+.horizontalSeperator{
+	border-right: 1px solid #A4B8CD;display: inline;height: 30px;
+}
+
+
 .buttonLink{
     font-family: Helvetica, 'lucida grande', sans-serif;
     display: inline;
@@ -77,7 +126,7 @@
 .defaultTextActive { color: #3c3c3c; }
 
 #theContent{
-    width:760px;
+    width:990px;
     border: 1px solid #cccccc;
     float:right;
     margin: 0px 10px 0 5px;
@@ -90,12 +139,15 @@
 #theContent h2{
 	font-family: 'Helvetica Neue';
 	font-weight: 200;
+	margin-top: auto;
 }
 
 .center{
     text-align: center;
 }
 .red{color:#880000;text-shadow: 1px 1px 0 #fff;}
+input .redButton{background-color: #990000;color:#fefefe;}
+.redButton:hover{background-color: #333;}
 .grey{color:#444;text-shadow: 1px 1px 0 #fff;}
 
 table.uiGrid{
@@ -106,10 +158,30 @@ table.uiGrid{
 }
 
 input{
-    width: 200px;
     padding: 4px;
     font-size:13px;
     border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+input.small{
+	padding:3px;
+	font-size: 10px;
+	border:1px solid #999;
+}
+input[type=submit].small:hover{
+	border: 1px solid #333;
+	background-color: #333;
+	color:#eee;
+}
+.small{
+	padding: 2px;
+	font-size: 12px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input.fields{
+	width: 200px;
 }
 
 td.label{
@@ -135,6 +207,7 @@ td.label{
 .smallText input{
 	width: 45px;
 }
+.noMargin{margin:0;}
 #commonControls{
 	/*float: right;*/
 	float: right;
@@ -149,13 +222,24 @@ td.label{
 #commonControls a{
 	margin-right:10px;
 }
-/*
-#contentWrapper a{
+
+#contentWrapper{
 	text-decoration: none;
+	margin:auto;
+	padding:0;
 }
-*/
+#footer{
+	margin: auto;
+	padding: 10px;
+	clear:both;
+	text-align: center;
+}
+
 #container{
-	float:left;
+	background-color: #ffffff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
 }
 
 .flash{
@@ -228,6 +312,8 @@ table.review th{
 #usability{
 	float: right;
 }
+.alignLeft{text-align: left;}
+td.label.alignLeft{text-align: left;}
 
 a.buttonLink,input.buttonLink, button.buttonLink{
 	border: 1px solid #EDA42E;

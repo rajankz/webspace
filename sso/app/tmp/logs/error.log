@@ -10778,3 +10778,915 @@
 #3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-09-27 20:31:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Attachment.worksheet_id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Attachm...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Attachm...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1342): DboSource->fetchAll('SELECT `Attachm...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1204): DboSource->fetchAssociated(Object(Worksheet), 'SELECT `Attachm...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1117): DboSource->queryAssociation(Object(Worksheet), Object(Attachment), 'hasMany', 'Attachment', Array, Array, true, Array, 0, Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#7 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('first', Array)
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(600): AppModel->find('first', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Worksheet))
+#10 [internal function]: Model->__call('findById', Array)
+#11 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(92): Worksheet->findById('6')
+#12 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(85): WorksheetsController->addEdit('6')
+#13 [internal function]: WorksheetsController->admin_addEdit('6')
+#14 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#15 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#16 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#17 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2012-10-03 16:18:02 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-03 16:18:02 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-05 18:45:51 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-05 18:45:51 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-05 20:12:23 Error: Fatal Error (1): Call to undefined method View::input() in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 3]
+2012-10-05 20:12:23 Error: [FatalErrorException] Call to undefined method View::input()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 3, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 3, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-08 15:22:11 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-08 15:22:11 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 13:43:32 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 9]
+2012-10-09 13:43:32 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 9, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 9, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 13:43:51 Error: [MissingControllerException] Controller class WorksheetFiltersController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 17:22:46 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 87]
+2012-10-09 17:22:46 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 87, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 87, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 18:00:39 Error: [MissingHelperException] Helper class FromHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('From')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('From')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(93): View->__get('From')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(5): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-09 19:46:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 63]
+2012-10-09 19:46:02 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 63)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 63, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 63, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 01:26:33 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 01:26:34 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 03:13:39 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/Users/raj/Sites/webspace/sso/app/View/Layouts/default.ctp, line 47]
+2012-10-11 03:13:39 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 47, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 47, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 04:45:28 Error: [MissingControllerException] Controller class WorksheetFiltersController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 13:40:11 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 24]
+2012-10-11 13:40:11 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 13:58:56 Error: [MissingControllerException] Controller class WorksheetFiltersController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 13:59:07 Error: [MissingControllerException] Controller class WorksheetFiltersController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 15:49:08 Error: [MissingControllerException] Controller class WorksheetFiltersController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 15:58:09 Error: [MissingPluginException] Plugin Worksheet could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('Worksheet')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('Worksheet')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Model', 'Worksheet')
+#3 [internal function]: App::load('WorksheetFilter...')
+#4 [internal function]: spl_autoload_call('WorksheetFilter...')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ClassRegistry.php(136): class_exists('WorksheetFilter...')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php(153): ClassRegistry::init('Worksheet.Works...', true)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php(323): FormHelper->_getModel('Worksheet.Works...')
+#8 /Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp(14): FormHelper->create('Worksheet.Works...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#12 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_index.ctp(6): View->element('allWorksheetsIn...')
+#13 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#14 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#15 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#16 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#17 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#18 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#19 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2012-10-11 15:58:14 Error: [MissingPluginException] Plugin Worksheet could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('Worksheet')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('Worksheet')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Model', 'Worksheet')
+#3 [internal function]: App::load('WorksheetFilter...')
+#4 [internal function]: spl_autoload_call('WorksheetFilter...')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ClassRegistry.php(136): class_exists('WorksheetFilter...')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php(153): ClassRegistry::init('Worksheet.Works...', true)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php(323): FormHelper->_getModel('Worksheet.Works...')
+#8 /Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp(14): FormHelper->create('Worksheet.Works...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#12 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_index.ctp(6): View->element('allWorksheetsIn...')
+#13 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#14 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#15 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#16 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#17 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#18 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#19 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2012-10-11 16:03:07 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 16:08:34 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:08:34 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:08:57 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:08:57 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:08:58 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:08:58 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:09:04 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:09:04 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:09:05 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:09:05 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:09:24 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:09:24 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:09:26 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 16:09:26 Error: [FatalErrorException] syntax error, unexpected T_NEW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 16:09:56 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 16:09:56 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:20:09 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:20:25 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:20:50 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:24:25 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:24:55 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:25:15 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:25:35 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:25:53 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:26:15 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:29:08 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:29:25 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:29:45 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:30:02 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:30:41 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:31:03 Error: [MissingActionException] Action WorksheetController::admin_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-11 18:34:37 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 18:36:10 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 18:36:10 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:36:50 Error: Fatal Error (4): syntax error, unexpected T_IF in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 18:36:50 Error: [FatalErrorException] syntax error, unexpected T_IF
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:36:51 Error: Fatal Error (4): syntax error, unexpected T_IF in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 18:36:51 Error: [FatalErrorException] syntax error, unexpected T_IF
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:37:07 Error: Fatal Error (4): syntax error, unexpected '(' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 18:37:07 Error: [FatalErrorException] syntax error, unexpected '('
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:37:08 Error: Fatal Error (4): syntax error, unexpected '(' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 14]
+2012-10-11 18:37:08 Error: [FatalErrorException] syntax error, unexpected '('
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 14, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:38:36 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:38:36 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:38:37 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:38:37 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:39:37 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:39:37 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:39:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:39:39 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:40:03 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:40:03 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 18:40:04 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 18:40:04 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 19:02:10 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:07:35 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 19:07:35 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 19:08:06 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 16]
+2012-10-11 19:08:06 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 16, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 19:18:55 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:20:18 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:20:27 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:24:01 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:24:10 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_filter_worksheet.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-11 19:24:32 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 120]
+2012-10-11 19:24:32 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 120)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 120, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 120, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 19:58:30 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 19:58:30 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 19:59:22 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 10]
+2012-10-11 19:59:22 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 10, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:02:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:02:33 Error: Fatal Error (4): syntax error, unexpected T_ARRAY, expecting ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 119]
+2012-10-11 20:02:33 Error: [FatalErrorException] syntax error, unexpected T_ARRAY, expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:02:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:04:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:04:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:05:22 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 119]
+2012-10-11 20:05:22 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:05:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:09:19 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 119]
+2012-10-11 20:09:19 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:11:03 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 122]
+2012-10-11 20:11:03 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:11:14 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 122]
+2012-10-11 20:11:14 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:11:24 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 121]
+2012-10-11 20:11:24 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 121)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 121, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 121, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:11:49 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 121]
+2012-10-11 20:11:49 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 121)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 121, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 121, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:12:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:12:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:13:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:13:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:13:34 Error: Fatal Error (4): syntax error, unexpected '"', expecting ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 122]
+2012-10-11 20:13:34 Error: [FatalErrorException] syntax error, unexpected '"', expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 122, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:13:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:14:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:15:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:15:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:15:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:15:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:16:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:16:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:16:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:16:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ('%llo%')) OR (lastName LIKE = ('%llo%')))   ORDER BY `Worksheet`.`id` desc  L' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(104): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-11 20:49:56 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 103]
+2012-10-11 20:49:56 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 103)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:50:45 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 103]
+2012-10-11 20:50:45 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 103)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 103, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:51:32 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 102]
+2012-10-11 20:51:32 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 102)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 102, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 102, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 20:56:59 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 104]
+2012-10-11 20:56:59 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 104, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 104, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 21:36:56 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 18]
+2012-10-11 21:36:56 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 18, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 18, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 21:37:04 Error: Fatal Error (4): syntax error, unexpected ',', expecting ']' in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 18]
+2012-10-11 21:37:04 Error: [FatalErrorException] syntax error, unexpected ',', expecting ']'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 18, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 18, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-11 21:44:53 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/Users/raj/Sites/webspace/sso/app/View/Elements/allWorksheetsIndex.ctp, line 17]
+2012-10-11 21:44:53 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 17, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 17, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -22,11 +22,65 @@
 <?php $siteDescription = 'University of Maryland - Student Success Office'; ?>
 <head>
 	<base href="<?php echo $base_url ?>" />
-	<script type="text/javascript">
-	function changeFont(element,step)
-	{
-	    document.getElementById(element).style.fontSize =  (parseInt(document.getElementById(element).style.fontSize,10) + parseInt(step,10)) + 'px';
+	<style>
+	#changeFont {
+	position:absolute;
+	top:10px;
+	right:0px;
+	background-color:#555;
+	padding:5px;
+	border-radius: 3px;
+}
+.increaseFont, .decreaseFont, .resetFont {
+	text-decoration: none;
+	color:#CCCCCC;
+	font-size:14px;
+	float:left;
+	margin:5px 10px;
+}
+.increaseFont:hover, .decreaseFont:hover, .resetFont:hover {
+	color:#FFFFFF;
+}
+
+	</style>
+	<script type="text/javascript" language="javascript">
+
+	/*
+	var defaultSize = 16;
+	var sizeChanged = 0;
+	function resetFont(){
+		var newSize = parseInt(sizeChanged)*-1;
+		var list = document.getElementsByTagName('div');
+		if(newSize == null || newSize == 0)
+			newSize = 0;
+			
+		for(var i=0,item;i<1;i++){
+		    item=list.item(i);
+		    newFontSize = (parseInt(getComputedStyle(item, null).getPropertyValue("font-size"))+parseInt(newSize));
+		    sizeChanged = 0;
+		    item.setAttribute('style', 'font-size:'+newFontSize+"px;");
+	    }	
+		
 	}
+	function changeFont(step)
+	{
+		var item;
+		    //alert(document.getElementById(element).style.getPropertyValue('fontSize'));
+	    var list = document.getElementsByTagName('div');
+	    var newFontSize;
+	    //just do for one
+	    for(var i=0,item;i<1;i++){
+		    item=list.item(i);
+		    sizeChanged = parseInt(sizeChanged) + parseInt(step);
+		    newFontSize = (parseInt(getComputedStyle(item, null).getPropertyValue("font-size"))+parseInt(step));
+		    
+		    //alert(newFontSize);
+		    item.setAttribute('style', 'font-size:'+newFontSize+"px;");
+	    }
+		    //alert(getComputedStyle(item, null).getPropertyValue("font-size"));
+	    //document.getElementById('body').style.fontSize = '20px';
+	    //(parseInt(document.getElementById(element).style.fontSize,10) + parseInt(step,10)) + 'px';
+	}*/
 	</script>
 	<?php echo $this->Html->charset(); ?>
 	<title>
@@ -35,7 +89,7 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		//echo $this->Html->css('bootstrap');
 		echo $this->Html->css('sso');
         echo '<link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-1020px.css" />';
         echo $this->Html->script('jquery-1.7.2.min.js');
@@ -47,7 +101,32 @@
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+  // Reset Font Size
+  var originalFontSize = $('html').css('font-size');
+    $(".resetFont").click(function(){
+    $('html').css('font-size', originalFontSize);
+  });
+  // Increase Font Size
+  $(".increaseFont").click(function(){
+    var currentFontSize = $('html').css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*1.2;
+    $('html').css('font-size', newFontSize);
+    return false;
+  });
+  // Decrease Font Size
+  $(".decreaseFont").click(function(){
+    var currentFontSize = $('html').css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*0.8;
+    $('html').css('font-size', newFontSize);
+    return false;
+  });
+});
+</script>
+<body id="body">
 <div id="umd-frame" style="margin: auto">
     <div id="umd-frame-header">
         <a href="http://www.umd.edu/"><img src="http://www.umd.edu/wrapper/images/header-um-logo.gif" alt="University of Maryland" id="umd-frame-logo" /></a>
@@ -56,11 +135,19 @@
 
 	<div id="container">
 		<div id="header">
-            <div id="usability">
-               <a href="javascript:void(0);" onclick="changeFont('html','2');">A+</a>
-               <a href="javascript:void(0);" onclick="changeFont('html',-2);">A-</a>
+            <!--<div id="usability">
+               <a href="javascript:void(0);" onclick="changeFont('2');">A+</a><span> </span>
+               <a href="javascript:void(0);" onclick="resetFont();">A</a><span> </span>
+               <a href="javascript:void(0);" onclick="changeFont('-2');">A-</a>
 
             </div>
+            -->
+            <div id="changeFont">
+				<a href="#" class="increaseFont">Increase</a>
+				<a href="#" class="resetFont">Reset</a>
+				<a href="#" class="decreaseFont">Decrease</a>				
+			</div>
+
             <div id="banner">
             <?php echo $this->Html->link(
                 $this->Html->image('sso-banner.jpg',array('alt' => $siteDescription, 'border' => '0')),

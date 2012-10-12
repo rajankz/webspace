@@ -1,4 +1,4 @@
-<?php echo $this->element('admin_sidemenu'); ?>
+<?php echo $this->element('admin_navmenu'); ?>
 <div id="theContent">
 <h2 class="center">Change User Password</h2>
 <?php

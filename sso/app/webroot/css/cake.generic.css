@@ -403,6 +403,7 @@ form .submit input[type=submit] {
 	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
 	background-image: -webkit-1linear-gradient(top, #76BF6B, #3B8230);
 	background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
+	background: #0863c5;
 	*/
 	border-color: #5eccfa;
 	border-color: #3C41C2;
@@ -413,7 +414,10 @@ form .submit input[type=submit] {
 	-moz-box-shadow: 1px 1px 1px #b3f3a6;
 	-webkit-box-shadow: 1px 1px 1px #b3f3a6;
 	box-shadow: 1px 1px 1px #b8caf9;
-	background: #0863c5;
+	
+}
+form .redButton input[type=submit]{
+	background-color: #880000;
 }
 form .submit input[type=submit]:hover {
 	background: #5fa8fb;
