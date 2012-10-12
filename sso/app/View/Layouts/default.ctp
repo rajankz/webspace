@@ -43,45 +43,7 @@
 }
 
 	</style>
-	<script type="text/javascript" language="javascript">
 
-	/*
-	var defaultSize = 16;
-	var sizeChanged = 0;
-	function resetFont(){
-		var newSize = parseInt(sizeChanged)*-1;
-		var list = document.getElementsByTagName('div');
-		if(newSize == null || newSize == 0)
-			newSize = 0;
-			
-		for(var i=0,item;i<1;i++){
-		    item=list.item(i);
-		    newFontSize = (parseInt(getComputedStyle(item, null).getPropertyValue("font-size"))+parseInt(newSize));
-		    sizeChanged = 0;
-		    item.setAttribute('style', 'font-size:'+newFontSize+"px;");
-	    }	
-		
-	}
-	function changeFont(step)
-	{
-		var item;
-		    //alert(document.getElementById(element).style.getPropertyValue('fontSize'));
-	    var list = document.getElementsByTagName('div');
-	    var newFontSize;
-	    //just do for one
-	    for(var i=0,item;i<1;i++){
-		    item=list.item(i);
-		    sizeChanged = parseInt(sizeChanged) + parseInt(step);
-		    newFontSize = (parseInt(getComputedStyle(item, null).getPropertyValue("font-size"))+parseInt(step));
-		    
-		    //alert(newFontSize);
-		    item.setAttribute('style', 'font-size:'+newFontSize+"px;");
-	    }
-		    //alert(getComputedStyle(item, null).getPropertyValue("font-size"));
-	    //document.getElementById('body').style.fontSize = '20px';
-	    //(parseInt(document.getElementById(element).style.fontSize,10) + parseInt(step,10)) + 'px';
-	}*/
-	</script>
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $siteDescription; ?>
