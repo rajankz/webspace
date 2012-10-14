@@ -105,9 +105,9 @@
             </div>
             -->
             <div id="changeFont">
-				<a href="#" class="increaseFont">Increase</a>
-				<a href="#" class="resetFont">Reset</a>
-				<a href="#" class="decreaseFont">Decrease</a>				
+				<a href="#" class="increaseFont">A+</a>
+				<a href="#" class="resetFont">A</a>
+				<a href="#" class="decreaseFont">A-</a>				
 			</div>
 
             <div id="banner">

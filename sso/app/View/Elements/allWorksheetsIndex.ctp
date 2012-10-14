@@ -30,8 +30,8 @@
 <td><?php echo $this->Form->input('WorksheetFilters.Status',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($worksheetSCFilter))); ?></td>
 <td><?php echo $this->Form->input('WorksheetFilters.AssignedTo',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($reviewersFilter))); ?></td>
 <td><?php echo $this->Form->input('WorksheetFilters.Sem',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($semOptions))); ?></td>
-<td><?php echo $this->Form->submit('Go',array('div'=>false, 'action'=>'filter','name'=>'filterButton','class'=>'small')); ?></td>
-<td><?php echo $this->Form->submit('Restore Default', array('div'=>false,'action'=>'restoreDefault','name'=>'restoreDefaultButton','class'=>'small alignRight'));?></td>
+<td><?php echo $this->Form->submit('Go',array('div'=>false,'name'=>'applyFilter','class'=>'small')); ?></td>
+<td><?php echo $this->Form->submit('Restore Default', array('div'=>false,'name'=>'restoreDefault','class'=>'small alignRight'));?></td>
 </tr>
 </table>
 

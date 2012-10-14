@@ -30,7 +30,15 @@ class Worksheet extends AppModel{
 	'Semester'=>array(
 		'className'=>'Semester',
 		'foreignKey'=>'worksheetId',
-		'fields'=>array('Semester.order','Semester.sem','Semester.code')
+		'fields'=>array('Semester.id','Semester.order','Semester.sem','Semester.code')
+	),
+	'Review'=>array(
+		'className'=>'Review',
+		'foreignKey'=>'worksheetId'
+	),
+	'Upload'=>array(
+		'className'=>'Upload',
+		'foreignKey'=>'worksheetId'
 	)
 	
 	); 

@@ -106,6 +106,13 @@ class AppController extends Controller {
 	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
     }
+    
+    function isAdmin(){
+		if($this->params['prefix']=='admin' && ($this->Auth->user('role')!='admin')){
+            return false;
+        }    
+        return true;
+    }
 
     function isAuthorized($user){
         if($this->params['prefix']=='admin' && ($user['role']!='admin')){

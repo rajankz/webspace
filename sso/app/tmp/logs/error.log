@@ -11690,3 +11690,423 @@
 #3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-10-12 18:45:19 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 105]
+2012-10-12 18:45:19 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 105, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 105, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-12 20:28:41 Error: Fatal Error (4): syntax error, unexpected $end in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_review_controls.ctp, line 100]
+2012-10-12 20:28:41 Error: [FatalErrorException] syntax error, unexpected $end
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 100, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 100, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-12 20:33:13 Error: Fatal Error (4): syntax error, unexpected ':' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_review_controls.ctp, line 19]
+2012-10-12 20:33:13 Error: [FatalErrorException] syntax error, unexpected ':'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 19, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 19, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 19:53:24 Error: [MissingHelperException] Helper class viewvarsHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('viewvars')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('viewvars')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/admin_review_controls.ctp(8): View->__get('viewvars')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(207): View->element('admin_review_co...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#10 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(5): View->element('addEditWorkshee...')
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#13 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#14 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#15 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#16 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#17 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2012-10-13 19:58:14 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/Users/raj/Sites/webspace/sso/app/Model/Worksheet.php, line 35]
+2012-10-13 19:58:14 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 35, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 35, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:26:33 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:26:33 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:27:04 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:27:04 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:27:26 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:27:26 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:27:38 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:27:38 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:27:46 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:27:46 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:27:46 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:27:46 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:28:04 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 96]
+2012-10-13 21:28:04 Error: [FatalErrorException] syntax error, unexpected T_VAR
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 96, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 21:58:16 Error: Fatal Error (4): syntax error, unexpected T_ECHO, expecting ',' or ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 150]
+2012-10-13 21:58:16 Error: [FatalErrorException] syntax error, unexpected T_ECHO, expecting ',' or ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 150)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 150, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 150, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 22:18:02 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 367]
+2012-10-13 22:18:02 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 367)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 367, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 367, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 01:06:04 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 379]
+2012-10-14 01:06:04 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 379)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 379, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 379, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 01:06:23 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 379]
+2012-10-14 01:06:23 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 379)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 379, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 379, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 01:18:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(382): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(417): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(293): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:21:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(383): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(418): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(293): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:26:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(385): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(420): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:30:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(385): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(420): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:30:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(385): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(420): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:40:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(388): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(423): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:40:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(388): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(423): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:42:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(388): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(423): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:44:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(392): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(427): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:45:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(392): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(427): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:46:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(392): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(427): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:47:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(390): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(425): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:49:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:51:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:51:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:52:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:52:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:52:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:54:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-14 01:54:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `ug...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `ug...')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Semester), Array, Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(391): Model->save(Array)
+#5 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(426): WorksheetsController->handlePreviousSemesters()
+#6 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(294): WorksheetsController->saveWorksheet()
+#7 [internal function]: WorksheetsController->admin_saveWorksheet()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

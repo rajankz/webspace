@@ -3,8 +3,10 @@
 <?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
 <?php
 	$id = "";
-	if($worksheet!=null)
+	if($worksheet!=null){
+		debug($worksheet);
 		$id=$worksheet['Worksheet']['id'];
+	}
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
 ?>
 
@@ -83,16 +85,69 @@
 	<?php echo $this->Form->input('Worksheet.numCancelledApps', array('label'=>'Number of Cancelled Applications (RC) ', 'value'=>$worksheet['Worksheet']['numCancelledApps'], 'div'=>array('class'=>'smallText input text'))); ?>
 	
 	<?php //debug($worksheet); ?>
-	<div id='priorSemesters'>
+	<div id='priorSemesters'><br />
+	<script type="text/javascript">
+	function addSemester(tableID) {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            rowNum = rowCount;
+            
+            var cell1 = row.insertCell(0);
+            var element1 = document.createElement("input");
+            element1.type = "checkbox";
+            cell1.appendChild(element1);
+ 
+            var cell2 = row.insertCell(1);
+            var sem = document.createElement("input");
+            sem.type = "text";
+            sem.setAttribute("id", "Semester"+rowNum+"sem");
+            sem.setAttribute("name", "data[Semester]["+rowNum+"][sem]");
+            cell2.appendChild(sem);
+ 
+            var cell3 = row.insertCell(2);
+            var code = document.createElement("input");
+            code.type = "text";
+            code.setAttribute("id", "Semester"+rowNum+"code");
+            code.setAttribute("name", "data[Semester]["+rowNum+"][code]");
+            cell3.appendChild(code);
+    }
+    
+    function removeSemesters(tableID) {
+            try {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+ 
+            for(var i=0; i<rowCount; i++) {
+                var row = table.rows[i];
+                var chkbox = row.cells[0].childNodes[0];
+                if(null != chkbox && true == chkbox.checked) {
+                    table.deleteRow(i);
+                    rowCount--;
+                    i--;
+                }
+            }
+            }catch(e) {
+                alert(e);
+            }
+        }
+	</script>
+	
+	<input type="button" value="Add Semester" onclick="addSemester('priorSems')" class="small">
+	<input type="button" value="Remove Semester" onclick="removeSemesters('priorSems')" class="small">
+	<div style="clear:both"></div>
 	<table id="priorSems" style="width:300px;float:left">
-		<tr><th>Semester</th><th>Code</th></tr>
-	
-	
+		<tr><th></th><th>Semester</th><th>Code</th></tr>
 	<?php
+		$prevSemCount=0;
 		if(!empty($worksheet['Semester'])){
+			
 			foreach($worksheet['Semester'] as $oneSemester){
 				//debug($oneSemester);
+				$prevSemCount++;
+				echo $this->Form->input('SemesterIds.'.$prevSemCount,array('type'=>'hidden','value'=>$oneSemester['id']));
 				echo "<tr><td>";
+				echo "<input type='checkbox'></td><td>";
 				echo $this->Form->input('Semester.'.$oneSemester['order'].'.sem',array('label'=>false,'div'=>false,'value'=>$oneSemester['sem']));
 				echo "</td><td>";
 				echo $this->Form->input('Semester.'.$oneSemester['order'].'.code',array('label'=>false,'div'=>false,'value'=>$oneSemester['code']));
@@ -101,40 +156,11 @@
 			}
 		}
 	?>
-		</table>	
+	</table>
+	<?php echo $this->Form->input('SemesterCount',array('type'=>'hidden','value'=>$prevSemCount)); ?>		
 		<div style="clear:both;margin:0;padding:0"></div>
 	</div>
-	<?php echo $this->Form->input('SemesterCount',array('type'=>'hidden','value'=>$worksheet['Worksheet']['priorSemCount'])); ?>
-	<a href="javascript:void(0);" onclick="addOneSemester();">Add One Semester</a>
-	
-	<script type="text/javascript">
-		
-		function removeSem(semNum){
-			alert(semNum);
-		}
-	
-		function addOneSemester(){
-			var content = document.getElementById('priorSemesters').innerHTML;
-			var count=document.getElementById('WorksheetSemesterCount').value;
-			if(count == null || count=="")
-				count = 0;
-			count = parseInt(count);
-			count = count+1;
-			var oneNewSem = "";
-			oneNewSem += "<div class='noMargin' name='data[Semester]["+count+"]' id='Semester"+count+"'>";
-			oneNewSem += "Semester: ";
-			oneNewSem += "<input type='text' name='data[Semester]["+count+"][sem]' /> ";
-			oneNewSem += "Code: ";
-			oneNewSem += "<input type='text' name='data[Semester]["+count+"][code]' /> ";
-			oneNewSem += "<a href='javascript:void(0);' onclick='removeSem("+count+")'>X</a>";
-			oneNewSem += "</div>";
-			
-			content += oneNewSem;
-			document.getElementById('WorksheetSemesterCount').value = count;
-			document.getElementById('priorSemesters').innerHTML = content;
-		}
-	</script>
-	
+
 </div>
 
 <div class="formBox"><a name="sso-feedback"></a>
@@ -231,6 +257,9 @@
 		if($worksheet['Worksheet']['statusId']<'2')
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
 	}	
+	
+	echo $this->Form->submit('Duplicate',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));
+	
 ?>
 </div>
 

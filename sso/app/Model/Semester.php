@@ -10,13 +10,14 @@ class Semester extends AppModel{
 	var $name = "Semester";
 	var $useTable = "semesters";
 
-
+	/*
 	var $belongsTo = array(
 	'Worksheet' => array(
 		'className'     => 'Worksheet',
 		'foreignKey'    => 'worksheetId'
 		)
-	); 
+	);
+	*/ 
 	
 }
 
