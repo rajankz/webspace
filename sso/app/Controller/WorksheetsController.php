@@ -4,6 +4,7 @@
  * Date: 7/24/12
  * Time: 2:24 PM
  */
+App::import('Vendor', 'Uploader.Upload');
 class WorksheetsController extends AppController {
 	var $name = 'Worksheet';
 	var $useTable = 'worksheets';
@@ -14,6 +15,11 @@ class WorksheetsController extends AppController {
 		'order' => array('Worksheet.id' => 'asc')
 	);
 	var $worksheetId=null;
+	
+	/**
+	 * Include plugin.
+	 */
+	public $uses = array('Worksheet','Upload','Uploader.Upload');
 	
 	/** COMMON **/
 	public function isAuthorized($user){
@@ -211,9 +217,11 @@ class WorksheetsController extends AppController {
 		$this->Session->write('reviewData',empty($this->params['data']['Review'])?null:$this->params['data']['Review']);
 		$this->Session->write('semesterData',empty($this->params['data']['Semester'])?null:$this->params['data']['Semester']);
 		$this->Session->write('semesterIds',empty($this->params['data']['SemesterIds'])?null:$this->params['data']['SemesterIds']);
+		$this->Session->write('uploadData',empty($this->params['data']['Upload'])?null:$this->params['data']['Upload']);
+		$this->Session->write('uploadIds',empty($this->params['data']['UploadIds'])?null:$this->params['data']['UploadIds']);
 		/** foreward to appropirate action/method */
 		if(isset($this->params['data']['saveButton'])){
-			$this->redirect(array('action'=>'saveWorksheet','admin'=>true));
+			$this->saveWorksheet();
 		}
 		if(isset($this->params['data']['submitButton'])){
 			$this->redirect(array('action'=>'submitWorksheet','admin'=>true));
@@ -231,7 +239,6 @@ class WorksheetsController extends AppController {
 	
 	function admin_finalizeWorksheet(){
 		$worksheetData = $this->Session->read('worksheetData');
-		//debug($worksheetData);exit;
 		if($worksheetData['statusId']=='6'){
 			$worksheetData['statusId']='7';
 		}
@@ -288,10 +295,6 @@ class WorksheetsController extends AppController {
 		
 		$this->redirect(array('action'=>'index','admin'=>true));
 		
-	}
-	
-	function admin_saveWorksheet(){
-		$this->saveWorksheet();
 	}
 	
 	private function handleReviewers(){
@@ -408,6 +411,44 @@ class WorksheetsController extends AppController {
 		//debug(count($semesterData));
 	}
 	
+	private function handleUploads(){
+		$this->loadModel('Attachment');
+		$uploadData = $this->Session->read('uploadData');
+		$uploadIds = $this->Session->read('uploadIds');
+		
+		if(empty($uploadData) && empty($uploadIds))
+			return true;
+		$this->Uploader = new Uploader(array('tempDir' => TMP));	
+		$uploadCounter = 0;
+		if(!empty($uploadData)){
+			foreach($uploadData as $oneUpload){
+				//debug($oneUpload);exit;
+				if(!isset($uploadIds[++$uploadCounter])){
+					$this->Attachment->create();
+				}else
+					$this->Attachment->id=$uploadIds[$uploadCounter];
+					
+				$oneUpload['order']=$uploadCounter;
+				$oneUpload['worksheetId']=$this->Worksheet->id;
+				$oneUpload['filename']=$oneUpload['file']['name'];				
+				if(!($this->Attachment->save($oneUpload))){
+					$this->Session->setFlash('Unable to upload files','flashError');
+					return false;
+				}	
+			}
+			while(!empty($uploadIds[++$uploadCounter])){
+				$this->Attachment->id=$uploadIds[$uploadCounter];
+				if(!$this->Attachment->delete()){
+					$this->Session->setFlash('Unable to delete file. Please try later','flashError');
+					return false;
+				}
+			}
+		}
+		
+		return true;		
+	}
+	
+	
 	private function saveWorksheet(){
 		$worksheetData = $this->Session->read('worksheetData');
 		
@@ -427,6 +468,10 @@ class WorksheetsController extends AppController {
 		
 		if($this->Worksheet->save($worksheetData)){
 			$this->handlePreviousSemesters();
+			if(!$this->handleUploads()){
+				$this->Session->setFlash('Failed file upload section','flashError');
+				$this->redirect(array('action'=>'index'));
+			}
 			$this->Session->setFlash('Saved Data sucessfully','flashSuccess');
 			//debug($this->isAdmin());
 			if($this->isAdmin()){

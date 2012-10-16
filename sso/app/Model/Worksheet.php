@@ -22,11 +22,6 @@ class Worksheet extends AppModel{
 	);
 	
 	var $hasMany = array(
-	'Attachment' => array(
-		'className'     => 'Attachment',
-		'foreignKey'    => 'worksheet_id',
-		'fields'=>array('Attachment.file_name','Attachment.description')
-		),
 	'Semester'=>array(
 		'className'=>'Semester',
 		'foreignKey'=>'worksheetId',
@@ -36,8 +31,8 @@ class Worksheet extends AppModel{
 		'className'=>'Review',
 		'foreignKey'=>'worksheetId'
 	),
-	'Upload'=>array(
-		'className'=>'Upload',
+	'Attachment'=>array(
+		'className'=>'Attachment',
 		'foreignKey'=>'worksheetId'
 	)
 	

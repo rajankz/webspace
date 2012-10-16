@@ -1,10 +1,10 @@
 <h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
 <a name="top"></a>
-<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm')); ?>
+<?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm','enctype'=>'multipart/form-data')); ?>
 <?php
 	$id = "";
 	if($worksheet!=null){
-		debug($worksheet);
+		//debug($worksheet['Attachment']);
 		$id=$worksheet['Worksheet']['id'];
 	}
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
@@ -133,9 +133,7 @@
         }
 	</script>
 	
-	<input type="button" value="Add Semester" onclick="addSemester('priorSems')" class="small">
-	<input type="button" value="Remove Semester" onclick="removeSemesters('priorSems')" class="small">
-	<div style="clear:both"></div>
+	
 	<table id="priorSems" style="width:300px;float:left">
 		<tr><th></th><th>Semester</th><th>Code</th></tr>
 	<?php
@@ -159,6 +157,9 @@
 	</table>
 	<?php echo $this->Form->input('SemesterCount',array('type'=>'hidden','value'=>$prevSemCount)); ?>		
 		<div style="clear:both;margin:0;padding:0"></div>
+		<input type="button" value="Add Semester" onclick="addSemester('priorSems')" class="small">
+	<input type="button" value="Remove Semester" onclick="removeSemesters('priorSems')" class="small">
+	<div style="clear:both"></div>
 	</div>
 
 </div>
@@ -218,10 +219,108 @@
 
 <div class="formBox"><a name="attachments"></a>
 	<h3>Attachments</h3>
-	<div id="attachmentList"></div>
+	<div id="attachmentList">
+	<script type="text/javascript">
+		function addUploadRow(tableID) {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            rowNum = rowCount;
+            
+            var cell1 = row.insertCell(0);
+            var check = document.createElement("input");
+            check.type = "checkbox";
+            cell1.appendChild(check);
+            
+            var cell2 = row.insertCell(1);
+            var code = document.createElement("input");
+            code.type = "text";
+            code.setAttribute("id", "Upload"+rowNum+"Description");
+            code.setAttribute("name", "data[Upload]["+rowNum+"][description]");
+            cell2.appendChild(code);
+ 
+            var cell3 = row.insertCell(2);
+            var file = document.createElement("input");
+            file.type = "file";
+            file.setAttribute("id", "Upload"+rowNum+"file");
+            file.setAttribute("name", "data[Upload]["+rowNum+"][file]");
+            //file.setAttribute("id", "fileName");
+            //file.setAttribute("name", "fileName");
+            cell3.appendChild(file);
+            
+            /*
+            var cell4 = row.insertCell(3);
+            var upload = document.createElement("input");
+            upload.type = "submit";
+            upload.setAttribute("id", "Upload"+rowNum+"upload");
+            upload.setAttribute("value", "Upload");
+            upload.setAttribute("name", "data[Upload]["+rowNum+"][upload]");
+            cell4.appendChild(upload);
+            
+            var cell5 = row.insertCell(4);
+            var remove = document.createElement("input");
+            remove.type = "submit";
+            remove.setAttribute("id", "Upload"+rowNum+"remove");
+            remove.setAttribute("value", "Delete");
+            remove.setAttribute("name", "data[Upload]["+rowNum+"][remove]");
+            cell5.appendChild(remove);
+            */
+
+    }
+		function removeFiles(tableID) {
+            try {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+ 
+            for(var i=0; i<rowCount; i++) {
+                var row = table.rows[i];
+                var chkbox = row.cells[0].childNodes[0];
+                if(null != chkbox && true == chkbox.checked) {
+                    table.deleteRow(i);
+                    rowCount--;
+                    i--;
+                }
+            }
+            }catch(e) {
+                alert(e);
+            }
+        }
+	</script>	
 	
-	<?php echo $this->Form->input('Worksheet.currentMajor',array('value'=>$worksheet['Worksheet']['currentMajor'])); ?>
-	<?php echo $this->Form->input('Worksheet.requestedMajor', array('label'=>'Requested Major (if applicable)', 'value'=>$worksheet['Worksheet']['requestedMajor'])); ?>
+	<table id="attachemnts" style="width:400px;float:left">
+		<tr><th></th><th>Description</th><th>File</th><th></th><th></th></tr>
+	<?php
+		$uploadCount=0;
+		if(!empty($worksheet['Upload'])){
+			
+			foreach($worksheet['Upload'] as $oneUpload){
+				//debug($oneSemester);
+				$uploadCount++;
+				echo $this->Form->input('UploadIds.'.$uploadCount,array('type'=>'hidden','value'=>$oneUpload['id']));
+				echo "<tr><td>";
+				echo "<input type='checkbox'></td><td>";
+				//echo $this->Form->input('Upload.'.$oneUpload['order'].'.description',array('label'=>false,'div'=>false,'value'=>$oneUpload['description']));
+				echo "<span>".$oneUpload['description']."</span>";
+				echo "</td><td>";
+				echo "<span>".$oneUpload['filename']."</span>";
+				echo $this->Form->input('Upload.'.$oneUpload['order'].'.filename',array('action'=>'uploadFile','type'=>'file','label'=>false,'div'=>false,'value'=>$oneUpload['filename']));
+				echo "</td><td></td><td>";
+				echo $this->Form->input('Delete',array('label'=>false,'div'=>false,'id'=>'Upload'.$uploadCount.'remove', 'name'=>'data[Upload]['.$uploadCount.'][remove]', 'onclick'=>''));
+				echo "</td></tr>";
+				
+			}
+		}
+	?>
+	</table>
+	<?php echo $this->Form->input('UploadCount',array('type'=>'hidden','value'=>$uploadCount)); ?>		
+	<div style="clear:both;margin:0;padding:0"></div>
+	<input type="button" value="Add File" onclick="addUploadRow('attachemnts')" class="small">
+	<input type="button" value="Remove Selected" onclick="removeFiles('attachemnts')" class="small">
+	<div style="clear:both"></div>	
+		
+	</div>
+	
+	
 </div>
 
 <?php echo $this->Form->input('Worksheet.statusId', array('type'=>'hidden', 'value'=>($worksheet==null?'0':$worksheet['Worksheet']['statusId']))); ?>
