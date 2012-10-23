@@ -59,6 +59,6 @@
 	<?php } ?>
 	</div>
 
-
-
 </div>
+<div></div>
+<div class="clearBoth" style="margin-bottom:1em;"></div>

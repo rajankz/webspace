@@ -172,10 +172,15 @@
  * the cake shell command: cake schema create Sessions
  *
  */
+ 	Configure::write('Session', array(
+		'defaults' => 'php',
+		'cookie' => 'PHPSESSID'
+	));
+	/*
 	Configure::write('Session', array(
 		'defaults' => 'php'
 	));
-
+*/
 /**
  * The level of CakePHP security.
  */
@@ -278,3 +283,10 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+/** 
+ * CAS server coordinates 
+ */ 
+    Configure::write('CAS.hostname', 'login.umd.edu'); //CAS server IP address 
+    Configure::write('CAS.port', 443); //CAS server listening port 
+    Configure::write('CAS.uri', 'cas/login'); //CAS server service 

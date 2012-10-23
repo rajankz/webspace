@@ -12584,3 +12584,1524 @@
 #10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2012-10-19 18:09:24 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-19 18:09:24 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-19 18:11:21 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_worksheet_controls.ctp, line 2]
+2012-10-19 18:11:21 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-19 18:24:06 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_worksheet_controls.ctp, line 2]
+2012-10-19 18:24:06 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-19 18:24:15 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_worksheet_controls.ctp, line 2]
+2012-10-19 18:24:15 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-19 18:24:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_worksheet_controls.ctp, line 2]
+2012-10-19 18:24:42 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-19 18:25:02 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_worksheet_controls.ctp, line 2]
+2012-10-19 18:25:02 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 2, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-20 02:46:28 Error: [MissingActionException] Action WorksheetController::creator_filterWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-21 23:03:13 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-21 23:03:13 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-22 01:53:21 Error: Fatal Error (1): Call to undefined function isEmpty() in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 117]
+2012-10-22 01:53:21 Error: [FatalErrorException] Call to undefined function isEmpty()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 117, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 117, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 02:37:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:38:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:42:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:43:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:43:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:43:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:43:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:44:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:45:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:45:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,2,3,4,5,6'   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(144): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:50:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$assignedToId' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:51:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$assignedToId' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:52:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$assignedToId' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:52:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$assignedToId' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:55:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 0   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:55:41 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 117]
+2012-10-22 02:55:41 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 02:57:57 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 117]
+2012-10-22 02:57:57 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 02:57:59 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 117]
+2012-10-22 02:57:59 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 117, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 02:58:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 0   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:59:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 0   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 02:59:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 0   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(147): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:00:57 Error: [MissingActionException] Action UserController::admin_settings() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-22 03:25:29 Error: [MissingActionException] Action UserController::admin_settings() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-22 03:30:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:30:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:30:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:31:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assignedToId26' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:31:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assignedToId26' in 'where clause'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:35:26 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 119]
+2012-10-22 03:35:26 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 119, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 03:37:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:38:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:38:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:39:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:41:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:41:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:44:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN (-1)   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 03:45:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NOT NULL   ORDER BY `Worksheet`.`id` asc  LIMIT 10' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Workshe...', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Workshe...', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Workshe...', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Worksheet), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('all', Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Component/PaginatorComponent.php(173): AppModel->find('all', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('Worksheet', Array, Array)
+#8 /Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php(149): Controller->paginate('Worksheet', Array)
+#9 [internal function]: WorksheetsController->admin_index()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(WorksheetsController), Array)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-10-22 13:48:00 Error: [MissingActionException] Action DashboardController::admin_stats() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-22 16:30:45 Error: [MissingActionException] Action DashboardController::admin_register() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-22 16:31:54 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-22 19:42:46 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-22 19:42:46 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-22 21:25:20 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 441]
+2012-10-22 21:25:20 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 441)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 441, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 441, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:25:36 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 440]
+2012-10-22 21:25:36 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 440)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 440, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 440, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:29:38 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 440]
+2012-10-22 21:29:38 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 440)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 440, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 440, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:43:40 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php, line 2561]
+2012-10-22 21:43:40 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:43:54 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php, line 2561]
+2012-10-22 21:43:54 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:55:35 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php, line 2561]
+2012-10-22 21:55:35 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:56:36 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/lib/Cake/View/Helper/FormHelper.php, line 2561]
+2012-10-22 21:56:36 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 2561, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 21:57:03 Error: [MissingControllerException] Controller class UploadsController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-22 22:09:49 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 442]
+2012-10-22 22:09:49 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 442)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 22:10:10 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 442]
+2012-10-22 22:10:10 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 442)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 22:10:16 Error: Fatal Error (1): Cannot use string offset as an array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 442]
+2012-10-22 22:10:16 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Users/raj/Site...', 442)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Users/raj/Site...', 442, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 23:10:06 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-22 23:25:35 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 142]
+2012-10-22 23:25:35 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 142)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 142, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 142, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-22 23:26:19 Error: Fatal Error (1): Cannot unset string offsets in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 142]
+2012-10-22 23:26:19 Error: [FatalErrorException] Cannot unset string offsets
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Users/raj/Site...', 142)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Users/raj/Site...', 142, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Users/raj/Site...', 142, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 00:30:43 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 00:31:12 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 00:32:48 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 00:33:09 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 00:33:28 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 00:40:03 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 202]
+2012-10-23 00:40:03 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 202)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 00:40:56 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 202]
+2012-10-23 00:40:56 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 202)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 00:41:05 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 202]
+2012-10-23 00:41:05 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 202)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 00:41:07 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 202]
+2012-10-23 00:41:07 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 202)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 202, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 02:13:38 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 02:13:56 Error: Fatal Error (1): Class 'phpCAS' not found in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 34]
+2012-10-23 02:13:56 Error: [FatalErrorException] Class 'phpCAS' not found
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 34, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 34, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 02:31:22 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:37:47 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:37:50 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:37:51 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:37:52 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:37:58 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:38:05 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:38:07 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:38:37 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:38:42 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:39:14 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:39:51 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:40:34 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:40:56 Error: [MissingActionException] Action UserController::admin_index() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-23 02:41:14 Error: [MissingActionException] Action UserController::admin_index() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-23 02:48:53 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:49:05 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:49:10 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:49:26 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:50:12 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:53:52 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:55:24 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:57:17 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1223): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 02:59:42 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:00:22 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:00:25 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:00:29 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:05:47 Error: [MissingControllerException] Controller class RegisterController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-23 03:08:07 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:21:00 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:21:17 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:21:30 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:21:58 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1222): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS/Client.php(1081): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/vendors/CAS-1.3.1/CAS-1.3.1/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-23 03:22:52 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:22:52 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:22:52 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:18 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:18 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:18 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:29 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:29 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:29 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:48 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:48 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:48 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:50 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:50 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:50 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:52 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:52 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:52 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:23:55 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:23:55 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:23:55 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:24:01 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:24:01 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:24:01 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:24:43 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:24:43 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:24:43 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:24:44 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:24:44 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:24:44 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:24:45 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:24:45 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:24:45 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:24:52 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:24:52 Error: Fatal Error (64): Cannot redeclare class CasAuthenticate in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:24:52 Error: [FatalErrorException] Cannot redeclare class CasAuthenticate
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:27:16 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:27:16 Error: Fatal Error (64): Cannot redeclare class CasAuthenticateS in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 5]
+2012-10-23 03:27:16 Error: [FatalErrorException] Cannot redeclare class CasAuthenticateS
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 5, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:34:41 Error: [MissingComponentException] Component class CasAuthComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CasAuth', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-23 03:38:25 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 251]
+2012-10-23 03:38:25 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 251)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:38:57 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 251]
+2012-10-23 03:38:57 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 251)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:39:01 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 251]
+2012-10-23 03:39:01 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 251)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:39:51 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 251]
+2012-10-23 03:39:51 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 251)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 251, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:40:52 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 255]
+2012-10-23 03:40:52 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 255)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:40:54 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 255]
+2012-10-23 03:40:54 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 255)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 03:40:57 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 255]
+2012-10-23 03:40:57 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 255)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 255, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-23 13:13:18 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-23 13:13:19 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-23 13:14:08 Error: [MissingTableException] Table sso_users for model Users was not found in datasource default.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(3180): Model->setSource('users')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): Model->getDataSource()
+#2 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#3 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#4 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(226): AppController->loadModelData()
+#5 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(58): AppController->beforeFilter()
+#6 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

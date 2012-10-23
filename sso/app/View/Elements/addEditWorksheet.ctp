@@ -1,3 +1,13 @@
+<script type="text/javascript">
+	function confirmDelete(){
+		if(confirm('Confirm Worksheet Deletion.\nThis action cannot be un-done.'))
+			return true;
+		return false;
+	}
+	
+
+
+</script>
 <h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
 <a name="top"></a>
 <?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm','enctype'=>'multipart/form-data')); ?>
@@ -6,6 +16,9 @@
 	if($worksheet!=null){
 		//debug($worksheet['Attachment']);
 		$id=$worksheet['Worksheet']['id'];
+	}else if(!empty($copiedWorksheet)){
+		$worksheet = $copiedWorksheet;
+		debug($worksheet);
 	}
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
 ?>
@@ -142,9 +155,13 @@
 			
 			foreach($worksheet['Semester'] as $oneSemester){
 				//debug($oneSemester);
-				$prevSemCount++;
-				echo $this->Form->input('SemesterIds.'.$prevSemCount,array('type'=>'hidden','value'=>$oneSemester['id']));
-				echo "<tr><td>";
+				if(!empty($oneSemester['id'])){
+					$prevSemCount++;
+					echo $this->Form->input('SemesterIds.'.$prevSemCount, array('type'=>'hidden', 'value'=>$oneSemester['id']));
+				}
+				echo "<tr>";
+				echo $this->Form->input('Semester.'.$oneSemester['order'].'.order',array('type'=>'hidden', 'label'=>false,'div'=>false,'value'=>$oneSemester['order']));
+				echo "<td>";
 				echo "<input type='checkbox'></td><td>";
 				echo $this->Form->input('Semester.'.$oneSemester['order'].'.sem',array('label'=>false,'div'=>false,'value'=>$oneSemester['sem']));
 				echo "</td><td>";
@@ -235,36 +252,16 @@
             var cell2 = row.insertCell(1);
             var code = document.createElement("input");
             code.type = "text";
-            code.setAttribute("id", "Upload"+rowNum+"Description");
-            code.setAttribute("name", "data[Upload]["+rowNum+"][description]");
+            code.setAttribute("id", "Attachment"+rowNum+"Description");
+            code.setAttribute("name", "data[Attachment]["+rowNum+"][description]");
             cell2.appendChild(code);
  
             var cell3 = row.insertCell(2);
             var file = document.createElement("input");
             file.type = "file";
-            file.setAttribute("id", "Upload"+rowNum+"file");
-            file.setAttribute("name", "data[Upload]["+rowNum+"][file]");
-            //file.setAttribute("id", "fileName");
-            //file.setAttribute("name", "fileName");
+            file.setAttribute("id", "Attachment"+rowNum+"file");
+            file.setAttribute("name", "data[Attachment]["+rowNum+"][file]");
             cell3.appendChild(file);
-            
-            /*
-            var cell4 = row.insertCell(3);
-            var upload = document.createElement("input");
-            upload.type = "submit";
-            upload.setAttribute("id", "Upload"+rowNum+"upload");
-            upload.setAttribute("value", "Upload");
-            upload.setAttribute("name", "data[Upload]["+rowNum+"][upload]");
-            cell4.appendChild(upload);
-            
-            var cell5 = row.insertCell(4);
-            var remove = document.createElement("input");
-            remove.type = "submit";
-            remove.setAttribute("id", "Upload"+rowNum+"remove");
-            remove.setAttribute("value", "Delete");
-            remove.setAttribute("name", "data[Upload]["+rowNum+"][remove]");
-            cell5.appendChild(remove);
-            */
 
     }
 		function removeFiles(tableID) {
@@ -288,31 +285,36 @@
 	</script>	
 	
 	<table id="attachemnts" style="width:400px;float:left">
-		<tr><th></th><th>Description</th><th>File</th><th></th><th></th></tr>
+		<tr><th></th><th>Description</th><th>File</th></tr>
 	<?php
-		$uploadCount=0;
-		if(!empty($worksheet['Upload'])){
+		$attachmentCount=0;
+		//debug($worksheet);
+		if(!empty($worksheet['Attachment'])){
 			
-			foreach($worksheet['Upload'] as $oneUpload){
+			foreach($worksheet['Attachment'] as $oneAttachment){
 				//debug($oneSemester);
-				$uploadCount++;
-				echo $this->Form->input('UploadIds.'.$uploadCount,array('type'=>'hidden','value'=>$oneUpload['id']));
-				echo "<tr><td>";
+				$attachmentCount++;
+				echo $this->Form->input('AttachmentIds.'.$oneAttachment['id'],array('type'=>'hidden','value'=>$oneAttachment['id']));
+				echo "<tr>";
+				echo $this->Form->input('Attachment.'.$oneAttachment['order'].'.id',array('type'=>'hidden','value'=>$oneAttachment['id'])); 
+				echo "<td>";
 				echo "<input type='checkbox'></td><td>";
-				//echo $this->Form->input('Upload.'.$oneUpload['order'].'.description',array('label'=>false,'div'=>false,'value'=>$oneUpload['description']));
-				echo "<span>".$oneUpload['description']."</span>";
+				
+				//echo $this->Html->tag('span',$oneAttachment['description'],array('label'=>false,'div'=>false,'id'=>'Attachment'.$oneAttachment['order'].'Description','name'=>'data[Attachment]['.$oneAttachment['order'].'][description]'));
+				//echo "</td><td>";
+				//echo $this->Html->link($oneAttachment['filename'],$oneAttachment['link'], array('label'=>false,'div'=>false,'id'=>'Attachment'.$oneAttachment['order'].'filename','name'=>'data[Attachment]['.$oneAttachment['order'].'][filename]'));
+				//echo "</td></tr>";
+				//echo "<input type='checkbox'></td><td>";
+				echo "<span>".$oneAttachment['description']."</span>";
 				echo "</td><td>";
-				echo "<span>".$oneUpload['filename']."</span>";
-				echo $this->Form->input('Upload.'.$oneUpload['order'].'.filename',array('action'=>'uploadFile','type'=>'file','label'=>false,'div'=>false,'value'=>$oneUpload['filename']));
-				echo "</td><td></td><td>";
-				echo $this->Form->input('Delete',array('label'=>false,'div'=>false,'id'=>'Upload'.$uploadCount.'remove', 'name'=>'data[Upload]['.$uploadCount.'][remove]', 'onclick'=>''));
+				echo $this->Html->link($oneAttachment['filename'],$oneAttachment['link'], array('target' => '_blank'));
 				echo "</td></tr>";
 				
 			}
 		}
 	?>
 	</table>
-	<?php echo $this->Form->input('UploadCount',array('type'=>'hidden','value'=>$uploadCount)); ?>		
+	<?php echo $this->Form->input('AttachmentCount',array('type'=>'hidden','value'=>$attachmentCount)); ?>		
 	<div style="clear:both;margin:0;padding:0"></div>
 	<input type="button" value="Add File" onclick="addUploadRow('attachemnts')" class="small">
 	<input type="button" value="Remove Selected" onclick="removeFiles('attachemnts')" class="small">
@@ -340,24 +342,28 @@
 ?>
 
 
-
 <div class="formBox">
-<?php if($worksheet['Worksheet']['statusId']<'2') echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit')); ?>
 <?php
+	
+	if($worksheet['Worksheet']['statusId']<='2'){
+		echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit floatLeft','onclick'=>'return validateForm();'));
+	}
+	
 	if(!empty($this->Session->request->params['admin'])){
-		if($worksheet['Worksheet']['statusId']<'6')
-		echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit'));
+		if($worksheet['Worksheet']['statusId']<'6'){
+			echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit floatLeft','onclick'=>'return validateForm();'));
+		}
 		else if($worksheet['Worksheet']['statusId']=='6')
-		echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit'));
+			echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit floatLeft'));
 		if(!empty($id)){
-		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redButton submit floatRight'));	
+			echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redBtn submit floatRight', 'onclick'=>'return confirmDelete();'));	
 		}
 	}else if($this->Session->request->params['creator']){
 		if($worksheet['Worksheet']['statusId']<'2')
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
 	}	
 	
-	echo $this->Form->submit('Duplicate',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));
+	echo $this->Form->submit('Make a Copy',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));
 	
 ?>
 </div>

@@ -25,7 +25,7 @@
 	<style>
 	#changeFont {
 	position:absolute;
-	top:10px;
+	top:15px;
 	right:0px;
 	background-color:#555;
 	padding:5px;
@@ -51,6 +51,7 @@
 	<?php
 		echo $this->Html->meta('icon');
 
+		echo $this->Html->css('fonts');
 		//echo $this->Html->css('bootstrap');
 		echo $this->Html->css('sso');
         echo '<link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-1020px.css" />';
@@ -134,7 +135,7 @@
             </a> <a href="http://www.umd.edu" class="blackonwhite">University of Maryland</a><br />
             College Park, MD 20742 <br>
             </p>
-            <?php //echo $this->element('sql_dump'); ?>
+            <?php echo $this->element('sql_dump'); ?>
 		</div>
 	</div>
 </div>

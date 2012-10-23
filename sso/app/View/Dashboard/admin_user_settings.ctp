@@ -31,9 +31,10 @@ foreach($users as $user)
 ?>
 </table>
 
-<?php
-echo $this->Form->create('User', array('action' => 'register'));
-echo $this->Form->submit('Add User');
-echo $this->Form->end();
-?>
+<div id="userControls" class="actionLink">  
+	<span class="floatLeft">  
+		<?php echo $this->Html->link('Add User', array('controller'=>'users','action'=>'register')); ?>  
+	</span>
+	<div class="clearBoth"></div>
+</div>
 </div>

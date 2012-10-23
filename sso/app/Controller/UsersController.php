@@ -11,6 +11,8 @@ class UsersController extends AppController{
 
         if($this->Auth->loggedIn())
             $this->Auth->logout();
+            
+        //$this->redirect(array('action'=>'index'));
 
         if($this->Auth->login()){
             $this->redirect(array('action'=>'index'));
@@ -18,7 +20,7 @@ class UsersController extends AppController{
         	//debug($this->Auth->authenticate['all']['scope']['User.is_active']);
             $this->Auth->loginError = 'Invalid username / password combination.';
             $this->Auth->authError = 'Your account has been diabled. Please contact Administrator.';
-            $this->Session->setFlash($this->Auth->authError);
+            $this->Session->setFlash($this->Auth->authError,'flashError');
         }
     }
 
@@ -60,11 +62,12 @@ class UsersController extends AppController{
 		$this->User->id = $this->data['User']['id'];
 	
 		//check for empty passwords
+		/*
 		if(empty($this->data['User']['password']) && empty($this->data['User']['confirm_password'])){
 			$this->Session->setFlash('You cannot set a blank pasword.','flashInformation');
 			$this->redirect(array('controller'=>'dashboard','action'=>'changePwd','userId'=>$this->User->id,'username'=>$this->data['User']['username']));
 		}
-		
+		*/
 		//check if password matches
 		if ($this->data['User']['password'] != $this->data['User']['confirm_password']) {
 			$this->request->data['User']['password'] = null;
@@ -112,13 +115,13 @@ class UsersController extends AppController{
     }
 
     private function convertPasswords() {
-        if(!empty( $this->data['User']['password'] ) ){
+        //if(!empty( $this->data['User']['password'] ) ){
                 $this->request->data['User']['password'] = $this->Auth->password($this->data['User']['password'] );
                //debug($this->request->data['User']['password']);exit;
-        }
-        if(!empty( $this->data['User']['confirm_password'] ) ){
+        //}
+        //if(!empty( $this->data['User']['confirm_password'] ) ){
             $this->request->data['User']['confirm_password'] = $this->Auth->password( $this->data['User']['confirm_password'] );
-        }
+        //}
     }
     
     /*   PASSWORD

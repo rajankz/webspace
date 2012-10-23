@@ -66,7 +66,7 @@ class DATABASE_CONFIG {
 		'login' => 'ugst',
 		'password' => 'ugst',
 		'database' => 'ugst',
-		'prefix' => '',
+		'prefix' => 'sso_',
 		//'encoding' => 'utf8',
 	);
 

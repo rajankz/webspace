@@ -105,29 +105,62 @@ class WorksheetsController extends AppController {
 	private function filterWorksheet(){
 		$filters = $this->Session->read('WorksheetFilters');
 		$uid = $filters['uid'];
-		$sem = $filters['Sem'];
-		//debug($sem);exit;
+		$sem = $filters['sem'];
 		$studentName = $filters['name'];
+		$status=intval($filters['status']);
+		$assignedTo=intval($filters['assignedTo']);
 		$cond = array(
-			'uid LIKE'=>(!empty($uid))?"%$uid%":'',
-			'OR'=>array(array('firstName LIKE' => (!empty($studentName))?"%$studentName%":''),array('lastName LIKE' => (!empty($studentName))?"%$studentName%":'')),
-			'sem LIKE'=>(!empty($sem))?"%$sem%":'',
-			
+			'uid LIKE'=>(!empty($uid))?"%$uid%":"%",
+			'OR'=>array(array('firstName LIKE' => (!empty($studentName))?"%$studentName%":"%"),array('lastName LIKE' => (!empty($studentName))?"%$studentName%":"%")),
+			'sem LIKE'=>(!empty($sem))?"%$sem%":"%",
+			'statusId'=>($status==-1 || $status==0)?array(1,2,3,4,5,6):$status,
+			'(assignedToId '.($assignedTo>0?'='.$assignedTo.')':(($assignedTo==-1)?'IS NULL)':'IS NULL OR assignedToId IS NOT NULL)')),
+						
 		);
 		//debug($this->cond);
-		$this->Session->write('WorksheetConditions',$cond);
+		if(!empty($cond))
+			$this->Session->write('WorksheetConditions',$cond);
+		else
+			$this->Session->write('WorksheetConditions', $this->defaultCond);
 		$this->paginate = null;
 		$this->redirect(array('action'=>'index'));
 	}
 	
 	private function restoreDefault(){
 		$this->Session->write('WorksheetConditions', $this->defaultCond);
+		$this->Session->delete('WorksheetFilters');
 		$this->paginate = null;
 		$this->redirect(array('action'=>'index'));
 	}
+	
 	private function duplicateWorksheet(){
-		$worksheetData = $this->Session->read('WorksheetData');
-		$reviewData = $this->Session->read('ReviewData');
+		$worksheetData = $this->Session->read('worksheetData');
+		//$reviewData = $this->Session->read('reviewData');
+		$semesterData = $this->Session->read();
+		unset($worksheetData['id']);
+		//debug($reviewData);
+		/*if(!empty($reviewData))
+		foreach($reviewData as $oneReview){
+			debug($oneReview);
+			//unset($oneReview['worksheetId']);
+		}*/
+		//debug($worksheetData);
+		//debug($reviewData);
+		//exit;
+		
+		
+		$semesterData = $this->Session->read('semesterData');
+		/*
+		if(!empty($semesterData))
+			foreach($semesterData as $oneSem){
+				unset($oneSem['id']);
+				unset($oneSem['worksheetId']);
+			}
+		*/
+		$copiedWorksheet = array('Worksheet'=>$worksheetData,'Semester'=>$semesterData);
+		//debug($copiedWorksheet);
+		$this->Session->write('copiedWorksheet',$copiedWorksheet);
+		$this->redirect(array('action'=>'addEdit'));
 	}
 	
 	/** ADMIN  **/
@@ -136,6 +169,7 @@ class WorksheetsController extends AppController {
 			$cond = $this->Session->read('WorksheetConditions');
 		else
 			$cond = $this->defaultCond;
+		//$cond = $this->defaultCond;
 		//debug($cond);
 		$data = $this->paginate('Worksheet',$cond);
 		$this->set('worksheets',$data);
@@ -172,9 +206,16 @@ class WorksheetsController extends AppController {
 	function addEdit($id=null){
 		if($id==null ){
 			$this->set('worksheet',null);
+			$copiedWorksheet = $this->Session->read('copiedWorksheet');
+			if(!empty($copiedWorksheet)){
+				$this->set('copiedWorksheet',$this->Session->read('copiedWorksheet'));
+				$this->Session->delete('copiedWorksheet');
+			}
+			
 		}else{
 			$worksheetId = $id;
 			$worksheetData = $this->Worksheet->findById($id);
+			
 			if(empty($worksheetData)){
 				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
 				$this->redirect(array('action'=>'index','admin'=>true));
@@ -213,12 +254,14 @@ class WorksheetsController extends AppController {
 	
 	function admin_submitWorksheetForm(){
 		/** save data to session */
+		//debug($this->params['data']);
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
 		$this->Session->write('reviewData',empty($this->params['data']['Review'])?null:$this->params['data']['Review']);
 		$this->Session->write('semesterData',empty($this->params['data']['Semester'])?null:$this->params['data']['Semester']);
 		$this->Session->write('semesterIds',empty($this->params['data']['SemesterIds'])?null:$this->params['data']['SemesterIds']);
-		$this->Session->write('uploadData',empty($this->params['data']['Upload'])?null:$this->params['data']['Upload']);
-		$this->Session->write('uploadIds',empty($this->params['data']['UploadIds'])?null:$this->params['data']['UploadIds']);
+		//debug($this->params['data']);
+		$this->Session->write('attachmentData',empty($this->params['data']['Attachment'])?null:$this->params['data']['Attachment']);
+		$this->Session->write('attachmentIds',empty($this->params['data']['AttachmentIds'])?null:$this->params['data']['AttachmentIds']);
 		/** foreward to appropirate action/method */
 		if(isset($this->params['data']['saveButton'])){
 			$this->saveWorksheet();
@@ -413,37 +456,47 @@ class WorksheetsController extends AppController {
 	
 	private function handleUploads(){
 		$this->loadModel('Attachment');
-		$uploadData = $this->Session->read('uploadData');
-		$uploadIds = $this->Session->read('uploadIds');
-		
-		if(empty($uploadData) && empty($uploadIds))
+		$newAttachmentData = $this->Session->read('attachmentData');
+		$prevAttachmentIds = $this->Session->read('attachmentIds');
+		//debug($newAttachmentData);
+		//debug($prevAttachmentIds);
+		if(empty($newAttachmentData) && empty($prevAttachmentIds))
 			return true;
 		$this->Uploader = new Uploader(array('tempDir' => TMP));	
-		$uploadCounter = 0;
-		if(!empty($uploadData)){
-			foreach($uploadData as $oneUpload){
-				//debug($oneUpload);exit;
-				if(!isset($uploadIds[++$uploadCounter])){
+		$attachmentCounter = 0;
+		if(!empty($newAttachmentData)){
+			foreach($newAttachmentData as $oneAttachment){
+				//debug($oneAttachment['id']);
+				if(!isset($oneAttachment['id'])){
 					$this->Attachment->create();
-				}else
-					$this->Attachment->id=$uploadIds[$uploadCounter];
+					//debug($oneAttachment);
+					$oneAttachment['filename']=$oneAttachment['file']['name'];
+				}else{
+					//exisiting attachemnt -> remove from attachemnt Ids
+					unset($prevAttachmentIds[$oneAttachment['id']]);
+					$this->Attachment->id=$oneAttachment['id'];
+				}
 					
-				$oneUpload['order']=$uploadCounter;
-				$oneUpload['worksheetId']=$this->Worksheet->id;
-				$oneUpload['filename']=$oneUpload['file']['name'];				
-				if(!($this->Attachment->save($oneUpload))){
+				$oneAttachment['order']=$attachmentCounter;
+				$oneAttachment['worksheetId']=$this->Worksheet->id;
+								
+				if(!($this->Attachment->save($oneAttachment))){
 					$this->Session->setFlash('Unable to upload files','flashError');
 					return false;
 				}	
 			}
-			while(!empty($uploadIds[++$uploadCounter])){
-				$this->Attachment->id=$uploadIds[$uploadCounter];
+		}
+			
+			//while(!empty($prevAttachmentIds[++$attachmentCounter])){
+		if(!empty($prevAttachmentIds))
+			foreach($prevAttachmentIds as $onePrevAttachmentId){
+				//debug($onePrevAttachmentId);exit;
+				$this->Attachment->id=$onePrevAttachmentId;
 				if(!$this->Attachment->delete()){
 					$this->Session->setFlash('Unable to delete file. Please try later','flashError');
 					return false;
 				}
 			}
-		}
 		
 		return true;		
 	}

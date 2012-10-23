@@ -6,6 +6,9 @@
     <?php echo $this->Html->link('Users Settings', array('controller'=>'dashboard', 'action'=>'admin_userSettings','admin'=>true)); ?>
     
     <?php echo $this->Html->link('Reviews', array('controller'=>'dashboard', 'action'=>'admin_reviews','admin'=>true)); ?>
+    
+    <?php echo $this->Html->link('Stats', array('controller'=>'dashboard', 'action'=>'admin_stats','admin'=>true)); ?>
+    
     </div>
     
     <div class="floatRight">

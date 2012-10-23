@@ -14,6 +14,9 @@ class DashboardController extends AppController{
 	function admin_reviews(){
 		$this->redirect(array('controller'=>'reviews', 'action'=>'index'));
 	}
+	function admin_stats(){
+		$this->redirect(array('controller'=>'stats', 'action'=>'index'));
+	}
 	function admin_userEdit(){
 		$this->loadModel('Users');
 		$editUserId = $this->params->named['userId'];

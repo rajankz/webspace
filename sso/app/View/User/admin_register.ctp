@@ -1,4 +1,5 @@
-<?php echo $this->element('admin_sidemenu'); ?>
+<?php echo $this->element('admin_navmenu'); ?>
+
 <div id="theContent">
 <h2 class="center">Register User</h2>
 <?php
@@ -9,7 +10,7 @@ echo $this->Form->input('emailId');
 echo $this->Form->input('password',array('type' => 'password'));
 echo $this->Form->input('confirm_password', array('type' => 'password'));
 echo $this->Form->input('User.role',array('type'=>'select','options'=>$roleOptions));
-echo $this->Form->submit();
+echo $this->Form->submit('Submit',array('class'=>'submit'));
 echo $this->Form->end();
 ?>
 </div>

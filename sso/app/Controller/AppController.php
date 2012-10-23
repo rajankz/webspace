@@ -33,7 +33,13 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $components = array('Session','Auth' );
+    var $components = array('Session',
+    'Auth'=>array(
+    	'loginRedirect' => array('controller' => 'dashboard', 'action' => 'index'),
+         'logoutRedirect' => array('controller' => 'users', 'action' => 'logout', 'index')
+    )    
+    );
+    //var $uses = array('CasAuth');
 	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
 	//global $loaded = false;
@@ -194,7 +200,19 @@ return $result;
 			$this->redirect(array('controller'=>'users', 'action'=>'login'));
 		}
 	}
+/*
+public function beforeFilter(){
+	$this->Auth->authenticate = array(
+            AuthComponent::ALL => array(),
+            'Cas',
+            'Form'
+        );
+        $this->Auth->allow('*');
+        $this->loadModelData();
+    }
+}
 
+*/
     public function beforeFilter(){
         $this->Auth->allow('login');
         $this->Auth->authorize = array('controller');
@@ -207,6 +225,8 @@ return $result;
 	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
     }
+    
+    
     
     function isAdmin(){
 		if($this->params['prefix']=='admin' && ($this->Auth->user('role')!='admin')){

@@ -1,15 +1,15 @@
-<?php echo $this->element('admin_sidemenu'); ?>
+<?php echo $this->element('admin_navmenu'); ?>
 
 
 <div id="theContent">
 <h2 class="center">Admin Reviews</h2>
 
 Page: <?php echo $this->Paginator->counter(); ?>
-<table>
+<table class="paginationTable">
 	<tr>
 		<th><?php echo $this->Paginator->sort('worksheetId', 'Worksheet ID'); ?></th>
-		<th><?php echo $this->Paginator->sort('reviewerId', 'Reviewer ID');?></th>
-		<th><?php echo $this->Paginator->sort('statusCode', 'Status');?></th>
+		<th><?php echo $this->Paginator->sort('reviewerId', 'Reviewer');?></th>
+		<th><?php echo $this->Paginator->sort('statusCode', 'Review Status');?></th>
 		<th><?php echo $this->Paginator->sort('reviewOrder','Review Order');?></th>
 	</tr>
 	<?php foreach($reviews as $review): ?>
@@ -26,7 +26,6 @@ Page: <?php echo $this->Paginator->counter(); ?>
 <div id="pagination">
 	<?php echo $this->Paginator->prev('« Previous', null, null, array('class' => 'disabled')); ?>
 	<?php echo $this->Paginator->numbers(); ?>
-	<?php //debug($this->params);exit; ?>
 	<!-- Page: -->
 	<select onchange="setURL('page', this.value)">
 	<?php for ($i = 1; $i <= $this->Paginator->counter(array('format' => '%pages%')); $i++): ?>
