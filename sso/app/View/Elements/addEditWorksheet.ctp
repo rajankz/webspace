@@ -18,7 +18,7 @@
 		$id=$worksheet['Worksheet']['id'];
 	}else if(!empty($copiedWorksheet)){
 		$worksheet = $copiedWorksheet;
-		debug($worksheet);
+		//debug($worksheet);
 	}
 	echo $this->Form->input('Worksheet.id',array('type'=>'hidden','value'=>$id));
 ?>

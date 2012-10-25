@@ -1077,7 +1077,6 @@ class CAS_Client
     public function forceAuthentication()
     {
         phpCAS::traceBegin();
-
         if ( $this->isAuthenticated() ) {
             // the user is authenticated, nothing to be done.
             phpCAS::trace('no need to authenticate');
@@ -2733,7 +2732,7 @@ class CAS_Client
     public function validateCAS20(&$validate_url,&$text_response,&$tree_response)
     {
         phpCAS::traceBegin();
-        phpCAS::trace($text_response);
+        phpCAS::trace($text_response);//debug($tree_response);exit;
         $result = false;
         // build the URL to validate the ticket
         if ($this->getAllowedProxyChains()->isProxyingAllowed()) {
@@ -3205,6 +3204,7 @@ class CAS_Client
     ) {
         phpCAS::traceBegin();
         $lang = $this->getLangObj();
+        $this->printHTMLHeader(phpCAS::getUser());
         $this->printHTMLHeader($lang->getAuthenticationFailed());
         printf($lang->getYouWereNotAuthenticated(), htmlentities($this->getURL()), $_SERVER['SERVER_ADMIN']);
         phpCAS::trace('CAS URL: '.$cas_url);
