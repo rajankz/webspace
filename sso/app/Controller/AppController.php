@@ -40,7 +40,11 @@ class AppController extends Controller {
 	//global $loaded = false;
     var $financialBlock;
 
-
+    public function loadData(){
+	    if($this->isAuthorized($this->User))
+	    	$this->loadModelData();
+    }
+    
 	private function loadModelData(){
 		//debug($this->loaded);
 		if($this->loaded)
@@ -72,7 +76,7 @@ class AppController extends Controller {
 		$this->loaded = true;
 		//debug($this);
 	}
-	private function loadReviewerDecisionCodes(){
+	 function loadReviewerDecisionCodes(){
 		$this->loadModel('SelectOptions');
 		$reviewerDecisionCodeOptions = array();
 		$reviewerDecisionCodes = $this->SelectOptions->find('all',array(

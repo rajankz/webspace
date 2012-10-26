@@ -360,7 +360,7 @@
 		}
 	}else if($this->Session->request->params['creator']){
 		if($worksheet['Worksheet']['statusId']<'2')
-		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit'));
+		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit floatLeft'));
 	}	
 	
 	echo $this->Form->submit('Make a Copy',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));

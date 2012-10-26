@@ -391,7 +391,7 @@ table.review th{
 .reviewSections{
 	float: left;
 	border: 1px solid #357176;
-	width: 240px;
+	width: 305px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	border-radius: 2px;
@@ -500,4 +500,8 @@ a.buttonLink,input.buttonLink, button.buttonLink{
 	-webkit-transition: background 0.3s ease;
 	-moz-transition: background 0.3s ease;
 	transition: background 0.3s ease;
+}
+#attachmentList{
+	margin-bottom: 1em;
+	clear: both;
 }

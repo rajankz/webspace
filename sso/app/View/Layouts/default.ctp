@@ -135,7 +135,7 @@
             </a> <a href="http://www.umd.edu" class="blackonwhite">University of Maryland</a><br />
             College Park, MD 20742 <br>
             </p>
-            <?php echo $this->element('sql_dump'); ?>
+            <?php //echo $this->element('sql_dump'); ?>
 		</div>
 	</div>
 </div>

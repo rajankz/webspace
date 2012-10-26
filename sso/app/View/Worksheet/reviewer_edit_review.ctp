@@ -1,11 +1,12 @@
-<?php echo $this->element('reviewer_sidemenu'); ?>
+<?php echo $this->element('reviewer_navmenu'); ?>
 
 <div id="theContent">
 <h2 class="center">View / Edit Worksheet Review</h2>
+<?php //debug($worksheetData); ?>
 <table class="review">
 	<tr>
-		<th><div class="red">Student's Name: <span class="grey"><?php echo $worksheetData['firstName'] . " " . $worksheetData['lastName']; ?></span></div></th>
-		<th><div class="floatLeft red">University ID: <span class="grey"><?php echo $worksheetData['uid']; ?></span></div></th>
+		<th><div class="red">Applicant's Name: <span class="grey"><?php echo $worksheetData['firstName'] . " " . $worksheetData['lastName']; ?></span></div></th>
+		<th><div class="floatRight red">University ID: <span class="grey"><?php echo $worksheetData['uid']; ?></span></div></th>
 	</tr>
 </table>
 
@@ -16,18 +17,32 @@
 	<tr><td class="rtAlign">Approvals :</td><td><?= $worksheetData['numApprovals']; ?></td></tr>
 	<tr><td class="rtAlign">Denials :</td><td><?= $worksheetData['numDenials']; ?></td></tr>
 </table>
+<div class="reviewHeader">Previous Applications</div>
+<?php if(!empty($semesterData)){ ?>
+<table class="review">
+<tr><th>Semester</th><th>Code</th></tr>
+	<?php
+		foreach($semesterData as $oneSemData){
+			echo '<tr><td>'.$oneSemData['sem'].'</td><td>'.$oneSemData['code'].'</td></tr>';
+		}
+	
+	?>
+</table>
+
+<?php } ?>
 </div> <!-- reviewSections -->
 
 <div class="reviewSections">
 	<div class="reviewHeader">Student Success Office Feedback</div>
 <table class="review">
 	<tr><td class="ltAlign">Repeated Credits :</td><td><?= $worksheetData['creditsRepeated']; ?>/18</td></tr>
-	<?php if($worksheetData['needPermToReturnToMajor']) ?>
-		<tr><td colspan="2" class="red">- Needs permission to return to major</td></tr
-	<?php if($worksheetData['needPermToRegisterThirdTime']) ?>
-		<tr><td colspan="2" class="red">- Needs permission to register for a major requirement for a 3rd time</td></tr>
-	<?php if($worksheetData['needPermToRepeatMoreThan18']) ?>
-		<tr><td colspan="2" class="red">- Needs permission to repeat more than 18 credits</td></tr>
+	<?php if($worksheetData['needPermToReturnToMajor'])
+		echo '<tr><td colspan="2" class="red">- Needs permission to return to major</td></tr>';
+	 if($worksheetData['needPermToRegisterThirdTime'])
+		echo '<tr><td colspan="2" class="red">- Needs permission to register for a major requirement for a 3rd time</td></tr>';
+	 if($worksheetData['needPermToRepeatMoreThan18'])
+	echo '<tr><td colspan="2" class="red">- Needs permission to repeat more than 18 credits</td></tr>';
+		?>
 </table>
 </div> <!-- reviewSections -->
 
@@ -44,7 +59,7 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections">
+<div class="reviewSections"  style="width: 340px;">
 	<div class="reviewHeader">Blocks</div>
 <table class="review">
 	<tr <?php if($worksheetData['financialBlock']!='01') echo 'class="red"' ?>><td class="rtAlign">Financial Block :</td><td><?= $worksheetData['financialBlock']; ?></td></tr>
@@ -52,7 +67,7 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 490px;">
+<div class="reviewSections" style="width: 590px;">
 	<div class="reviewHeader">Major</div>
 <table class="review">
 	<tr><td class="ltAlign" style="width:120px">Current Major :</td><td><?= $worksheetData['currentMajor']; ?></td></tr>
@@ -60,31 +75,50 @@
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 365px">
+<div class="reviewSections" style="width: 465px">
 	<div class="reviewHeader">Notes</div>
 <table class="review">
-	<?php if($worksheetData['nonDegreeSeeking']) ?>
-		<tr><td colspan="2" class="red">- Non-degree seeking student</td></tr
-	<?php if($worksheetData['shadyGrove']) ?>
-		<tr><td colspan="2" class="red">- Shady Grove student</td></tr>
-	<?php if($worksheetData['repeatingCoursesOffSem']) ?>
-		<tr><td colspan="2" class="red">- Repeating courses in summer or winter term</td></tr>
-	<?php if($worksheetData['dismissedLastSem']) ?>
-		<tr><td colspan="2" class="red">- Dismissed last semester</td></tr>
-	<?php if($worksheetData['withdrewLastSem']) ?>
-		<tr><td colspan="2" class="red">- Withdrew last semester</td></tr>
-	<?php if($worksheetData['registeredForOffSem']) ?>
-		<tr><td colspan="2" class="red">- Registered for summer or winter term</td></tr>
+	<?php if($worksheetData['nonDegreeSeeking']) 
+	echo '<tr><td colspan="2" class="red">- Non-degree seeking student</td></tr>';
+		if($worksheetData['shadyGrove'])
+	echo '<tr><td colspan="2" class="red">- Shady Grove student</td></tr>';
+		if($worksheetData['repeatingCoursesOffSem'])
+	echo '<tr><td colspan="2" class="red">- Repeating courses in summer or winter term</td></tr>';
+		if($worksheetData['dismissedLastSem'])
+	echo '<tr><td colspan="2" class="red">- Dismissed last semester</td></tr>';
+		if($worksheetData['withdrewLastSem'])
+	echo '<tr><td colspan="2" class="red">- Withdrew last semester</td></tr>';
+		if($worksheetData['registeredForOffSem'])
+	echo '<tr><td colspan="2" class="red">- Registered for summer or winter term</td></tr>';
+	?>
 </table>
 </div> <!-- reviewSections -->
 
-<div class="reviewSections" style="width: 365px;">
+<div class="reviewSections" style="width: 465px;">
 	<div class="reviewHeader">Additional Comments</div>
 	<?php
 	if(empty($worksheetData['additionalComments']))
 		echo "<p>There are no additional comments for this student.</p>";
 	else ?>
 		<pre style="max-height: 130px;overflow-y: scroll;"><?= $worksheetData['additionalComments']; ?></pre>
+</div> <!-- reviewSections -->
+
+<div class="reviewSections" style="width: 940px;">
+	<div class="reviewHeader">Attachments</div>
+	<?php
+	if(empty($attachmentData))
+		echo "<p>There are no attachments with this worksheet.</p>";
+	else {
+		echo '<table>';
+		foreach($attachmentData as $oneAttachment){//debug($oneAttachment);
+			echo '<tr><td>';
+			echo $this->Html->link($oneAttachment['description'],$oneAttachment['link'],
+				array('target'=>'_blank'));
+			echo '</td></tr>';
+		}		
+		echo '</table>';
+		
+	 } ?>
 </div> <!-- reviewSections -->
 
 <?php foreach($allReviewsData as $oneReviewArray){
@@ -100,11 +134,11 @@ switch($oneReview['statusCode']){
 	$disabled = !$currentReviewer;
 ?>
 
-<div class="reviewSections" style="width: 740px;">
+<div class="reviewSections" style="width: 940px;">
 	<div class="reviewHeader"><?=$reviewOrderText?> Review</div>
 	<?php echo $this->Form->create('Review', array('action' => 'submit')); ?>
 	<div class="input text reviewerComments">
-	<?php echo $this->Form->label('reviewerComments'); ?>
+	<?php echo $this->Form->label('reviewerComments'); ?><div class="clearBoth"></div>
 	<?php //debug($this);
 	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
 	</div>

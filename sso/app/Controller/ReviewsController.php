@@ -101,6 +101,8 @@ class ReviewsController extends AppController {
 		// set worksheet status id to the next one
 		//debug($nextReview);exit;
 		Classregistry::init('Worksheet')->saveField('assignedToId',$nextReview['Review']['reviewerId']);
+		}else{
+			Classregistry::init('Worksheet')->saveField('assignedToId',null);
 		}
 		
 	}

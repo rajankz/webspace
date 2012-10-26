@@ -18,6 +18,7 @@
 	<div class="oneReview">
 	Reviewer: 
 	<?php
+		$reviewDone = false;
 		if(!empty($this->viewVars['reviews']['1']))
 			$reviewDone=($this->viewVars['reviews']['1']['statusCode']>2)?true:false;
 		echo $this->Form->input('Review.firstReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['1'])?'':$this->viewVars['reviews']['1']['reviewerId']))); 			
@@ -33,6 +34,7 @@
 	<div class="oneReview">
 	Reviewer: 
 	<?php
+		$reviewDone = false;
 		if(!empty($this->viewVars['reviews']['2']))
 			$reviewDone=($this->viewVars['reviews']['2']['statusCode']>2)?true:false;
 		echo $this->Form->input('Review.secondReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['2'])?'':$this->viewVars['reviews']['2']['reviewerId']))); 			
@@ -48,8 +50,11 @@
 	<div class="oneReview">
 	Reviewer: 
 	<?php
-		if(!empty($this->viewVars['reviews']['3']))
-			$reviewDone=($this->viewVars['reviews']['3']['statusCode']>2)?true:false;
+		$reviewDone = false;
+		if(!empty($this->viewVars['reviews']['3'])){
+			$statusCode = $this->viewVars['reviews']['3']['statusCode'];
+			$reviewDone=(!empty($statusCode) && ($statusCode>2))?true:false;	
+		}
 		echo $this->Form->input('Review.thirdReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['3'])?'':$this->viewVars['reviews']['3']['reviewerId']))); 			
 	if($reviewDone){?>
 		<div style="margin-bottom:0">

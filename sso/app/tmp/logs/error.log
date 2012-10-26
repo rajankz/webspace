@@ -111,3 +111,197 @@
 #3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-10-26 00:09:43 Error: Fatal Error (64): Access level to WorksheetsController::index() must be public (as in class AppController) in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 8]
+2012-10-26 00:09:43 Error: [FatalErrorException] Access level to WorksheetsController::index() must be public (as in class AppController)
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Access level to...', '/Users/raj/Site...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'Access level to...', '/Users/raj/Site...', 8, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Access level to...', '/Users/raj/Site...', 8, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 02:19:09 Error: Fatal Error (1): Call to private method AppController::loadReviewerDecisionCodes() from context 'WorksheetsController' in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 560]
+2012-10-26 02:19:09 Error: [FatalErrorException] Call to private method AppController::loadReviewerDecisionCodes() from context 'WorksheetsController'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to private...', '/Users/raj/Site...', 560)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to private...', '/Users/raj/Site...', 560, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to private...', '/Users/raj/Site...', 560, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 03:53:02 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 71]
+2012-10-26 03:53:02 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 71, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 71, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 03:56:26 Error: Fatal Error (4): syntax error, unexpected '<' in [/Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 79]
+2012-10-26 03:56:26 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 79, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 79, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 04:01:54 Error: Fatal Error (4): syntax error, unexpected '<' in [/Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 22]
+2012-10-26 04:01:54 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 22, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 22, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 04:02:46 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 24]
+2012-10-26 04:02:46 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 04:02:52 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/View/Worksheet/reviewer_edit_review.ctp, line 24]
+2012-10-26 04:02:52 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 24, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 05:24:05 Error: Fatal Error (1): Call to private method AppController::loadModelData() from context 'StatsController' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 7]
+2012-10-26 05:24:05 Error: [FatalErrorException] Call to private method AppController::loadModelData() from context 'StatsController'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to private...', '/Users/raj/Site...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to private...', '/Users/raj/Site...', 7, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to private...', '/Users/raj/Site...', 7, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 05:25:23 Error: Fatal Error (1): Call to undefined function isAuthorized() in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 44]
+2012-10-26 05:25:23 Error: [FatalErrorException] Call to undefined function isAuthorized()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 44, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 44, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 05:25:45 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 8]
+2012-10-26 05:25:45 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 8, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 8, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 05:30:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findAll' at line 1
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('findAll', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('findAll', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(613): DboSource->fetchAll('findAll', Array, Array)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(784): DboSource->query('findAll', Array, Object(Review))
+#5 [internal function]: Model->__call('findAll', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/StatsController.php(17): Review->findAll()
+#7 [internal function]: StatsController->admin_index()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(StatsController), Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(StatsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-26 05:32:37 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 17]
+2012-10-26 05:32:37 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 17, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 17, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:09:29 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Stats/admin_index.ctp, line 30]
+2012-10-26 06:09:29 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 30, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 30, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:09:47 Error: Fatal Error (1): Call to undefined method View::loadModel() in [/Users/raj/Sites/webspace/sso/app/View/Stats/admin_index.ctp, line 24]
+2012-10-26 06:09:47 Error: [FatalErrorException] Call to undefined method View::loadModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 24, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 24, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:10:11 Error: [MissingHelperException] Helper class ReviewHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Review')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Review')
+#2 /Users/raj/Sites/webspace/sso/app/View/Stats/admin_index.ctp(29): View->__get('Review')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(StatsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-10-26 06:15:30 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 30]
+2012-10-26 06:15:30 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 30)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 30, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 30, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:16:06 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 32]
+2012-10-26 06:16:06 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:16:22 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 32]
+2012-10-26 06:16:22 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:16:23 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 32]
+2012-10-26 06:16:23 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:16:43 Error: Fatal Error (4): syntax error, unexpected ')' in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 32]
+2012-10-26 06:16:43 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 32, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:18:18 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/StatsController.php, line 32]
+2012-10-26 06:18:18 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 32, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 32, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:56:55 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_review_controls.ctp, line 53]
+2012-10-26 06:56:55 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-26 06:58:15 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/Users/raj/Sites/webspace/sso/app/View/Elements/admin_review_controls.ctp, line 54]
+2012-10-26 06:58:15 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 54, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 54, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

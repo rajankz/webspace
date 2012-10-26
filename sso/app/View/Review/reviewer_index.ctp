@@ -1,4 +1,4 @@
-<?php echo $this->element('reviewer_sidemenu'); ?>
+<?php echo $this->element('reviewer_navmenu'); ?>
 
 
 <div id="theContent">
@@ -14,6 +14,7 @@ Page: <?php echo $this->Paginator->counter(); ?>
 	<?php foreach($reviews as $review): ?>
 	<tr>
 	<td><?php
+	//debug($review);
 	//debug($review['Review']['statusCode']);//exit;
 		echo $this->Html->link(/*h($review['Review']['worksheetId']), */
 		h($review['Worksheet']['firstName']." ".$review['Worksheet']['lastName']),

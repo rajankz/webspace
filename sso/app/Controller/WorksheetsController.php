@@ -16,19 +16,37 @@ class WorksheetsController extends AppController {
 	);
 	var $worksheetId=null;
 	
-	/**
-	 * Include plugin.
-	 */
-	//public $uses = array('Worksheet','Uploader.Upload');
-	
 	/** COMMON **/
-	public function isAuthorized($user){
+	public  function isAuthorized($user){
 	     if(in_array($this->action, array('addEdit'))){
 	          if($user['role'] != 'admin' || $user['role'] != 'creator'){
 	               return false;
 	          }
 	     }
 	     return true;
+	}
+	private function addEdit($id=null){
+		if($id==null ){
+			$this->set('worksheet',null);
+			$copiedWorksheet = $this->Session->read('copiedWorksheet');
+			if(!empty($copiedWorksheet)){
+				$this->set('copiedWorksheet',$this->Session->read('copiedWorksheet'));
+				$this->Session->delete('copiedWorksheet');
+			}
+			
+		}else{
+			$worksheetId = $id;
+			$worksheetData = $this->Worksheet->findById($id);
+			
+			if(empty($worksheetData)){
+				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
+				$this->redirect(array('action'=>'index','admin'=>true));
+			}
+			//debug($worksheetData);exit;
+			$this->set('worksheet',$worksheetData);
+			//$this->Session->write('worksheet',$worksheetData);
+		}
+		$this->loadModelData();
 	}
 	private function loadSemesterOptions(){
 		if(!ClassRegistry::isKeySet('SelectOptions')){
@@ -49,7 +67,7 @@ class WorksheetsController extends AppController {
 	private function loadWorksheetStatuses(){
 		
 	}
-	function loadWorksheetSemesters(){
+	private function loadWorksheetSemesters(){
 		$this->loadModel('Semester');
 		$semesterData = $this->Semester->find('all', array(
         	'conditions'=>array('Semester.worksheetId'=>$this->viewVars['worksheet']['Worksheet']['id'])));
@@ -57,17 +75,15 @@ class WorksheetsController extends AppController {
         $this->set('semesterData',$semesterData);
 		
 	}
-	function loadModelData(){
+	private function loadModelData(){
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
 		$this->loadModel('Users');
 		$this->loadModel('Review');
 		$this->loadWorksheetSemesters();
 		
-
 		$this->loadRoleOptions();
 		$this->loadSemesterOptions();
-		
 
         $financialBlockOptions = array();
 		$financialBlocks = $this->SelectOptions->find('all',array(
@@ -103,6 +119,15 @@ class WorksheetsController extends AppController {
         
 	}
 	private function filterWorksheet(){
+		$this->Session->write('WorksheetFilters',$this->data['WorksheetFilters']);
+		if(isset($this->params['data']['applyFilter'])){
+			$this->applyFilters();
+		}
+		if(isset($this->params['data']['restoreDefault'])){
+			$this->restoreDefault();
+		}	
+	}
+	private function applyFilters(){
 		$filters = $this->Session->read('WorksheetFilters');
 		$uid = $filters['uid'];
 		$sem = $filters['sem'];
@@ -125,39 +150,17 @@ class WorksheetsController extends AppController {
 		$this->paginate = null;
 		$this->redirect(array('action'=>'index'));
 	}
-	
 	private function restoreDefault(){
 		$this->Session->write('WorksheetConditions', $this->defaultCond);
 		$this->Session->delete('WorksheetFilters');
 		$this->paginate = null;
 		$this->redirect(array('action'=>'index'));
 	}
-	
 	private function duplicateWorksheet(){
 		$worksheetData = $this->Session->read('worksheetData');
-		//$reviewData = $this->Session->read('reviewData');
-		//$semesterData = $this->Session->read('semesterData');
 		unset($worksheetData['id']);
-		//debug($reviewData);
-		/*if(!empty($reviewData))
-		foreach($reviewData as $oneReview){
-			debug($oneReview);
-			//unset($oneReview['worksheetId']);
-		}*/
-		//debug($worksheetData);
-		//debug($reviewData);
-		//exit;
-		$worksheetData['statusId']='1';
-		
+		$worksheetData['statusId']='1';		
 		$semesterData = $this->Session->read('semesterData');
-		//debug($semesterData);
-		/*
-		if(!empty($semesterData))
-			foreach($semesterData as $oneSem){
-				unset($oneSem['id']);
-				unset($oneSem['worksheetId']);
-			}
-		*/
 		$copiedWorksheet = array('Worksheet'=>$worksheetData,'Semester'=>$semesterData);
 		$this->Session->write('copiedWorksheet',$copiedWorksheet);
 		$this->redirect(array('action'=>'addEdit'));
@@ -383,15 +386,11 @@ class WorksheetsController extends AppController {
 			$this->redirect(array('action'=>'addEdit','admin'=>true,$worksheetId));
 		}
 	}
-	
-	/** ADMIN  **/
-	function admin_index(){
+	private function worksheetIndex(){
 		if($this->Session->check('WorksheetConditions'))
 			$cond = $this->Session->read('WorksheetConditions');
 		else
 			$cond = $this->defaultCond;
-		//$cond = $this->defaultCond;
-		//debug($cond);
 		$data = $this->paginate('Worksheet',$cond);
 		$this->set('worksheets',$data);
 		$this->loadModel('User');
@@ -400,17 +399,14 @@ class WorksheetsController extends AppController {
 		'fields'=>array('User.id','User.fullName'),
 		'conditions'=>array('role'=>'reviewer'))));
 		$this->loadSemesterOptions();
-		
+	}
+	
+	/** ADMIN  **/
+	function admin_index(){
+		$this->worksheetIndex();
 	}
 	function admin_filterWorksheet(){
-		
-		$this->Session->write('WorksheetFilters',$this->data['WorksheetFilters']);
-		if(isset($this->params['data']['applyFilter'])){
-			$this->filterWorksheet();
-		}
-		if(isset($this->params['data']['restoreDefault'])){
-			$this->restoreDefault();
-		}		
+		$this->filterWorksheet();	
 	}
 	function admin_addWorksheet(){
 		$this->redirect(array('action'=>'addEdit','admin'=>true));
@@ -421,29 +417,6 @@ class WorksheetsController extends AppController {
 	}
 	function admin_addEdit($id=null){
 		$this->addEdit($id);
-	}
-	function addEdit($id=null){
-		if($id==null ){
-			$this->set('worksheet',null);
-			$copiedWorksheet = $this->Session->read('copiedWorksheet');
-			if(!empty($copiedWorksheet)){
-				$this->set('copiedWorksheet',$this->Session->read('copiedWorksheet'));
-				$this->Session->delete('copiedWorksheet');
-			}
-			
-		}else{
-			$worksheetId = $id;
-			$worksheetData = $this->Worksheet->findById($id);
-			
-			if(empty($worksheetData)){
-				$this->Session->setFlash('Invalid record ID or Record Deleted.',true);
-				$this->redirect(array('action'=>'index','admin'=>true));
-			}
-			//debug($worksheetData);exit;
-			$this->set('worksheet',$worksheetData);
-			//$this->Session->write('worksheet',$worksheetData);
-		}
-		$this->loadModelData();
 	}
 	function admin_deleteWorksheets(){
 		debug($this);
@@ -504,8 +477,10 @@ class WorksheetsController extends AppController {
 
 	/** CREATOR  **/
 	function creator_index(){
-		$data = $this->paginate('Worksheet');
-		$this->set('worksheets',$data);
+		$this->worksheetIndex();
+	}
+	function creator_filterWorksheet(){
+		$this->filterWorksheet();	
 	}
 	function creator_submitWorksheetForm(){
 		$this->Session->write('worksheetData',$this->params['data']['Worksheet']);
@@ -564,7 +539,7 @@ class WorksheetsController extends AppController {
 			$this->redirect(array('controller'=>'review','action'=>'index'));
 		}
 		if(empty($worksheetId)){
-			$this->Session->setFlash('Not a valid worksheet. This worksheet could have been scrapped','flashError');
+			$this->Session->setFlash('Not a valid worksheet. This worksheet could have been deleted','flashError');
 			$this->redirect(array('controller'=>'review','action'=>'index'));
 			
 		}
@@ -574,7 +549,10 @@ class WorksheetsController extends AppController {
 		}
 		
 		$worksheetData = $this->Worksheet->findById($worksheetId);
+		//debug($worksheetData);
 		$this->set('worksheetData',$worksheetData['Worksheet']);
+		$this->set('semesterData',$worksheetData['Semester']);
+		$this->set('attachmentData',$worksheetData['Attachment']);
 		//debug('hello');exit;
 		//$this->loadModel('Review');
 		$allReviewsData = $this->Review->find('all',array(
