@@ -487,6 +487,7 @@ class WorksheetsController extends AppController {
 
 		if(isset($this->params['data']['saveButton'])){
 			$this->saveWorksheet();
+			$this->redirect(array('action'=>'index','creator'=>true));
 		}else if(isset($this->params['data']['submitButton'])){
 			$this->redirect(array('action'=>'submitWorksheet','creator'=>true));
 		}	
