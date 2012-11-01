@@ -5,8 +5,6 @@
 		return false;
 	}
 	
-
-
 </script>
 <h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
 <a name="top"></a>

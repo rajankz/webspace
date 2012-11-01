@@ -23,5 +23,20 @@ $(document).ready(function()
         }
     });
 
-    $(".defaultText").blur();
+    $(".defaultText").blur();    
+    
 });
+
+function validateForm(){
+	var $uid = $('#WorksheetUid').val();
+	if(isNaN($uid)){
+		alert('University ID should be all numbers');
+		return false;
+	}
+	if($uid.length==9){
+		return true;
+	}else{
+		alert('Univeristy ID should be 9-digits long');
+		return false;
+	}
+}
