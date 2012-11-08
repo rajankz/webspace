@@ -60,7 +60,7 @@ class CasAuthComponent extends AuthComponent {
             //debug();exit;
             //$model =& $this->getModel(); 
             $controller->loadModel('User');
-            $model = $controller->Users;
+            $model = $controller->User;
             $controller->request->data['User']['username'] = phpCAS::getUser(); 
             $controller->request->data['User']['password'] ='a'; 
             
@@ -83,7 +83,7 @@ class CasAuthComponent extends AuthComponent {
      * @access public 
      */ 
     function logout() { 
-    	//debug($this->user());
+    	//debug($this);exit;
         // Set debug mode 
         phpCAS::setDebug(false); 
         //Initialize phpCAS 

@@ -24,7 +24,7 @@ class ReviewsController extends AppController {
 		$this->paginate = array(
 			'limit' => 10,
 			'order' => array('Review.worksheetId' => 'asc'),
-			'conditions'=>array('Review.invalidReview'=>false,'statusCode >'=>'1','reviewerId'=>$this->Auth->user('id'))
+			'conditions'=>array('Review.invalidReview'=>false,'statusCode >'=>'1','reviewerId'=>$this->CasAuth->user('id'))
 		);
 		$data = $this->paginate('Review');//,
 		$this->set('reviews',$data);

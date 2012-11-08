@@ -33,7 +33,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $components = array('Session','Auth');
+    var $components = array('Session','Auth', 'CasAuth');
     //var $uses = array('AuthAuth');
 	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
@@ -96,7 +96,7 @@ class AppController extends Controller {
 
 	public function index(){
 		//debug($this->User);exit;
-		if($this->Auth->loggedIn()){
+		if($this->CasAuth->loggedIn()){
 			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
 		}else{
 			$this->redirect(array('controller'=>'users', 'action'=>'login'));
@@ -105,16 +105,16 @@ class AppController extends Controller {
 
     public function beforeFilter(){
     	
-        $this->Auth->allow('login');
+        $this->CasAuth->allow('login');
         
-        $this->Auth->authorize = array('Controller');
-        $this->Auth->authenticate = array(
+        $this->CasAuth->authorize = array('Controller');
+        $this->CasAuth->authenticate = array(
             'all' => array(
                 'scope' => array('User.is_active' => 1)
             ),
             'Form'
         );
-	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
+	    $this->CasAuth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
 	    
     }
@@ -122,7 +122,7 @@ class AppController extends Controller {
     
     
     function isAdmin(){
-		if($this->params['prefix']=='admin' && ($this->Auth->user('role')!='admin')){
+		if($this->params['prefix']=='admin' && ($this->CasAuth->user('role')!='admin')){
             return false;
         }    
         return true;
