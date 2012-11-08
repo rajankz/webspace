@@ -36,10 +36,10 @@ class CasAuthComponent extends AuthComponent {
      */ 
     function startup(&$controller) { 
         // CAS authentication required if user is not logged in 
-        //debug($this->user());exit; 
+        //debug($this->request->data);exit; 
         
         //if(!isset($this->request->query['ticket'])){
-        //if(!($this->CasAuth->loggedIn())){
+        if(empty($this->request->data)){
         //debug($this->user());	
             // Set debug mode 
             //phpCAS::setDebug(false); 
@@ -59,15 +59,16 @@ class CasAuthComponent extends AuthComponent {
             phpCAS::forceAuthentication(); //debug(phpCAS::getUser());exit; 
             //debug();exit;
             //$model =& $this->getModel(); 
-            $controller->loadModel('Users');
+            $controller->loadModel('User');
             $model = $controller->Users;
-            $controller->CasAuth->request->data['Users']['username'] = phpCAS::getUser(); 
-            $controller->CasAuth->request->data['Users']['password'] ='a'; 
-            //debug($controller);exit;
+            $controller->request->data['User']['username'] = phpCAS::getUser(); 
+            $controller->request->data['User']['password'] ='a'; 
+            
+            //debug($this);exit;
             //$this->request->data->User['username']=phpCAS::getUser();
             //$this->request->data->User['password']='a';      
             //debug($this->request);exit;      
-        //} 
+        } 
         //debug(phpCAS::getUser());exit;
         return parent::startup($controller); 
         //$this->redirect(array('controller'=>'User','action'=>'login'));

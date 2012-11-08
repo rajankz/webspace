@@ -21,7 +21,6 @@
  */
 
 App::uses('Controller', 'Controller');
-//CakePlugin::load('CasAuth');
 
 /**
  * Application Controller
@@ -34,8 +33,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $components = array('Session','Auth','CasAuth');
-    //var $uses = array('CasAuthAuth');
+    var $components = array('Session','Auth');
+    //var $uses = array('AuthAuth');
 	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
 	//global $loaded = false;
@@ -47,14 +46,14 @@ class AppController extends Controller {
     }
     
 	private function loadModelData(){
-		//debug($this->loaded);
+
 		if($this->loaded)
 			return;
-		//debug($this);//exit;
+
 		$this->loadModel('Roles');
-		
-		$this->loadModel('Users');
-		$this->set('userOptions',$this->Users->find('list',array('fields'=>array('Users.id','Users.fullName'))));
+
+		$this->loadModel('User');
+		$this->set('userOptions',$this->User->find('list',array('fields'=>array('User.id','User.fullName'))));
 		
 		$this->loadModel('SelectOptions');
 		$this->set('roleOptions',$this->Roles->find('list',array('fields'=>array('Roles.role_name','Roles.role_name'))));
@@ -75,7 +74,6 @@ class AppController extends Controller {
 		$this->loadReviewerDecisionCodes();
 
 		$this->loaded = true;
-		//debug($this);
 	}
 	function loadReviewerDecisionCodes(){
 		$this->loadModel('SelectOptions');
@@ -97,8 +95,8 @@ class AppController extends Controller {
 	}
 
 	public function index(){
-		debug($this->User);exit;
-		if($this->CasAuth->loggedIn()){
+		//debug($this->User);exit;
+		if($this->Auth->loggedIn()){
 			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
 		}else{
 			$this->redirect(array('controller'=>'users', 'action'=>'login'));
@@ -107,17 +105,16 @@ class AppController extends Controller {
 
     public function beforeFilter(){
     	
-        $this->CasAuth->allow('login');
+        $this->Auth->allow('login');
         
-        $this->CasAuth->authorize = array('Controller');
-        //debug($this);exit;
-        $this->CasAuth->authenticate = array(
+        $this->Auth->authorize = array('Controller');
+        $this->Auth->authenticate = array(
             'all' => array(
                 'scope' => array('User.is_active' => 1)
             ),
             'Form'
         );
-	    $this->CasAuth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
+	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
 	    
     }
@@ -125,8 +122,7 @@ class AppController extends Controller {
     
     
     function isAdmin(){
-    	debug($this->CasAuth->user());exit;
-		if($this->params['prefix']=='admin' && ($this->CasAuth->user('role')!='admin')){
+		if($this->params['prefix']=='admin' && ($this->Auth->user('role')!='admin')){
             return false;
         }    
         return true;

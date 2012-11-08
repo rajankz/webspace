@@ -5,7 +5,7 @@
 <?php //debug($worksheetData); ?>
 <table class="review">
 	<tr>
-		<th><div class="red">Applicant's Name: <span class="grey"><?php echo $worksheetData['firstName'] . " " . $worksheetData['lastName']; ?></span></div></th>
+		<th><div class="red">Applicant's Name: <span class="grey"><?php echo $worksheetData['applicantName']; ?></span></div></th>
 		<th><div class="floatRight red">University ID: <span class="grey"><?php echo $worksheetData['uid']; ?></span></div></th>
 	</tr>
 </table>

@@ -1,7 +1,6 @@
 <?php
 
 class UsersController extends AppController{
-	var $name = 'User';
 	var $helpers = array('Html','Form');
 
 
@@ -9,27 +8,25 @@ class UsersController extends AppController{
 	function login(){
         //if (!$this->request->is('post'))
         //    return;
-        if($this->CasAuth->loggedIn()){
-            //$this->CasAuth->logout();
+        //debug($this);exit;
+        if($this->Auth->loggedIn()){
+            $this->Auth->logout();
             $this->redirect(array('action'=>'index'));
         }
-
-        if($this->CasAuth->login()){
+        if($this->Auth->login()){
             $this->redirect(array('action'=>'index'));
         } else {
-            $this->CasAuth->authError = 'You do not have access to this system.<br /><br />Please contact coordinator.';
-            $this->Session->setFlash($this->CasAuth->authError,'flashError');
+            $this->Auth->authError = 'You do not have access to this system.<br /><br />Please contact coordinator.';
+            $this->Session->setFlash($this->Auth->authError,'flashError');
         }
     }
-	function logout(){$this->redirect($this->CasAuth->logout());}
+	function logout(){$this->redirect($this->Auth->logout());}
 	function dashboard(){}
 	function beforeFilter(){
         parent::beforeFilter();
 	}
 	function index(){
-//		debug($this->CasAuth);debug($this->data);exit;
-		unset($this->request->data->User);
-        switch($this->CasAuth->user('role')){
+        switch($this->Auth->user('role')){
             case 'admin':
                 $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>true));
                 break 1;
@@ -44,14 +41,13 @@ class UsersController extends AppController{
         }
     }
 	private function convertPasswords() {
-    	$this->request->data['User']['password'] = $this->CasAuth->password($this->data['User']['password'] );
-        $this->request->data['User']['confirm_password'] = $this->CasAuth->password( $this->data['User']['confirm_password'] );
-        //debug($this->request->data['User']);exit;
+    	$this->request->data['User']['password'] = $this->Auth->password($this->data['User']['password'] );
+        $this->request->data['User']['confirm_password'] = $this->Auth->password( $this->data['User']['confirm_password'] );
     }
 	
 	/** Admin **/
     function admin_login(){$this->redirect(array('action'=>'login','admin'=>false));}
-    function admin_logout(){$this->redirect($this->CasAuth->logout());}
+    function admin_logout(){$this->redirect($this->Auth->logout());}
     function admin_updatePwd(){
 		$this->User->id = $this->data['User']['id'];
 	
@@ -84,7 +80,7 @@ class UsersController extends AppController{
 
 	}
     function admin_register() {
-    	debug($this->data);exit;
+    	//debug($this->data);exit;
         $this->loadModel('Roles');
         $this->set('roles',$this->Roles->find('list',array('fields'=>array('role_name'))));
         if (!empty($this->data)) {
@@ -123,12 +119,12 @@ class UsersController extends AppController{
     
     /** Creator **/    
     function creator_login(){$this->redirect(array('action'=>'login','creator'=>false));}
-    function creator_logout(){$this->redirect($this->CasAuth->logout());}
+    function creator_logout(){$this->redirect($this->Auth->logout());}
     function creator_dashboard(){}
     
     /** Reviewer **/
     function reviewer_login(){$this->redirect(array('action'=>'login','reviewer'=>false));}    
-    function reviewer_logout(){$this->redirect($this->CasAuth->logout());}
+    function reviewer_logout(){$this->redirect($this->Auth->logout());}
    
 
 

@@ -78,7 +78,7 @@ class WorksheetsController extends AppController {
 	private function loadModelData(){
 		$this->loadModel('Roles');
 		$this->loadModel('SelectOptions');
-		$this->loadModel('Users');
+		$this->loadModel('User');
 		$this->loadModel('Review');
 		$this->loadWorksheetSemesters();
 		
@@ -105,8 +105,8 @@ class WorksheetsController extends AppController {
         }
         $this->set('judicialBlockOptions', $judicialBlockOptions);
         
-        $this->set('reviewerOptions',$this->Users->find('list',array('fields'=>array('Users.id','Users.fullName'),
-        	'conditions'=>array('Users.role'=>'reviewer', 'Users.is_active'=>true)
+        $this->set('reviewerOptions',$this->User->find('list',array('fields'=>array('User.id','User.fullName'),
+        	'conditions'=>array('User.role'=>'reviewer', 'User.is_active'=>true)
         )));
         
         $reviewsData = $this->Review->find('all',array(
@@ -136,7 +136,7 @@ class WorksheetsController extends AppController {
 		$assignedTo=intval($filters['assignedTo']);
 		$cond = array(
 			'uid LIKE'=>(!empty($uid))?"%$uid%":"%",
-			'OR'=>array(array('firstName LIKE' => (!empty($studentName))?"%$studentName%":"%"),array('lastName LIKE' => (!empty($studentName))?"%$studentName%":"%")),
+			'applicantName LIKE'=>(!empty($studentName))?"%$studentName%":"%",
 			'sem LIKE'=>(!empty($sem))?"%$sem%":"%",
 			'statusId'=>($status==-1 || $status==0)?array(1,2,3,4,5,6):$status,
 			'(assignedToId '.($assignedTo>0?'='.$assignedTo.')':(($assignedTo==-1)?'IS NULL)':'IS NULL OR assignedToId IS NOT NULL)')),
@@ -535,7 +535,7 @@ class WorksheetsController extends AppController {
 		$this->loadModel('Review');
 		$reviewData = $this->Review->findById($reviewId);
 		//debug($reviewData['Review']['reviewerId']);
-		if($reviewData['Review']['reviewerId']!=$this->Auth->user('id')){
+		if($reviewData['Review']['reviewerId']!=$this->CasAuth->user('id')){
 			$this->Session->setFlash('You do not have access to that review','flashError');
 			$this->redirect(array('controller'=>'review','action'=>'index'));
 		}
@@ -560,7 +560,7 @@ class WorksheetsController extends AppController {
 		'conditions'=>array('worksheetId'=>$worksheetId, 'invalidReview'=>false)));
 		//debug($allReviewsData);exit;
 		$this->set('allReviewsData',$allReviewsData);
-		$this->set('userId',$this->Auth->user('id'));
+		$this->set('userId',$this->CasAuth->user('id'));
 		$this->loadReviewerDecisionCodes();
 		
 		

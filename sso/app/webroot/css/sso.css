@@ -230,15 +230,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba2727', end
 }
 
 input[type=submit]{
-background: #47649b;
-background: -moz-linear-gradient(top,  #47649b 0%, #617699 0%, #5d7399 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#47649b), color-stop(0%,#617699), color-stop(100%,#5d7399));
-background: -webkit-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
-background: -o-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
-background: -ms-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
-background: linear-gradient(to bottom,  #47649b 0%,#617699 0%,#5d7399 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47649b', endColorstr='#5d7399',GradientType=0 );
-
+background: #4e5c75;
+background: -moz-linear-gradient(top,  #4e5c75 0%, #244275 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e5c75), color-stop(100%,#244275));
+background: -webkit-linear-gradient(top,  #4e5c75 0%,#244275 100%);
+background: -o-linear-gradient(top,  #4e5c75 0%,#244275 100%);
+background: -ms-linear-gradient(top,  #4e5c75 0%,#244275 100%);
+background: linear-gradient(to bottom,  #4e5c75 0%,#244275 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5c75', endColorstr='#244275',GradientType=0 );
 
 	text-transform: capitalize;
 	font-variant: small-caps;
@@ -267,17 +266,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47649b', end
 }
 
 input[type=submit]:hover{
-background: #4e5c75;
-background: -moz-linear-gradient(top,  #4e5c75 0%, #244275 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e5c75), color-stop(100%,#244275));
-background: -webkit-linear-gradient(top,  #4e5c75 0%,#244275 100%);
-background: -o-linear-gradient(top,  #4e5c75 0%,#244275 100%);
-background: -ms-linear-gradient(top,  #4e5c75 0%,#244275 100%);
-background: linear-gradient(to bottom,  #4e5c75 0%,#244275 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e5c75', endColorstr='#244275',GradientType=0 );
-
-
-
+background: #47649b;
+background: -moz-linear-gradient(top,  #47649b 0%, #617699 0%, #5d7399 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#47649b), color-stop(0%,#617699), color-stop(100%,#5d7399));
+background: -webkit-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
+background: -o-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
+background: -ms-linear-gradient(top,  #47649b 0%,#617699 0%,#5d7399 100%);
+background: linear-gradient(to bottom,  #47649b 0%,#617699 0%,#5d7399 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47649b', endColorstr='#5d7399',GradientType=0 );
 
 }
 
@@ -418,7 +414,7 @@ table.review th{
 	height:20px;
 	position: fixed;
 	bottom:0px;
-	background-color: #000;
+	background-color: #333;
 	width:999px;
 	margin-left: -3px;
 	z-index: 10;
@@ -479,21 +475,22 @@ a.buttonLink,input.buttonLink, button.buttonLink{
 }
 .clearBoth{clear:both;}
 .actionLink a{
-	background: #87d841;
-	background: -moz-linear-gradient(top,  #87d841 0%, #69c419 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87d841), color-stop(100%,#69c419));
-	background: -webkit-linear-gradient(top,  #87d841 0%,#69c419 100%);
-	background: -o-linear-gradient(top,  #87d841 0%,#69c419 100%);
-	background: -ms-linear-gradient(top,  #87d841 0%,#69c419 100%);
-	background: linear-gradient(to bottom,  #87d841 0%,#69c419 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87d841', endColorstr='#69c419',GradientType=0 );
+	background: #86B440;
+	background: -moz-linear-gradient(top, #86B440 0%, #77AA39 92%, #659D30 100%);
+	background: -webkit-linear-gradient(top, #86B440 0%, #77AA39 92%, #659D30 100%);
+	background: linear-gradient(to bottom, #86B440 0%, #77AA39 92%, #659D30 100%);
+	border: 1px solid #528B31;
+	box-shadow: inset 0px 0px 1px 1px #93BB56;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	transition: background 0.3s ease;
 	text-transform: capitalize;
 	font-variant: small-caps;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 	transition: background 0.3s ease;
 	cursor: pointer;
 	border: 1px solid #60A535;
-	box-shadow: inset 0px 0px 2px 1px #A8D357;
+	box-shadow: inset 0px 0px 2px 1px #98c14d;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 4px 14px;
@@ -508,15 +505,15 @@ a.buttonLink,input.buttonLink, button.buttonLink{
 	letter-spacing: 1px;
 }
 .actionLink a:hover{
-	background: #86B440;
-	background: -moz-linear-gradient(top, #86B440 0%, #77AA39 92%, #659D30 100%);
-	background: -webkit-linear-gradient(top, #86B440 0%, #77AA39 92%, #659D30 100%);
-	background: linear-gradient(to bottom, #86B440 0%, #77AA39 92%, #659D30 100%);
-	border: 1px solid #528B31;
-	box-shadow: inset 0px 0px 1px 1px #93BB56;
-	-webkit-transition: background 0.3s ease;
-	-moz-transition: background 0.3s ease;
-	transition: background 0.3s ease;
+	background: #87d841;
+	background: -moz-linear-gradient(top,  #87d841 0%, #69c419 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87d841), color-stop(100%,#69c419));
+	background: -webkit-linear-gradient(top,  #87d841 0%,#69c419 100%);
+	background: -o-linear-gradient(top,  #87d841 0%,#69c419 100%);
+	background: -ms-linear-gradient(top,  #87d841 0%,#69c419 100%);
+	background: linear-gradient(to bottom,  #87d841 0%,#69c419 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87d841', endColorstr='#69c419',GradientType=0 );
+
 }
 #attachmentList{
 	margin-bottom: 1em;

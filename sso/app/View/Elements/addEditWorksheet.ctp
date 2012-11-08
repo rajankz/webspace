@@ -7,7 +7,6 @@
 	
 </script>
 <h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
-<a name="top"></a>
 <?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm','enctype'=>'multipart/form-data')); ?>
 <?php
 	$id = "";
@@ -24,7 +23,7 @@
 <div id="navListContainer">
 <ul id="navList">
 <li><a href=<?php echo $this->here ?>#blocks>Blocks</a></li>
-<li><a href=<?php echo $this->here ?>#prior-reenroll>Prior Re-enrollment</a></li>
+<li><a href=<?php echo $this->here ?>#prior-reenroll>Prior Reenrollment</a></li>
 <li><a href=<?php echo $this->here ?>#sso-feedback>SSO Feedback</a></li>
 <li><a href=<?php echo $this->here ?>#gpa>GPA</a></li>
 <li><a href=<?php echo $this->here ?>#major>Major</a></li>
@@ -37,7 +36,7 @@
 </ul>
 </div>
 
-<div class="formBox"><a name="top"></a>
+<div class="formBox">
 	<h3>Student Information</h3>
     <table class="uiGrid table400" cellspacing="0" cellpadding="1">
         <tbody>
@@ -56,13 +55,10 @@
                 
             </tr>
             <tr>
-                <td class="label alignLeft">First Name</td>
-                <td class="label alignLeft">Last Name</td>
+                <td class="label alignLeft">Applicant Name</td>
             </tr>
             <tr>
-            	<td><?php echo $this->Form->input('Worksheet.firstName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['firstName'], 'class'=>'fields')); ?></td>
-                
-                <td><?php echo $this->Form->input('Worksheet.lastName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['lastName'], 'class'=>'fields')); ?></td>
+            	<td><?php echo $this->Form->input('Worksheet.applicantName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['applicantName'], 'class'=>'fields')); ?></td>
             </tr>
             
         </tbody>
@@ -88,9 +84,9 @@
 </div>
 
 <div class="formBox"><a name="prior-reenroll"></a>
-    <h3>Prior Re-enrollment Decisions</h3>
+    <h3>Prior Reenrollment Decisions</h3>
 
-	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Re-enrollment Applications ', 'value'=>$worksheet['Worksheet']['numReEnrollApps'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Reenrollment Applications ', 'value'=>$worksheet['Worksheet']['numReEnrollApps'], 'div'=>array('class'=>'smallText input text'))); ?>
 	<?php echo $this->Form->input('Worksheet.numApprovals', array('label'=>'Number of Approvals (80, 86, 8A*, 8A, 8N) ', 'value'=>$worksheet['Worksheet']['numApprovals'], 'div'=>array('class'=>'smallText input text'))); ?>
 	<?php echo $this->Form->input('Worksheet.numDenials', array('label'=>'Number of Denials (1A, 2A, 2F, 3A, 3F, 4X, 50) ', 'value'=>$worksheet['Worksheet']['numDenials'], 'div'=>array('class'=>'smallText input text'))); ?>
 	<?php echo $this->Form->input('Worksheet.numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X) ', 'value'=>$worksheet['Worksheet']['numPendingDecision'], 'div'=>array('class'=>'smallText input text'))); ?>

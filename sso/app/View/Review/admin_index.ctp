@@ -2,7 +2,7 @@
 
 
 <div id="theContent">
-<h2 class="center">Keonna Reviews</h2>
+<h2 class="center">Admin Reviews</h2>
 
 Page: <?php echo $this->Paginator->counter(); ?>
 <table class="paginationTable">

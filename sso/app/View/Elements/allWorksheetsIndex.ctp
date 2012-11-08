@@ -27,7 +27,7 @@
 <tr>
 <td><?php echo $this->Form->input('WorksheetFilters.uid',array('label'=>false,'div'=>false,'class'=>'small','value'=>$uid)); ?></td>
 <td><?php echo $this->Form->input('WorksheetFilters.name',array('label'=>false,'div'=>false,'class'=>'small','value'=>$studentName)); ?></td>
-<td><?php echo $this->Form->input('WorksheetFilters.status',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($worksheetSCFilter),'selected'=>$status)); ?></td>
+<td><?php echo $this->Form->input('WorksheetFilters.status',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($worksheetSCFilter),'selected'=>$status?$status:-1)); ?></td>
 <td><?php echo $this->Form->input('WorksheetFilters.assignedTo',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($reviewersFilter),'selected'=>$assignedTo)); ?></td>
 <td><?php echo $this->Form->input('WorksheetFilters.sem',array('label'=>false, 'empty'=>true,'div'=>false, 'type'=>'select', 'options'=>array($semOptions),'selected'=>$sem)); ?></td>
 <!--
@@ -40,7 +40,7 @@
 <table id="allWorksheetTable" class="dataGrid">
 	<tr>
 		<th><?php echo $this->Paginator->sort('uid', 'University ID'); ?></th>
-		<th><?php echo $this->Paginator->sort('name', 'Name');?></th>
+		<th><?php echo $this->Paginator->sort('applicantName', 'Applicant Name');?></th>
 		<th><?php echo $this->Paginator->sort('statusId', 'Status');?></th>
 		<th><?php echo $this->Paginator->sort('assignedToId','Assigned To');?></th>
 		<th><?php echo $this->Paginator->sort('sem','Semester');?></th>
@@ -50,7 +50,7 @@
 	<tr>
 	<td><?php
 		echo $this->Html->link(h($worksheet['Worksheet']['uid']), array('action'=>'editWorksheet','id'=>$worksheet['Worksheet']['id'])); ?> </td>
-		<td><?php echo h($worksheet['Worksheet']['firstName']." ".$worksheet['Worksheet']['lastName']); ?></td>
+		<td><?php echo h($worksheet['Worksheet']['applicantName']); ?></td>
 		<td><?php echo h($this->viewVars['worksheetSC'][$worksheet['Worksheet']['statusId']]); ?></td>
 		<td><?php echo ($worksheet['Worksheet']['assignedToId']!='')?h($reviewers[$worksheet['Worksheet']['assignedToId']]):''; ?></td>	
 		<td><?php echo ($worksheet['Worksheet']['sem']!='')?(h($semOptions[$worksheet['Worksheet']['sem']])):''; ?></td>

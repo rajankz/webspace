@@ -15,7 +15,7 @@ class Review extends AppModel{
 	'Worksheet' => array(
 		'className'     => 'Worksheet',
 		'foreignKey'    => 'worksheetId',
-		'fields'=>array('Worksheet.firstName','Worksheet.lastName')
+		'fields'=>array('Worksheet.applicantName')
 		)
 	); 
 	

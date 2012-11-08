@@ -39,7 +39,7 @@ class User extends AppModel{
 		//debug($this->User);
 		//debug($this->data);exit;
 		//if(empty($this->data['User']['password']))
-			unset($this->data['User']['password']);
+			//unset($this->data['User']['password']);
 	}
     public function passCompare() {
         //return ($this->data['User']['newPassword'] === $this->data['User']['confirmNewPassword']);

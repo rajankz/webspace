@@ -123,6 +123,7 @@
 		<div id="contentWrapper">
             <?php echo $this->Session->flash(); ?>
 			<?php echo $this->Session->flash('auth');?>
+			<a name="top"></a>
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
