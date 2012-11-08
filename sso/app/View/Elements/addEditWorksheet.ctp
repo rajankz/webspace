@@ -33,10 +33,11 @@
 <?php if(!empty($this->Session->request->params['admin'])){?>
 <li><a href=<?php echo $this->here ?>#reviews>Reviews</a></li>
 <?php } ?>
+<li class="right"><a href=<?php echo $this->here ?>#top>Back to Top</a></li>
 </ul>
 </div>
 
-<div class="formBox">
+<div class="formBox"><a name="top"></a>
 	<h3>Student Information</h3>
     <table class="uiGrid table400" cellspacing="0" cellpadding="1">
         <tbody>
@@ -347,20 +348,21 @@
 		echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit floatLeft','onclick'=>'return validateForm();'));
 	}
 	
+	//debug($this->Session->request);exit;
 	if(!empty($this->Session->request->params['admin'])){
 		if($worksheet['Worksheet']['statusId']<'6'){
 			echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit floatLeft','onclick'=>'return validateForm();'));
 		}
 		else if($worksheet['Worksheet']['statusId']=='6')
 			echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit floatLeft'));
-		if(!empty($id)){
-			echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redBtn submit floatRight', 'onclick'=>'return confirmDelete();'));	
-		}
 	}else if($this->Session->request->params['creator']){
 		if($worksheet['Worksheet']['statusId']<'2')
 		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit floatLeft'));
 	}	
 	
+	if(!empty($id)){
+		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redBtn submit floatRight', 'onclick'=>'return confirmDelete();'));	
+	}
 	echo $this->Form->submit('Make a Copy',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));
 	
 ?>

@@ -38,6 +38,11 @@ class Attachment extends AppModel{
 	)
 	);
 	
+	public function beforeSave() {
+		$worksheetId = $this->data['Attachment']['worksheetId'];
+		$this->actsAs['Uploader.Attachment']['file']['uploadDir'] = '/uploads/'.$worksheetId.'/';
+	}
+	
 }
 
 ?>

@@ -21,6 +21,7 @@
  */
 
 App::uses('Controller', 'Controller');
+//CakePlugin::load('CasAuth');
 
 /**
  * Application Controller
@@ -33,8 +34,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $components = array('Session','Auth');
-    //var $uses = array('CasAuth');
+    var $components = array('Session','Auth','CasAuth');
+    //var $uses = array('CasAuthAuth');
 	var $helpers = array('Html', 'Form', 'Js', 'Session', 'Paginator');
 
 	//global $loaded = false;
@@ -76,7 +77,7 @@ class AppController extends Controller {
 		$this->loaded = true;
 		//debug($this);
 	}
-	 function loadReviewerDecisionCodes(){
+	function loadReviewerDecisionCodes(){
 		$this->loadModel('SelectOptions');
 		$reviewerDecisionCodeOptions = array();
 		$reviewerDecisionCodes = $this->SelectOptions->find('all',array(
@@ -89,15 +90,15 @@ class AppController extends Controller {
 		$this->set('reviewerDecisionCodeOptions', $reviewerDecisionCodeOptions);
 	}
 
-function pa($arr) {
-	echo '<pre>';
-	print_r($arr);
-	echo '< /pre>';
-}
+	function pa($arr) {
+		 echo '<pre>';
+		 print_r($arr);
+		 echo '< /pre>';
+	}
 
 	public function index(){
-		//debug($this);exit;
-		if($this->Auth->loggedIn()){
+		debug($this->User);exit;
+		if($this->CasAuth->loggedIn()){
 			$this->redirect(array('controller'=>'users', 'action'=>'index',$this->User));
 		}else{
 			$this->redirect(array('controller'=>'users', 'action'=>'login'));
@@ -106,28 +107,33 @@ function pa($arr) {
 
     public function beforeFilter(){
     	
-        $this->Auth->allow('login');
-        $this->Auth->authorize = array('Controller');
-        $this->Auth->authenticate = array(
+        $this->CasAuth->allow('login');
+        
+        $this->CasAuth->authorize = array('Controller');
+        //debug($this);exit;
+        $this->CasAuth->authenticate = array(
             'all' => array(
                 'scope' => array('User.is_active' => 1)
             ),
             'Form'
         );
-	    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
+	    $this->CasAuth->logoutRedirect = array('controller' => 'users', 'action' => 'login','admin'=>false,'creator'=>false,'reviewer'=>false);
 	    $this->loadModelData();
+	    
     }
     
     
     
     function isAdmin(){
-		if($this->params['prefix']=='admin' && ($this->Auth->user('role')!='admin')){
+    	debug($this->CasAuth->user());exit;
+		if($this->params['prefix']=='admin' && ($this->CasAuth->user('role')!='admin')){
             return false;
         }    
         return true;
     }
 
     function isAuthorized($user){
+    	//debug($user);
         if($this->params['prefix']=='admin' && ($user['role']!='admin')){
             return false;
         }

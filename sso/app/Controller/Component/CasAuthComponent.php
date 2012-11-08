@@ -1,6 +1,6 @@
 <?php  
 
-App::import('Vendor', 'CAS/CAS/CAS'); 
+App::import('Vendor', 'CAS/CAS'); 
 App::import('Component', 'Auth'); 
 
 /** 
@@ -19,6 +19,13 @@ App::import('Component', 'Auth');
  * @license        http://www.opensource.org/licenses/mit-license.php The MIT License 
  */  
 class CasAuthComponent extends AuthComponent { 
+    
+    var $use = array('User');
+    
+     function initialize(&$controller) {
+	     parent::initialize($controller);
+	     phpCAS::setDebug(false);                    
+	     	 }
      
     /** 
      * Main execution method.  Initializes CAS client and force authentication if required before passing user to parent startup method.
@@ -28,22 +35,42 @@ class CasAuthComponent extends AuthComponent {
      * @access public 
      */ 
     function startup(&$controller) { 
-        // CAS authentication required if user is not logged in  
-        if (!$this->user()) { 
+        // CAS authentication required if user is not logged in 
+        //debug($this->user());exit; 
+        
+        //if(!isset($this->request->query['ticket'])){
+        //if(!($this->CasAuth->loggedIn())){
+        //debug($this->user());	
             // Set debug mode 
-            phpCAS::setDebug(false); 
+            //phpCAS::setDebug(false); 
+            //if(!empty(phpCAS::getUser()))
+	        //    debug($this);
             //Initialize phpCAS 
-            phpCAS::client(CAS_VERSION_2_0, Configure::read('CAS.hostname'), Configure::read('CAS.port'), Configure::read('CAS.uri'));            
+            //debug(isset($this->request->query['ticket']));
+            //phpCAS::client(CAS_VERSION_2_0, Configure::read('CAS.hostname'), Configure::read('CAS.port'), Configure::read('CAS.uri'));     
+            
+            phpCAS::client(CAS_VERSION_2_0, Configure::read('CAS.hostname'), Configure::read('CAS.port'), Configure::read('CAS.uri'));           
+	     phpCAS::setNoCasServerValidation();
+
+                  
             // No SSL validation for the CAS server 
-            phpCAS::setNoCasServerValidation(); 
+            //phpCAS::setNoCasServerValidation(); 
             // Force CAS authentication if required 
-            phpCAS::forceAuthentication(); 
-            debug(phpCAS::getUser());exit;
-            $model =& $this->getModel(); 
-            $controller->data[$model->alias][$this->fields['username']] = phpCAS::getUser(); 
-            $controller->data[$model->alias][$this->fields['password']] = ''; 
-        } 
+            phpCAS::forceAuthentication(); //debug(phpCAS::getUser());exit; 
+            //debug();exit;
+            //$model =& $this->getModel(); 
+            $controller->loadModel('Users');
+            $model = $controller->Users;
+            $controller->CasAuth->request->data['Users']['username'] = phpCAS::getUser(); 
+            $controller->CasAuth->request->data['Users']['password'] ='a'; 
+            //debug($controller);exit;
+            //$this->request->data->User['username']=phpCAS::getUser();
+            //$this->request->data->User['password']='a';      
+            //debug($this->request);exit;      
+        //} 
+        //debug(phpCAS::getUser());exit;
         return parent::startup($controller); 
+        //$this->redirect(array('controller'=>'User','action'=>'login'));
     } 
      
     /** 
@@ -55,15 +82,16 @@ class CasAuthComponent extends AuthComponent {
      * @access public 
      */ 
     function logout() { 
+    	//debug($this->user());
         // Set debug mode 
         phpCAS::setDebug(false); 
         //Initialize phpCAS 
-        phpCAS::client(CAS_VERSION_2_0, Configure::read('CAS.hostname'), Configure::read('CAS.port'), Configure::read('CAS.uri'), true);
+        //phpCAS::client(CAS_VERSION_2_0, Configure::read('CAS.hostname'), Configure::read('CAS.port'), Configure::read('CAS.uri'), true);
         // No SSL validation for the CAS server 
         phpCAS::setNoCasServerValidation(); 
         // Force CAS logout if required 
         if (phpCAS::isAuthenticated()) { 
-            phpCAS::logout(array('url' => 'http://www.cakephp.org')); // Provide login url for your application 
+            phpCAS::logout(array('url'=>'https://login.umd.edu/cas/logout')); // Provide login url for your application 
         } 
         return parent::logout(); 
     } 

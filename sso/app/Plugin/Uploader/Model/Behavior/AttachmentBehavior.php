@@ -170,7 +170,8 @@ class AttachmentBehavior extends ModelBehavior {
 	 * @return mixed
 	 */
 	public function beforeSave(Model $model) {
-		
+		//rajankz::temp
+		$model->beforeSave();
 		if (empty($model->data[$model->alias])) {
 			return true;
 		}
@@ -181,7 +182,8 @@ class AttachmentBehavior extends ModelBehavior {
 			}
 
 			$attachment = $this->_attachments[$model->alias][$field];
-			
+			//rajankz::temp
+			$attachment['uploadDir']=$model->actsAs['Uploader.Attachment']['file']['uploadDir'];
 			$data = array();
 
 			// Not a form upload, so lets treat it as an import

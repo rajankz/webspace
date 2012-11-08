@@ -289,4 +289,4 @@ Cache::config('_cake_model_', array(
  */ 
     Configure::write('CAS.hostname', 'login.umd.edu'); //CAS server IP address 
     Configure::write('CAS.port', 443); //CAS server listening port 
-    Configure::write('CAS.uri', 'cas/login'); //CAS server service 
+    Configure::write('CAS.uri', 'cas/'); //CAS server service 

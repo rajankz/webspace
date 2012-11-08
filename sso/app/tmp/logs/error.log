@@ -332,3 +332,1505 @@
 #3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-11-01 15:39:04 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(40): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 15:54:37 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 42]
+2012-11-01 15:54:37 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 42, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 42, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 15:56:41 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 45]
+2012-11-01 15:56:41 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 45, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 45, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 15:56:44 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 45]
+2012-11-01 15:56:44 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 45, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 45, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 15:59:17 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 15:59:17 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 15:59:25 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 15:59:25 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 15:59:47 Error: Fatal Error (1): Call to undefined method UsersController::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 15:59:47 Error: [FatalErrorException] Call to undefined method UsersController::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:09:48 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:09:48 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:09:50 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:09:50 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:02 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:02 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:06 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:06 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:14 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:14 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:16 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:16 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:18 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:18 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:10:22 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:10:22 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:17:01 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:17:01 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:18:57 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 16:43:20 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:43:20 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:43:27 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:43:27 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:43:34 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:43:34 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:43:45 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:43:45 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:43:50 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-01 16:43:50 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 16:43:55 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 16:53:19 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:07 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:10 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:11 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:11 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:12 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:13 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:13 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:19 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:00:41 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:03:16 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:13:45 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(41): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 17:15:21 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 36]
+2012-11-01 17:15:21 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 17:15:23 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 36]
+2012-11-01 17:15:23 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 17:16:08 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 36]
+2012-11-01 17:16:08 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 17:16:16 Error: Fatal Error (64): Can't use function return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 36]
+2012-11-01 17:16:16 Error: [FatalErrorException] Can't use function return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use funct...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 18:15:41 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(43): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:16:14 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(44): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:16:27 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(44): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:16:35 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(44): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:17:06 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(44): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:17:15 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 39]
+2012-11-01 18:17:15 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 39, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 39, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 18:17:20 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(44): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:00 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:10 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:30 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:38 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:46 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:19:58 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 18:20:03 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(45): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-01 19:41:24 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 49]
+2012-11-01 19:41:24 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 49, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 49, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-01 20:48:36 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-01 20:48:36 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-05 14:45:51 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1150): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(77): phpCAS::isAuthenticated()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(36): CasAuthComponent->logout()
+#4 [internal function]: UsersController->logout()
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-11-05 17:34:11 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1150): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(77): phpCAS::isAuthenticated()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(36): CasAuthComponent->logout()
+#4 [internal function]: UsersController->logout()
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-11-05 17:37:14 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1150): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(77): phpCAS::isAuthenticated()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(36): CasAuthComponent->logout()
+#4 [internal function]: UsersController->logout()
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-11-05 17:38:19 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1150): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(77): phpCAS::isAuthenticated()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(36): CasAuthComponent->logout()
+#4 [internal function]: UsersController->logout()
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-11-06 18:04:56 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:04:56 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:05:18 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:05:18 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:05:40 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:05:40 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:07:15 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:07:15 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:07:18 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:07:18 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:09:13 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:09:13 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-06 18:09:54 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 53]
+2012-11-06 18:09:54 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 53, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 19:37:41 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-07 19:37:41 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 19:37:57 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-07 19:37:57 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 19:37:59 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-07 19:37:59 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 19:38:17 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(48): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-07 19:48:00 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(50): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-07 19:50:31 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(50): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-08 01:34:47 Error: Fatal Error (1): Call to a member function user() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 01:34:47 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 01:35:08 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 01:35:08 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 01:35:19 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 01:35:19 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 01:35:24 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 01:35:24 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 02:32:54 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 02:32:54 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 02:32:56 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 02:32:56 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 02:32:56 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 37]
+2012-11-08 02:32:56 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 02:35:30 Error: [MissingPluginException] Plugin Cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('Cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('Cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'Cas')
+#3 [internal function]: App::load('CasComponent')
+#4 [internal function]: spl_autoload_call('CasComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('CasComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Cas.Cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 02:36:42 Error: [MissingPluginException] Plugin Cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('Cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('Cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'Cas')
+#3 [internal function]: App::load('CasComponent')
+#4 [internal function]: spl_autoload_call('CasComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('CasComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Cas.Cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:09:32 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'cas')
+#3 [internal function]: App::load('casComponent')
+#4 [internal function]: spl_autoload_call('casComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('casComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas.cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:09:54 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(24): CakePlugin::load('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(560): include('/Users/raj/Site...')
+#2 [internal function]: App::load('AppController')
+#3 /Users/raj/Sites/webspace/sso/app/Controller/UsersController.php(3): spl_autoload_call('AppController')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(560): include('/Users/raj/Site...')
+#5 [internal function]: App::load('UsersController')
+#6 [internal function]: spl_autoload_call('UsersController')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(265): class_exists('UsersController')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(234): Dispatcher->_loadController(Object(CakeRequest))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(152): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:11:00 Error: [MissingPluginException] Plugin CAS could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('CAS')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('CAS')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'CAS')
+#3 [internal function]: App::load('CASComponent')
+#4 [internal function]: spl_autoload_call('CASComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('CASComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('CAS.CAS', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:13:11 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'cas')
+#3 [internal function]: App::load('casComponent')
+#4 [internal function]: spl_autoload_call('casComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('casComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas.cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:13:27 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'cas')
+#3 [internal function]: App::load('casComponent')
+#4 [internal function]: spl_autoload_call('casComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('casComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas.cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:13:28 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'cas')
+#3 [internal function]: App::load('casComponent')
+#4 [internal function]: spl_autoload_call('casComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('casComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas.cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:13:29 Error: [MissingPluginException] Plugin cas could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(364): CakePlugin::path('cas')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(225): App::pluginPath('cas')
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'cas')
+#3 [internal function]: App::load('casComponent')
+#4 [internal function]: spl_autoload_call('casComponent')
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(99): class_exists('casComponent')
+#6 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas.cas', Array)
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-08 03:14:16 Error: [MissingComponentException] Component class casComponent could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('cas', Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(UsersController))
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-08 03:14:32 Error: Fatal Error (1): Class 'phpCAS' not found in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 35]
+2012-11-08 03:14:32 Error: [FatalErrorException] Class 'phpCAS' not found
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 35, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'phpCAS' ...', '/Users/raj/Site...', 35, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:15:45 Error: Fatal Error (1): Call to undefined method CasComponent::__setDefaults() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 64]
+2012-11-08 03:15:45 Error: [FatalErrorException] Call to undefined method CasComponent::__setDefaults()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:16:25 Error: Fatal Error (1): Call to undefined method CasComponent::__setDefaults() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 64]
+2012-11-08 03:16:25 Error: [FatalErrorException] Call to undefined method CasComponent::__setDefaults()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:16:26 Error: Fatal Error (1): Call to undefined method CasComponent::__setDefaults() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 64]
+2012-11-08 03:16:26 Error: [FatalErrorException] Call to undefined method CasComponent::__setDefaults()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:16:28 Error: Fatal Error (1): Call to undefined method CasComponent::__setDefaults() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 64]
+2012-11-08 03:16:28 Error: [FatalErrorException] Call to undefined method CasComponent::__setDefaults()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 64, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:18:54 Error: Fatal Error (1): Call to undefined method CasComponent::hashPasswords() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 69]
+2012-11-08 03:18:54 Error: [FatalErrorException] Call to undefined method CasComponent::hashPasswords()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 69, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 69, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 03:27:18 Error: Fatal Error (1): Call to undefined method CasComponent::passwords() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasComponent.php, line 69]
+2012-11-08 03:27:18 Error: [FatalErrorException] Call to undefined method CasComponent::passwords()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 69, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 69, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 04:52:30 Error: [CAS_AuthenticationException] 
+#0 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1221): CAS_Client->validateCAS20('https://login.u...', '', NULL)
+#1 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS/Client.php(1080): CAS_Client->isAuthenticated()
+#2 /Users/raj/Sites/webspace/sso/app/Vendor/CAS/CAS.php(1100): CAS_Client->forceAuthentication()
+#3 /Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php(57): phpCAS::forceAuthentication()
+#4 [internal function]: CasAuthComponent->startup(Object(UsersController))
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-08 04:55:45 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 59]
+2012-11-08 04:55:45 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 04:56:03 Error: Fatal Error (1): Call to undefined method CasAuthComponent::_getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 59]
+2012-11-08 04:56:03 Error: [FatalErrorException] Call to undefined method CasAuthComponent::_getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 04:57:44 Error: Fatal Error (1): Call to undefined method CasAuthComponent::_getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 59]
+2012-11-08 04:57:44 Error: [FatalErrorException] Call to undefined method CasAuthComponent::_getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 04:57:49 Error: Fatal Error (1): Call to undefined method CasAuthComponent::getModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 59]
+2012-11-08 04:57:49 Error: [FatalErrorException] Call to undefined method CasAuthComponent::getModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 59, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:03:11 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 19]
+2012-11-08 05:03:11 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:17:29 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 19]
+2012-11-08 05:17:29 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:17:31 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 19]
+2012-11-08 05:17:31 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 19, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:19:31 Error: Fatal Error (1): Call to a member function user() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 47]
+2012-11-08 05:19:31 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 47, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 47, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:20:13 Error: Fatal Error (1): Call to a member function logout() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 41]
+2012-11-08 05:20:13 Error: [FatalErrorException] Call to a member function logout() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 05:21:14 Error: Fatal Error (1): Call to a member function logout() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 41]
+2012-11-08 05:21:14 Error: [FatalErrorException] Call to a member function logout() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 06:04:39 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-08 06:04:39 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 06:05:09 Error: Fatal Error (1): Call to a member function user() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 43]
+2012-11-08 06:05:09 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 43, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 43, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 06:17:54 Error: Fatal Error (1): Call to a member function logout() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 41]
+2012-11-08 06:17:54 Error: [FatalErrorException] Call to a member function logout() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 41, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 17:38:01 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 100]
+2012-11-08 17:38:01 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 100, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 100, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 17:45:53 Error: Fatal Error (4): syntax error, unexpected T_EXIT in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 31]
+2012-11-08 17:45:53 Error: [FatalErrorException] syntax error, unexpected T_EXIT
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 31, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 31, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 17:54:03 Error: Fatal Error (4): syntax error, unexpected '<' in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 20]
+2012-11-08 17:54:03 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 20, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 20, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:07:15 Error: Fatal Error (1): Call to undefined function isAdmin() in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 352]
+2012-11-08 18:07:15 Error: [FatalErrorException] Call to undefined function isAdmin()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 352)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:07:57 Error: Fatal Error (1): Call to undefined method View::isAdmin() in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 352]
+2012-11-08 18:07:57 Error: [FatalErrorException] Call to undefined method View::isAdmin()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 352)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:08:15 Error: [MissingHelperException] Helper class CasAuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('CasAuth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('CasAuth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('CasAuth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:23 Error: [MissingHelperException] Helper class CasAuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('CasAuth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('CasAuth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('CasAuth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:25 Error: [MissingHelperException] Helper class CasAuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('CasAuth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('CasAuth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('CasAuth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:34 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 352]
+2012-11-08 18:09:34 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 352)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 352, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 352, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:09:38 Error: [MissingHelperException] Helper class CasAuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('CasAuth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('CasAuth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('CasAuth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:47 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:49 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:50 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:50 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:50 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:53 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:09:54 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('Auth')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('Auth')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('Auth')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:10:02 Error: Fatal Error (1): Call to undefined method View::user() in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 352]
+2012-11-08 18:10:02 Error: [FatalErrorException] Call to undefined method View::user()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 352)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 352, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:10:08 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 352]
+2012-11-08 18:10:08 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 352)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 352, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 352, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:10:13 Error: [MissingHelperException] Helper class UserHelper could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/HelperCollection.php(62): HelperCollection->load('User')
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(812): HelperCollection->__isset('User')
+#2 /Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp(352): View->__get('User')
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#5 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(424): View->_render('/Users/raj/Site...', Array)
+#6 /Users/raj/Sites/webspace/sso/app/View/Worksheet/admin_add_edit.ctp(4): View->element('addEditWorkshee...')
+#7 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(920): include('/Users/raj/Site...')
+#8 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(883): View->_evaluate('/Users/raj/Site...', Array)
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(475): View->_render('/Users/raj/Site...')
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:13:41 Error: Fatal Error (1): Call to undefined method CasAuthComponent::loadModel() in [/Users/raj/Sites/webspace/sso/app/Controller/Component/CasAuthComponent.php, line 62]
+2012-11-08 18:13:41 Error: [FatalErrorException] Call to undefined method CasAuthComponent::loadModel()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 62, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 62, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:18:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:18:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:21:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:22:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:22:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:22:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.id' in 'field list'
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Users`....', Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Users`....', Array, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Users`....', false)
+#4 /Users/raj/Sites/webspace/sso/lib/Cake/Model/Model.php(2631): DboSource->read(Object(User), Array)
+#5 /Users/raj/Sites/webspace/sso/app/Model/AppModel.php(66): Model->find('list', Array)
+#6 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(57): AppModel->find('list', Array)
+#7 /Users/raj/Sites/webspace/sso/app/Controller/AppController.php(121): AppController->loadModelData()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /Users/raj/Sites/webspace/sso/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#12 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-08 18:23:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/AppController.php, line 57]
+2012-11-08 18:23:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 57, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 57, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-08 18:23:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 108]
+2012-11-08 18:23:31 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 108)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 108, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 108, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -300,7 +300,7 @@ class WorksheetsController extends AppController {
 					$this->Attachment->id=$oneAttachment['id'];
 				}
 					
-				$oneAttachment['order']=$attachmentCounter;
+				$oneAttachment['order']=$attachmentCounter++;
 				$oneAttachment['worksheetId']=$this->Worksheet->id;
 								
 				if(!($this->Attachment->save($oneAttachment))){
