@@ -22,7 +22,9 @@
 		if(!empty($this->viewVars['reviews']['1']))
 			$reviewDone=($this->viewVars['reviews']['1']['statusCode']>2)?true:false;
 		echo $this->Form->input('Review.firstReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['1'])?'':$this->viewVars['reviews']['1']['reviewerId']))); 			
-	if($reviewDone){?>
+	if($reviewDone){
+		echo $this->Form->input('Review.firstReviewerId',array('type'=>'hidden', 'value'=>$this->viewVars['reviews']['1']['reviewerId']));
+	?>
 		<div style="margin-bottom:0">
 			<span>Reviewer Decision Code: <?php echo $this->viewVars['reviews']['1']['letterCode']; ?> </span><br />
 			<span>Reviewer Comments: <br /><pre style="max-height: 60px;overflow-y: scroll;padding:5px 10px;border: 0;"><?= $this->viewVars['reviews']['1']['review'] ?></pre> </span>
@@ -38,7 +40,9 @@
 		if(!empty($this->viewVars['reviews']['2']))
 			$reviewDone=($this->viewVars['reviews']['2']['statusCode']>2)?true:false;
 		echo $this->Form->input('Review.secondReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['2'])?'':$this->viewVars['reviews']['2']['reviewerId']))); 			
-	if($reviewDone){?>
+	if($reviewDone){
+		echo $this->Form->input('Review.secondReviewerId',array('type'=>'hidden', 'value'=>$this->viewVars['reviews']['2']['reviewerId']));
+	?>
 		<div style="margin-bottom:0">
 			<span>Reviewer Decision Code: <?php echo $this->viewVars['reviews']['2']['letterCode']; ?> </span><br />
 			<span>Reviewer Comments: <br /><pre style="max-height: 60px;overflow-y: scroll;padding:5px 10px;border: 0;"><?= $this->viewVars['reviews']['2']['review'] ?></pre> </span>
@@ -56,7 +60,9 @@
 			$reviewDone=(!empty($statusCode) && ($statusCode>2))?true:false;	
 		}
 		echo $this->Form->input('Review.thirdReviewerId',array('disabled'=>$reviewDone,'type'=>'select','options'=>$reviewerOptions, 'label'=>false,'div'=>false,'empty'=>true,'selected'=>(empty($this->viewVars['reviews']['3'])?'':$this->viewVars['reviews']['3']['reviewerId']))); 			
-	if($reviewDone){?>
+	if($reviewDone){
+		echo $this->Form->input('Review.thirdReviewerId',array('type'=>'hidden', 'value'=>$this->viewVars['reviews']['3']['reviewerId']));
+	?>
 		<div style="margin-bottom:0">
 			<span>Reviewer Decision Code: <?php echo $this->viewVars['reviews']['3']['letterCode']; ?> </span><br />
 			<span>Reviewer Comments: <br /><pre style="max-height: 60px;overflow-y: scroll;padding:5px 10px;border: 0;"><?= $this->viewVars['reviews']['3']['review'] ?></pre> </span>

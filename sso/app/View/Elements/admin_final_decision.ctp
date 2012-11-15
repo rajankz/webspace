@@ -2,7 +2,7 @@
 	<h3>Final Decision</h3>
 	<?php 
 		$disabled=true;
-		if($worksheet['Worksheet']['statusId']=='6')
+		if($worksheet['Worksheet']['statusId']=='7')
 			$disabled=false;
 	?>	
 		<div class="input text reviewerComments">

@@ -329,7 +329,7 @@
 		echo $this->element('admin_review_controls');
 		?></div><?php
 		
-	if($worksheet['Worksheet']['statusId']>='6'){
+	if($worksheet['Worksheet']['statusId']>='7'){
 		echo $this->element('admin_final_decision');
 	}	
 		
@@ -346,10 +346,10 @@
 	
 	//debug($this->Session->request);exit;
 	if(!empty($this->Session->request->params['admin'])){
-		if($worksheet['Worksheet']['statusId']<'6'){
+		if($worksheet['Worksheet']['statusId']<'7'){
 			echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit floatLeft','onclick'=>'return validateForm();'));
 		}
-		else if($worksheet['Worksheet']['statusId']=='6')
+		else if($worksheet['Worksheet']['statusId']=='7')
 			echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit floatLeft'));
 	}else if($this->Session->request->params['creator']){
 		if($worksheet['Worksheet']['statusId']<'2')

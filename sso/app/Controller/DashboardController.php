@@ -45,7 +45,7 @@ class DashboardController extends AppController{
 		$this->redirect(array('controller'=>'dashboard','action'=>'reviews','reviewer'=>true));
 	}
 	function reviewer_reviews(){
-		$this->redirect(array('controller'=>'reviews', 'action'=>'index'));
+		$this->redirect(array('controller'=>'reviews', 'action'=>'index','reviewer'=>true));
 	}
 	
 }

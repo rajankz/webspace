@@ -5,6 +5,7 @@
  * Time: 11:47 AM
  */
 class ReviewsController extends AppController {
+	
 	var $name = 'Review';
 	var $useTable = 'reviews';
 	
@@ -18,16 +19,19 @@ class ReviewsController extends AppController {
 		$data = $this->paginate('Review');
 		$this->set('reviews',$data);
 	}
-
+	
 	function reviewer_index(){
+	//debug($this);exit;
+	
 		$this->paginate = null;
 		$this->paginate = array(
 			'limit' => 10,
 			'order' => array('Review.worksheetId' => 'asc'),
-			'conditions'=>array('Review.invalidReview'=>false,'statusCode >'=>'1','reviewerId'=>$this->CasAuth->user('id'))
+			'conditions'=>array('Review.invalidReview'=>false,'statusCode >'=>'1','reviewerId'=>$this->Auth->user('id'))
 		);
-		$data = $this->paginate('Review');//,
+		$data = $this->paginate('Review');
 		$this->set('reviews',$data);
+	
 	}
 	
 	function reviewer_submit(){
@@ -64,14 +68,12 @@ class ReviewsController extends AppController {
 	
 	
 	private function assignToNextReviewer($worksheetId,$reviewOrder){
-		
 		Classregistry::init('Worksheet')->id = $worksheetId;
 		if($reviewOrder=='4'){//third review is also done
-			Classregistry::init('Worksheet')->saveField('statusId','6');
+			Classregistry::init('Worksheet')->saveField('statusId','7');
 			Classregistry::init('Worksheet')->saveField('assignedToId',null);
 			return;
 		}
-		
 		//blindly assignto 2nd reviewer...will get overwritten later appropriately
 		Classregistry::init('Worksheet')->saveField('statusId','4');
 		if($reviewOrder == '3'){
@@ -80,19 +82,29 @@ class ReviewsController extends AppController {
 			'fields'=>array('reviewOrder','letterCode'),
 			'conditions'=>array('worksheetId'=>$worksheetId,'invalidReview'=>false)
 			));
+			
 			if($firstTwoReviews['1']==$firstTwoReviews['2']){
-				Classregistry::init('Worksheet')->saveField('statusId','6');
+				Classregistry::init('Worksheet')->saveField('statusId','7');
 				Classregistry::init('Worksheet')->saveField('assignedToId',null);
 				//no need to assign to third reviewer
-				// make the worksheet statusId as '6'
+				// make the worksheet statusId as '7'
 				return;
 			}else{
-				//worksheet pending third review
-				Classregistry::init('Worksheet')->saveField('statusId','5');
+				//check if third reviewer is selected or not
+				$this->loadModel('Review');
+				if($this->Review->find('first',
+				array('conditions'=>array('worksheetId'=>$worksheetId,'reviewOrder'=>'3'))))
+				{			
+					//assign to third reviewer - worksheet pending third review
+					Classregistry::init('Worksheet')->saveField('statusId','6');
+				}
+				else{
+					//third reviewer not selected
+					Classregistry::init('Worksheet')->saveField('statusId','5');
+				}
 				//assign to third reviewer
 			}
 		}
-	
 		$nextReview = $this->Review->find('first',array('conditions' => array('worksheetId'=>$worksheetId,'invalidReview'=>false,'statusCode'=>'1','reviewOrder'=>$reviewOrder)));
 		if($nextReview){
 		$this->Review->id = $nextReview['Review']['id'];
@@ -104,10 +116,7 @@ class ReviewsController extends AppController {
 		}else{
 			Classregistry::init('Worksheet')->saveField('assignedToId',null);
 		}
-		
 	}
-	
-
 
 }
 ?>
