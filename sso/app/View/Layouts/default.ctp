@@ -54,7 +54,7 @@
 		echo $this->Html->css('fonts');
 		//echo $this->Html->css('bootstrap');
 		echo $this->Html->css('sso');
-        echo '<link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-1020px.css" />';
+		echo $this->Html->css('xhtml-1020px');
         echo $this->Html->script('jquery-1.7.2.min.js');
         echo $this->Html->script('jquery.validate.min.js');
         echo $this->Html->script('additional-methods.min.js');

@@ -33,7 +33,7 @@ foreach($users as $user)
 
 <div id="userControls" class="actionLink">  
 	<span class="floatLeft">  
-		<?php echo $this->Html->link('Add User', array('controller'=>'users','action'=>'register')); ?>  
+		<?php echo $this->Html->link('Add User', array('controller'=>'users','action'=>'addUser')); ?>  
 	</span>
 	<div class="clearBoth"></div>
 </div>

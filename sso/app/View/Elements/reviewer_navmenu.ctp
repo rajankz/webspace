@@ -7,7 +7,7 @@
     <div class="floatRight">
     <div class="horizontalSeperator"></div>
     
-    <?php   echo $this->Html->link('preferences', array('controller'=>'users','action' => 'settings')); ?>
+    <?php   //echo $this->Html->link('preferences', array('controller'=>'users','action' => 'settings')); ?>
     <?php   echo $this->Html->link('logout', array('controller'=>'users','action' => 'logout','reviewer'=>false)); ?>
     </div>
     

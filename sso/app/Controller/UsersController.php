@@ -79,6 +79,7 @@ class UsersController extends AppController{
 		$this->redirect(array('controller'=>'dashboard','action'=>'userEdit','userId'=>$this->User->id,'username'=>$this->data['User']['username']));
 
 	}
+    function admin_addUser(){}
     function admin_register() {
     	//debug($this->data);exit;
         $this->loadModel('Roles');

@@ -20,7 +20,7 @@ App::import('Component', 'Auth');
  */  
 class CasAuthComponent extends AuthComponent { 
     
-    var $use = array('User');
+    //var $use = array('User');
     
      function initialize(&$controller) {
 	     parent::initialize($controller);
@@ -61,8 +61,10 @@ class CasAuthComponent extends AuthComponent {
             //$model =& $this->getModel(); 
             $controller->loadModel('User');
             $model = $controller->User;
-            $controller->request->data['User']['username'] = phpCAS::getUser(); 
-            $controller->request->data['User']['password'] ='a'; 
+            //$controller->request->data['User']['username'] = phpCAS::getUser(); 
+            //$controller->request->data['User']['password'] ='a'; 
+            $this->request->data['User']['username'] = phpCAS::getUser(); 
+            $this->request->data['User']['password'] ='a'; 
             
             //debug($this);exit;
             //$this->request->data->User['username']=phpCAS::getUser();

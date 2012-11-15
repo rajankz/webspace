@@ -196,7 +196,7 @@
 	<div style="float: left;margin: 0;padding: 0;">
 	<div style="text-align: right;display: block;margin: 0;padding: 0;">
 	<?php echo $this->Form->input('Worksheet.needCreditsAt275', array('label'=>'Credits at a 2.75 GPA','maxlength'=>'3','div'=>array('class'=>'input text smallText'), 'value'=>$worksheet['Worksheet']['needCreditsAt275']));?>
-	<?php echo $this->Form->input('Worksheet.needCreditsAt25', array('label'=>'Credits at a 2.5 GPA','maxlength'=>'3','div'=>array('class'=>'input text smallText'), 'value'=>$worksheet['Worksheet']['needCreditsAt25']));?>
+	<?php echo $this->Form->input('Worksheet.needCreditsAt25', array('label'=>'Credits at a 2.50 GPA','maxlength'=>'3','div'=>array('class'=>'input text smallText'), 'value'=>$worksheet['Worksheet']['needCreditsAt25']));?>
 	<?php echo $this->Form->input('Worksheet.needCreditsAt225', array('label'=>'Credits at a 2.25 GPA','maxlength'=>'3','div'=>array('class'=>'input text smallText'), 'value'=>$worksheet['Worksheet']['needCreditsAt225']));?>
 	</div>
 	</div><div style="clear: both;margin: 0;padding: 0;"></div>
@@ -216,9 +216,9 @@
 	
 	<?php echo $this->Form->input('Worksheet.repeatingCoursesOffSem', array('type'=>'checkbox','label'=>'Repeating courses in Summer or Winter term', 'checked'=>$worksheet['Worksheet']['repeatingCoursesOffSem'])); ?>
 	
-	<?php echo $this->Form->input('Worksheet.dismissedLastSem', array('type'=>'checkbox','label'=>'Dismissed last semester', 'checked'=>$worksheet['Worksheet']['dismissedLastSem'])); ?>
+	<?php echo $this->Form->input('Worksheet.dismissedLastSem', array('type'=>'checkbox','label'=>'Dismissed from last semester', 'checked'=>$worksheet['Worksheet']['dismissedLastSem'])); ?>
 	
-	<?php echo $this->Form->input('Worksheet.withdrewLastSem', array('type'=>'checkbox','label'=>'Withdrew last semester', 'checked'=>$worksheet['Worksheet']['withdrewLastSem'])); ?>
+	<?php echo $this->Form->input('Worksheet.withdrewLastSem', array('type'=>'checkbox','label'=>'Withdrew from last semester', 'checked'=>$worksheet['Worksheet']['withdrewLastSem'])); ?>
 	
 	<?php echo $this->Form->input('Worksheet.registeredForOffSem', array('type'=>'checkbox','label'=>'Registered for Summer or Winter term', 'checked'=>$worksheet['Worksheet']['registeredForOffSem'])); ?>
 	

@@ -1,0 +1,74 @@
+/*
+** UMD Frame Rules
+** Release 0.1
+** Last Updated on 2008-07-10
+*/
+	body {
+		margin: 0;
+		padding: 0;
+		background: #000 url(http://www.umd.edu/images/site/body-bg.gif) repeat-x top left;
+		text-align: center; /* IE compatibility */
+	}
+
+	#umd-frame {
+		background: transparent url(http://www.umd.edu/wrapper/images/header-background.gif) no-repeat top left;
+		position: relative;
+		width: 1020px;
+		padding: 0;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	#umd-frame-header a img { border: 0; }
+
+	#umd-frame-logo {
+		float: left;
+		margin-top: 12px;
+	}
+
+	#umd-frame-header-search {
+		float: right;
+		position: relative;
+		margin: 0;
+		padding-top: 40px;
+	}
+
+	#umd-frame-header-search input.text {
+		position: absolute;
+		top: 20px;
+		right: 76px;
+		width: 210px;
+		height: 18px; /* 18px for XHTML; 22px otherwise */
+		border: 1px solid #A4A4A4;
+	}
+
+	#umd-frame-header-search input.button {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+
+	#umd-frame-header-search .radio {
+		text-align: right;
+		padding-top: 10px;
+		font-size: 10px;
+		color: #FFF;
+	}
+
+	#umd-date-weather {
+		float: right;
+		clear: right;
+		padding-top: 10px;
+		text-align: right;
+		color: #FFF;
+		font-size: .9em;
+	}
+
+	#umd-weather { font-weight: bold; }
+
+	#umd-frame-header-end {
+		clear: both;
+		height: 8px;
+	}
+    
+    iframe {display:all}

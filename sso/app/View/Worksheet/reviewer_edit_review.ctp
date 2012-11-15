@@ -85,9 +85,9 @@
 		if($worksheetData['repeatingCoursesOffSem'])
 	echo '<tr><td colspan="2" class="red">- Repeating courses in summer or winter term</td></tr>';
 		if($worksheetData['dismissedLastSem'])
-	echo '<tr><td colspan="2" class="red">- Dismissed last semester</td></tr>';
+	echo '<tr><td colspan="2" class="red">- Dismissed from last semester</td></tr>';
 		if($worksheetData['withdrewLastSem'])
-	echo '<tr><td colspan="2" class="red">- Withdrew last semester</td></tr>';
+	echo '<tr><td colspan="2" class="red">- Withdrew from last semester</td></tr>';
 		if($worksheetData['registeredForOffSem'])
 	echo '<tr><td colspan="2" class="red">- Registered for summer or winter term</td></tr>';
 	?>
