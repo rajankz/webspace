@@ -1,0 +1,15 @@
+.span21{border:1px solid pink;}
+.span81{border:1px solid blue;}
+ul li{list-style: none;}
+input[type="text"]{
+	padding:5px 3px;
+	height: auto;
+	border-radius: 2px;
+	min-width: 400px;
+	margin-bottom: 15px;
+}
+textarea{
+	width:auto;
+	margin-bottom: 15px;
+}
+.error{color:red;}
