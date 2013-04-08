@@ -102,11 +102,11 @@ class AppController extends Controller {
 	}
 
     public function beforeFilter(){
-    	
+    	parent::beforeFilter();
         $this->Auth->allow('login');
         
-        $this->Auth->authorize = array('Controller');
-        $this->Auth->authenticate = array(
+        $this->Auth->Authorize = array('Controller');
+        $this->Auth->Authenticate = array(
             'all' => array(
                 'scope' => array('User.is_active' => 1)
             ),
@@ -120,14 +120,23 @@ class AppController extends Controller {
     
     
     function isAdmin(){
+    	//debug($this->params['prefix']);
+    	//debug($this->Auth->user('role'));
 		if($this->params['prefix']=='admin' && ($this->Auth->user('role')=='admin')){
             return true;
         }    
         return false;
     }
-
+    
+    /*
     function isAuthorized($user){
-    	//debug($user);
+	    return $this->isCasAuthorized($user);
+    }
+    */
+    function isAuthorized($user){
+    	//debug($user);exit;
+    	if($user['is_active']==0)
+    		return false;
         if($this->params['prefix']=='admin' && ($user['role']!='admin')){
             return false;
         }

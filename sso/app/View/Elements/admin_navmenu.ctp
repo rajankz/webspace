@@ -8,6 +8,8 @@
     <?php echo $this->Html->link('Reviews', array('controller'=>'dashboard', 'action'=>'admin_reviews','admin'=>true)); ?>
     
     <?php echo $this->Html->link('Stats', array('controller'=>'dashboard', 'action'=>'admin_stats','admin'=>true)); ?>
+   
+    <?php echo $this->Html->link('Settings', array('controller'=>'dashboard', 'action'=>'admin_settings','admin'=>true)); ?>
     
     </div>
     

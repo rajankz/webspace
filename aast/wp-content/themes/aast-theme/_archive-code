@@ -1,0 +1,23 @@
+<?php query_posts('category_name=events');?>
+<?php if(have_posts()): ?>
+<table id="events-table">
+<tbody>
+<?php while(have_posts()): the_post(); ?>
+<tr>
+	<td class="image">
+	<div class="event-date">
+	<div class="event-day"><?=the_time('j')?></div>
+	<div class="event-month"><?=the_time('F')?></div>
+	</div>
+	</td>
+	<td class="event-title">
+		<a href=<?php the_permalink() ?> > <?php the_title() ?></a>
+	</td>
+</tr>
+
+
+<?php endwhile; ?>		
+</tbody></table>
+
+<?php endif; ?>
+<?php //include('events-calendar.php') ?>

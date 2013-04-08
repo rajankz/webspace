@@ -1,0 +1,222 @@
+University of Maryland <http://www.umd.edu>
+	
+)	-	)
+
+Advisor Services
+HOME <http://www.sis.umd.edu/catt/> 	ADVISE ON THE WEB <records> 	DEGREE
+NAVIGATOR </advise/dnRedirect> 	SCHEDULE OF CLASSES
+<http://www.sis.umd.edu/bin/soc?timesearch=true> 	SIS
+<http://um3270.umd.edu/um3270/> 	SEATS
+<http://www.sis.umd.edu/bin/seats> 	VENUS
+<http://www.sis.umd.edu/bin/venus>
+
+
+
+Contact Us <mailto:advisefeedback@umd.edu?subject=AoW Issue&body=1.
+Describe IN DETAILS all your steps. %0D%0A For example: I logged into
+Advise on Web, went to the Search, put Search Criteria (Zip Code =
+20742) and Report Fields (Major), Run, and received an error message.
+%0D%0A %0D%0A 2. Please, attach the screenshot of the Error page. %0D%0A
+To do the screen shot do 'Ctrl' + 'Alt' + 'Print Screen' buttons
+simultaneously. Then in email body do 'Paste' or 'Ctrl' + 'V'. >| Logout
+</advise/advTrans?logout=logout>
+
+- 	- 	-
+*ADVISE on the Web*
+
+Records
+<javascript:document.forms[0].action='/advise/records';document.forms[0].submit();>Notes
+<javascript:document.forms[0].action='/advise/notes';document.forms[0].submit();>Search
+<javascript:document.forms[0].action='/advise/baseSearch';document.forms[0].submit();>
+
+	
+ Transcript
+<javascript:document.forms[0].action='/advise/advTrans';document.forms[0].submit();>Personal
+<javascript:document.forms[0].action='/advise/personal';document.forms[0].submit();>Academic
+<javascript:document.forms[0].action='/advise/academic';document.forms[0].submit();>Courses
+<javascript:document.forms[0].action='/advise/umCourses';document.forms[0].submit();>Transfer
+<javascript:document.forms[0].action='/advise/transfer';document.forms[0].submit();> 
+
+	
+
+
+Search Student: 			
+
+Printable Version <javascript:PrintThisPage();>
+
+*Name: * Chung, Samuel
+*UID: * 108399266
+
+	
+
+
+*UNOFFICIAL TRANSCRIPT + FOR ADVISING PURPOSES ONLY*
+
+
+
+E-Mail: schung8@terpmail.umd.edu
+CORE Program
+Reenrollment Applicant
+Sociology                            Undergraduate Degree Seeking
+DATE: 01/10/13                      Current Status: Registered Fall 2012
+
+Fundamental Requirement Satisfied Math: MATH SAT; English: ENGL Course
+
+*Transcripts received from the following institutions:*
+
+*Ohio State University                    on 06/21/07*
+
+*Ohio State University                    on 01/12/07*
+
+*Montgomery College                       on 08/31/09*
+
+*** Transfer Credit Information **                   ** Equivalences ***
+
+*Ohio State University*
+    0509  FUNDAMENTALS OF CHEM I       C     3.34   Dup. Credit
+          CALC & ANALYT GEOM I         B-    3.34               FM <http://www.tce.umd.edu/codes.html>
+                                                    FOOTNOTES: (17,NS <http://www.tce.umd.edu/footnotes.html>)
+          GEN PSYC                     C     3.34   PSYC100     SB <http://www.tce.umd.edu/codes.html>
+          EXPLORATN SURVEY             A     0.67               L1 <http://www.tce.umd.edu/codes.html>
+    0601  FUNDAMENTALS OF CHEM I       D+    0.00   No Credit
+          CALC & ANALYT GEOM II        C-    0.00   No Credit
+          INTRO SOCIOLOGY              C+    3.34   SOCY100     SB <http://www.tce.umd.edu/codes.html>
+    0603  INTRO BIOLOGY I              C+    3.34               LL <http://www.tce.umd.edu/codes.html>
+          FIRST YEAR WRITING CRS       C-    0.00   No Credit
+          INTRO COMPARATIVE POL        C+    3.34   GVPT280
+*Acceptable UG Inst. Credits:                20.00*
+*Applicable UG Inst. Credits:                17.00*
+
+*Montgomery College*
+    0608  ITALIAN RENAISS ART          C     3.00               HA <http://www.tce.umd.edu/codes.html>
+          PRIN OF BIOLOGY I            D     4.00   Dup. Credit
+          WOMEN IN LITERATURE          A     3.00   ENGL250     HL <http://www.tce.umd.edu/codes.html>  D
+          HIST OF SPORT IN AMERI       C     3.00   KNES293     SH <http://www.tce.umd.edu/codes.html>
+    0701  PRIN ECON I: MACRO           B     3.00   ECON201     SB <http://www.tce.umd.edu/codes.html>
+          LISTENING TO MUSIC           A     3.00   MUSC130     HA <http://www.tce.umd.edu/codes.html>
+          SPORT AMERICAN SOCIETY       A     3.00   KNES287     SB <http://www.tce.umd.edu/codes.html>  D
+          MEDIA APPRECIATION           A     3.00               HA <http://www.tce.umd.edu/codes.html>
+                                                    FOOTNOTES: (MH,15,17 <http://www.tce.umd.edu/footnotes.html>)
+    0808  PRIN OF ACCTG I              B     4.00   BMGT220
+          STATISTICS BUS ADM           A     3.00   BMGT230
+          PRIN ECON II: MICRO          B     3.00   ECON200     SB <http://www.tce.umd.edu/codes.html>
+          FUND/HUMAN COMMUNICATN       A     0.00   No Credit
+*Acceptable UG Inst. Credits:                35.00*
+*Applicable UG Inst. Credits:                31.00*
+
+*Total UG Credits Acceptable:                55.00*
+*Total UG Credits Applicable:                48.00*
+
+*Historic Course Information is listed in the order:
+Course, Title, Grade, Credits Attempted, Earned and Quality Points*
+
+*Fall 2007                               *
+*PRE-DENTAL HYGIENE        LETTERS & SCIENCES            *
+     BSCI106  PRIN BIOL II             D  4.00  4.00  4.00 LL
+     ENGL101  INTRO TO WRITING         W  0.00  0.00  0.00
+     MATH220  ELEM CALCULUS I          C  3.00  3.00  6.00 MS
+     PSYC353  ABNORMAL PSYCHOLOGY      C+ 3.00  3.00  6.00
+     PSYC354  CROSS-CULT PSYC          B- 3.00  3.00  9.00    D
+--- Academic Probation --- <http://www.testudo.umd.edu/probation>
+*Semester:       Attempted 13.00; Earned 13.00; GPA 1.923
+UG Cumulative:            13.00;        13.00;     1.923*
+
+*Spring 2008                             *
+*PRE-DENTAL HYGIENE        LETTERS & SCIENCES            *
+     BSCI105  PRIN BIOL I              D  4.00  4.00  4.00 LL
+     CHEM131  CHEM FUNDAMENTALS I      C  3.00  3.00  6.00
+     CHEM132  CHEM I LABORATORY        C- 1.00  1.00  2.00 XP
+     ENGL101  *Repeated Course*        C  3.00  3.00  6.00
+     MATH221  ELEM CALCULUS II         D  3.00  3.00  3.00 MS
+--- Academic Dismissal --- <http://www.testudo.umd.edu/dismissal>
+*Semester:       Attempted 14.00; Earned 14.00; GPA 1.500
+UG Cumulative:            27.00;        27.00;     1.703*
+
+*Summer I 2008                           *
+*PRE-DENTAL HYGIENE        LETTERS & SCIENCES            *
+     EDCP108B ACADEMIC SKILLS          A  1.00  1.00  4.00
+*Semester:       Attempted  1.00; Earned  1.00; GPA 4.000
+UG Cumulative:            28.00;        28.00;     1.785*
+
+*Summer II 2008                          *
+*PRE-DENTAL HYGIENE        LETTERS & SCIENCES            *
+     BSCI106  *Repeated Course*        C+ 4.00  4.00  8.00 LL
+*Semester:       Attempted  4.00; Earned  4.00; GPA 2.000
+UG Cumulative:            28.00;        28.00;     1.928*
+
+*Spring 2009                             *
+*BIOLOGICAL SCIENCES       CHEM AND LIFE SCIENCES        *
+     ARTH275  ART & ARCH OF AFRICA     B- 3.00  3.00  9.00 HA D
+     BSCI105  *Repeated Course*        D  4.00  4.00  4.00 LL
+     CHEM231  ORGANIC CHEMISTRY I      D  3.00  3.00  3.00
+     CHEM232  ORGANIC CHEM LAB I       C  1.00  1.00  2.00
+     MATH221  *Repeated Course*        B  3.00  3.00  9.00 MS
+--- Academic Probation --- <http://www.testudo.umd.edu/probation>
+*Semester:       Attempted 14.00; Earned 14.00; GPA 1.928
+UG Cumulative:            42.00;        35.00;     1.928*
+
+*Summer II 2009                          *
+*BIOLOGICAL SCIENCES       CHEM AND LIFE SCIENCES        *
+     CLAS170  GREEK&ROMAN MYTH         B+ 3.00  3.00  9.00 HL
+*Semester:       Attempted  3.00; Earned  3.00; GPA 3.000
+UG Cumulative:            45.00;        38.00;     2.000*
+
+*Fall 2009                               *
+*ECONOMICS                 BEHAVIORAL SOCIAL SCI         *
+     BMGT360  HUMAN RESOURCE MGMT      B  3.00  3.00  9.00
+     COMM472  NONVERBAL COMMUNICATION  C  3.00  3.00  6.00
+     ECON300  MTHDS ECON ANALYSIS      C- 3.00  3.00  6.00
+     ECON321  ECON STAT                A- 3.00  3.00 12.00
+*Semester:       Attempted 12.00; Earned 12.00; GPA 2.750
+UG Cumulative:            57.00;        50.00;     2.157*
+
+*Spring 2010                             *
+*ECONOMICS                 BEHAVIORAL SOCIAL SCI         *
+     AREC365  HUNGER, POP, & FOOD      C  3.00  3.00  6.00    D
+     COMM398C CRISIS COMMUNICATION     B  3.00  3.00  9.00
+     ECON325  INTERMED MACRO ANALYSIS  W  0.00  0.00  0.00
+     ECON326  INTERMED MICRO ANALYSIS  D  3.00  3.00  3.00
+*Semester:       Attempted  9.00; Earned  9.00; GPA 2.000
+UG Cumulative:            66.00;        59.00;     2.136*
+
+*Fall 2010                               *
+*ECONOMICS                 BEHAVIORAL SOCIAL SCI         *
+     COMM424  COMM IN COMPLEX ORG      C  3.00  3.00  6.00
+     ECON325  *Repeated Course*        F  3.00  0.00  0.00
+     ECON326  *Repeated Course*        F  3.00  0.00  0.00
+     ENGL393  TECHNICAL WRITING        F  3.00  0.00  0.00
+--- Academic Probation --- <http://www.testudo.umd.edu/probation>
+*Semester:       Attempted 12.00; Earned  3.00; GPA 0.500
+UG Cumulative:            78.00;        62.00;     1.884*
+
+*Spring 2012                             *
+*SOCIOLOGY                 BEHAVIORAL SOCIAL SCI         *
+     SOCY105  INTRO CNTMP SOC PRB      C  3.00  3.00  6.00 SB
+     SOCY203  SOCIOLOGICAL THRY        B  3.00  3.00  9.00
+     SOCY230  SOCIOLG SOCIAL PSY       C  3.00  3.00  6.00
+     SOCY441  SOCIAL STRAT&INEQU       C  3.00  3.00  6.00
+--- Academic Dismissal --- <http://www.testudo.umd.edu/dismissal>
+*Semester:       Attempted 12.00; Earned 12.00; GPA 2.250
+UG Cumulative:            90.00;        74.00;     1.933*
+
+*Fall 2012                               *
+*SOCIOLOGY                 BEHAVIORAL SOCIAL SCI         *
+     ENGL394  BUSINESS WRITING         C  3.00  3.00  6.00
+     SOCY201  INTRO STATISTICS         C+ 4.00  4.00  9.20
+     SOCY325  SOCIOLOGY OF GENDER      D+ 3.00  3.00  3.90    D
+--- Academic Dismissal --- <http://www.testudo.umd.edu/dismissal>
+*Semester:       Attempted 10.00; Earned 10.00; GPA 1.910
+UG Cumulative:           100.00;        84.00;     1.931*
+
+*UG Cumulative Credit: 132.00*
+*UG Cumulative GPA   : 1.931*
+
+	)
+
+
+OIT Administrative and Enterprise Applications <http://www.oit.umd.edu/aea/>
+University of Maryland
+College Park, MD 20742, USA
+Copyright © 2003 University of Maryland 	Office of Information
+Technology <http://www.oit.umd.edu>
+

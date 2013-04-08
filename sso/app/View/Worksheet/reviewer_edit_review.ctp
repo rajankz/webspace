@@ -14,8 +14,10 @@
 	<div class="reviewHeader">Prior Re-enrollment Decisions</div>
 <table class="review">
 	<tr><td class="rtAlign">Re-enroll Apps :</td><td><?= $worksheetData['numReEnrollApps']; ?></td></tr>
+	<!--
 	<tr><td class="rtAlign">Approvals :</td><td><?= $worksheetData['numApprovals']; ?></td></tr>
 	<tr><td class="rtAlign">Denials :</td><td><?= $worksheetData['numDenials']; ?></td></tr>
+	-->
 </table>
 <div class="reviewHeader">Previous Applications</div>
 <?php if(!empty($semesterData)){ ?>
@@ -140,7 +142,7 @@ switch($oneReview['statusCode']){
 	<div class="input text reviewerComments">
 	<?php echo $this->Form->label('reviewerComments'); ?><div class="clearBoth"></div>
 	<?php //debug($this);
-	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','disabled'=>$disabled)); ?>
+	echo $this->Form->textarea('Review.'.$oneReview['reviewOrder'].'.review',array('rows'=>'5','cols'=>'100','maxlength'=>'1024','disabled'=>$disabled)); ?>
 	</div>
 	<div>
 		<span class="label">Reviewer Decision Code:</span>

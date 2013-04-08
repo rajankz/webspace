@@ -13,3 +13,7 @@ textarea{
 	margin-bottom: 15px;
 }
 .error{color:red;}
+.iseriesTbl{border:1px solid #ccc;}
+.iseriesTbl thead{font-size: 1.2em;font-weight: 600;}
+.iseriesTbl tr{border-bottom:1px solid #ccc;}
+.iseriesTbl tr td{border-right:1px solid #ccc;padding:3px 5px;}

@@ -1,0 +1,7 @@
+UseUMDKrbAuth on
+UseUMDHesiodAuth on
+AuthType Basic
+AuthName WAM.UMD.EDU
+<Limit GET>
+require user rajankz
+</Limit>

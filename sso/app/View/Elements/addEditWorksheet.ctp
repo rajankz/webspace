@@ -5,6 +5,18 @@
 		return false;
 	}
 	
+	function confirmMarkIncomplete(){
+		if(confirm('Confirm Worksheet to be marked as Incomplete?'))
+			return true;
+		return false;
+	}
+	
+	$(function() {
+	   $("#datepicker").datepicker({
+	   	dateFormat: 'yy-mm-dd',
+	   });
+	 });
+	
 </script>
 <h2 class="center red"><?php if(empty($id))echo "Create"; else echo "Edit";?> Worksheet</h2>
 <?php echo $this->Form->create('Worksheet', array('action' => 'submitWorksheetForm','enctype'=>'multipart/form-data')); ?>
@@ -43,6 +55,7 @@
             <tr>
                 <td class="label alignLeft">University Id</td>
                 <td class="label alignLeft">Semester</td>
+                <td class="label alignLeft">Date</td>
             </tr>
             
             <tr>                
@@ -52,6 +65,7 @@
                 
                 <td><?php echo $this->Form->input('Worksheet.sem',array('label'=>false, 'div'=>false, 'type'=>'select', 'options'=>array($semOptions), 'selected'=>$worksheet['Worksheet']['sem'])); ?></td>
                 
+                <td><?php echo $this->Form->input('Worksheet.date',array('label'=>false, 'div'=>false,'id'=>'datepicker','type'=>'text','value'=>$worksheet['Worksheet']['date'])); ?></td>
                 
             </tr>
             <tr>
@@ -59,6 +73,10 @@
             </tr>
             <tr>
             	<td><?php echo $this->Form->input('Worksheet.applicantName',array('label'=>false, 'div'=>false,'value'=>$worksheet['Worksheet']['applicantName'], 'class'=>'fields')); ?></td>
+            </tr>
+            
+            <tr>
+            	<td><?php echo $this->Form->input('Worksheet.skipReview', array('type'=>'checkbox','label'=>'No Board Review Needed', 'checked'=>$worksheet['Worksheet']['skipReview'])); ?></td>
             </tr>
             
         </tbody>
@@ -87,10 +105,11 @@
     <h3>Prior Reenrollment Decisions</h3>
 
 	<?php echo $this->Form->input('Worksheet.numReEnrollApps', array('label'=>'Number of Reenrollment Applications ', 'value'=>$worksheet['Worksheet']['numReEnrollApps'], 'div'=>array('class'=>'smallText input text'))); ?>
-	<?php echo $this->Form->input('Worksheet.numApprovals', array('label'=>'Number of Approvals (80, 86, 8A*, 8A, 8N) ', 'value'=>$worksheet['Worksheet']['numApprovals'], 'div'=>array('class'=>'smallText input text'))); ?>
-	<?php echo $this->Form->input('Worksheet.numDenials', array('label'=>'Number of Denials (1A, 2A, 2F, 3A, 3F, 4X, 50) ', 'value'=>$worksheet['Worksheet']['numDenials'], 'div'=>array('class'=>'smallText input text'))); ?>
-	<?php echo $this->Form->input('Worksheet.numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X) ', 'value'=>$worksheet['Worksheet']['numPendingDecision'], 'div'=>array('class'=>'smallText input text'))); ?>
-	<?php echo $this->Form->input('Worksheet.numCancelledApps', array('label'=>'Number of Cancelled Applications (RC) ', 'value'=>$worksheet['Worksheet']['numCancelledApps'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<!-- removed approed, denied and cancelled based on change request -->
+	<?php //echo $this->Form->input('Worksheet.numApprovals', array('label'=>'Number of Approvals (80, 81, 86, 8A, 8N) ', 'value'=>$worksheet['Worksheet']['numApprovals'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php //echo $this->Form->input('Worksheet.numDenials', array('label'=>'Number of Denials (1A, 2A, 2F, 3A, 3F, 4X, 50) ', 'value'=>$worksheet['Worksheet']['numDenials'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php echo $this->Form->input('Worksheet.numPendingDecision', array('label'=>'Number of Pending Decision (60,6M,6X,8K) ', 'value'=>$worksheet['Worksheet']['numPendingDecision'], 'div'=>array('class'=>'smallText input text'))); ?>
+	<?php //echo $this->Form->input('Worksheet.numCancelledApps', array('label'=>'Number of Cancelled Applications (33, RC) ', 'value'=>$worksheet['Worksheet']['numCancelledApps'], 'div'=>array('class'=>'smallText input text'))); ?>
 	
 	<?php //debug($worksheet); ?>
 	<div id='priorSemesters'><br />
@@ -178,7 +197,7 @@
 
 <div class="formBox"><a name="sso-feedback"></a>
 	<h3>Student Success Office Feedback</h3>
-	<?php echo $this->Form->input('Worksheet.creditsRepeated', array('label'=>'Repeated Credits (out of 18)', 'div'=>array('class'=>'smallText input text'),'maxlength'=>'2', 'value'=>$worksheet['Worksheet']['financialBlock'])); ?>
+	<?php echo $this->Form->input('Worksheet.creditsRepeated', array('label'=>'Repeated Credits (out of 18)', 'div'=>array('class'=>'smallText input text'),'maxlength'=>'2', 'value'=>$worksheet['Worksheet']['creditsRepeated'])); ?>
 	
 	<?php echo $this->Form->input('Worksheet.needPermToReturnToMajor', array('type'=>'checkbox','label'=>'Needs permission to return to Major', 'checked'=>$worksheet['Worksheet']['needPermToReturnToMajor'])); ?>
 	
@@ -189,6 +208,7 @@
 
 <div class="formBox"><a name="gpa"></a>
 	<h3>GPA</h3>
+	<?php echo $this->Form->input('Worksheet.earnedUMDCredits', array('label'=>'Earned UMD Credits', 'value'=>$worksheet['Worksheet']['earnedUMDCredits'])); ?>
 	<?php echo $this->Form->input('Worksheet.attemptedUMDCredits', array('label'=>'Attempted UMD Credits', 'value'=>$worksheet['Worksheet']['attemptedUMDCredits'])); ?>
 	<?php echo $this->Form->input('Worksheet.cgpa', array('label'=>'Cumulative GPA', 'value'=>$worksheet['Worksheet']['cgpa'])); ?>
 	
@@ -329,7 +349,9 @@
 		echo $this->element('admin_review_controls');
 		?></div><?php
 		
-	if($worksheet['Worksheet']['statusId']>='7'){
+	//change request: should be able to provide final decision after create
+	//if($worksheet['Worksheet']['statusId']>='8'){
+	if($worksheet['Worksheet']['statusId']>='2'){
 		echo $this->element('admin_final_decision');
 	}	
 		
@@ -340,26 +362,45 @@
 <div class="formBox">
 <?php
 	
+	
+	
 	if($worksheet['Worksheet']['statusId']<='2'){
 		echo $this->Form->submit('Save/Update',array('name'=>'saveButton', 'class'=>'submit floatLeft','onclick'=>'return validateForm();'));
+		
 	}
 	
 	//debug($this->Session->request);exit;
+	//ADMIN
 	if(!empty($this->Session->request->params['admin'])){
+	
+	if($worksheet['Worksheet']['statusId']<'2'){
+		echo $this->Form->submit('Mark as Completed',array('name'=>'completeButton', 'class'=>'submit floatLeft','onclick'=>'return validateForm();'));
+	}
+	
 		if($worksheet['Worksheet']['statusId']<'7'){
 			echo $this->Form->submit('Save & Assign',array('name'=>'submitButton','class'=>'submit floatLeft','onclick'=>'return validateForm();'));
 		}
-		else if($worksheet['Worksheet']['statusId']=='7')
+		//change request: should be able to provide final decision after create
+		//else if($worksheet['Worksheet']['statusId']=='8')
+		if($worksheet['Worksheet']['statusId']>='2')
 			echo $this->Form->submit('Finalize Worksheet',array('name'=>'finalizeButton','class'=>'submit floatLeft'));
-	}else if($this->Session->request->params['creator']){
+	}
+	//CREATOR
+	else if($this->Session->request->params['creator']){
 		if($worksheet['Worksheet']['statusId']<'2')
-		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit floatLeft'));
+		echo $this->Form->submit('Save & Submit Worksheet',array('name'=>'submitButton','class'=>'submit floatLeft','onclick'=>'return validateForm();'));
 	}	
+	
 	
 	if(!empty($id)){
 		echo $this->Form->submit('Delete Worksheet',array('name'=>'deleteButton','class'=>'redBtn submit floatRight', 'onclick'=>'return confirmDelete();'));	
 	}
-	echo $this->Form->submit('Make a Copy',array('name'=>'duplicateButton','class'=>'redButton submit floatRight'));
+	
+	if($worksheet['Worksheet']['statusId']>1){
+		echo $this->Form->submit('Mark Incomplete' ,array('name'=>'incompleteButton','class'=>'redBtn submit floatRight', 'onclick'=>'return confirmMarkIncomplete();'));
+	}
+	
+	echo $this->Form->submit('Make a Copy',array('name'=>'duplicateButton','class'=>'redButton submit floatRight','onclick'=>'return validateForm();'));
 	
 ?>
 </div>

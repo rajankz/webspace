@@ -39,5 +39,4 @@ Page: <?php echo $this->Paginator->counter(); ?>
 	<?php echo $this->Paginator->next('Next »', null, null, array('class' => 'disabled')); ?> 
 </div>
 
-
 </div>

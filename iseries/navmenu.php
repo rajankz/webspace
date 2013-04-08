@@ -4,5 +4,5 @@
 </ul>
 <h3><a href="instructors.php">Instructor</a></h3>
 <ul>
-	<li><a href="addInstructor.php">Add Instructor</a></li>
+	<li><a href="addEditInstructor.php">Add Instructor</a></li>
 </ul>

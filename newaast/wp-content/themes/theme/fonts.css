@@ -1,0 +1,17 @@
+/*
+Free Font
+*/
+@font-face {
+	font-family: 'Museo500';
+	src: url('fonts/Museo500/176B29_0.eot');
+	src: url('fonts/Museo500/176B29_0.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Museo500/176B29_0.woff') format('woff'),
+		 url('fonts/Museo500/176B29_0.ttf') format('truetype');}
+
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/MuseoSans500/MuseoSans500.eot');
+    src: url('fonts/MuseoSans500/MuseoSans500.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans500/MuseoSans500.ttf') format('truetype'),
+         url('fonts/MuseoSans500/MuseoSans500.svg#MuseoSans_500') format('svg');
+}

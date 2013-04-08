@@ -16,8 +16,8 @@ class UsersController extends AppController{
         if($this->Auth->login()){
             $this->redirect(array('action'=>'index'));
         } else {
-            $this->Auth->authError = 'You do not have access to this system.<br /><br />Please contact coordinator.';
-            $this->Session->setFlash($this->Auth->authError,'flashError');
+            $this->Auth->AuthError = 'You do not have access to this system.<br /><br />Please contact coordinator.';
+            $this->Session->setFlash($this->Auth->AuthError,'flashError');
         }
     }
 	function logout(){$this->redirect($this->Auth->logout());}
@@ -26,7 +26,7 @@ class UsersController extends AppController{
         parent::beforeFilter();
 	}
 	function index(){
-	//debug($this->Auth);exit;
+	//debug($this->CasAuth);exit;
         switch($this->Auth->user('role')){
             case 'admin':
                 $this->redirect(array('controller'=>'dashboard','action'=>'index','admin'=>true));

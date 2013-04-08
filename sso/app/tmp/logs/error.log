@@ -2467,3 +2467,1035 @@
 #3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-11-16 17:55:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-16 17:55:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 01:24:05 Error: Fatal Error (1): Call to a member function loggedIn() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/UsersController.php, line 12]
+2013-02-03 01:24:05 Error: [FatalErrorException] Call to a member function loggedIn() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 12, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 12, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-03 01:26:43 Error: [MissingActionException] Action DashboardController::creator_stats() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 01:26:44 Error: [MissingActionException] Action DashboardController::creator_reviews() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-10 22:26:18 Error: Fatal Error (1): Call to a member function user() on a non-object in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 30]
+2013-02-10 22:26:18 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/raj/Site...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/raj/Site...', 30, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/raj/Site...', 30, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-18 18:44:40 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 18:44:40 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 18:56:18 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 18:56:18 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 18:59:39 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 18:59:39 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 19:03:09 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-18 19:03:09 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-19 05:36:59 Error: Fatal Error (1): Cannot use object of type WorksheetsController as array in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 426]
+2013-02-19 05:36:59 Error: [FatalErrorException] Cannot use object of type WorksheetsController as array
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/raj/Site...', 426)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/raj/Site...', 426, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/raj/Site...', 426, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 03:18:25 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 03:18:25 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 21:45:14 Error: [MissingControllerException] Controller class ReviewController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 21:45:22 Error: [MissingControllerException] Controller class ReviewController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 21:45:46 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 12]
+2013-03-03 21:45:46 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:45:49 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 12]
+2013-03-03 21:45:49 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:46:13 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 12]
+2013-03-03 21:46:13 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:50:52 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 12]
+2013-03-03 21:50:52 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 12, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:51:06 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:51:06 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:51:07 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:51:07 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:51:42 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:51:42 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:51:44 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:51:44 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:51:50 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:51:50 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:52:04 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:52:04 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:52:20 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:52:20 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:52:48 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:52:48 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:52:49 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:52:49 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:53:21 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:53:21 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:53:28 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:53:28 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:53:36 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:53:36 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:53:53 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:53:53 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:54:05 Error: [MissingControllerException] Controller class ReviewerController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-03 21:54:24 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:54:24 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:54:47 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:54:47 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 21:54:47 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 21:54:47 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:05:37 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:05:37 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:05:43 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:05:43 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:05:49 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:05:49 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:05:49 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:05:49 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:06:21 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:06:21 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:06:29 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:06:29 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-03 22:07:04 Error: Fatal Error (64): Can't use method return value in write context in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 26]
+2013-03-03 22:07:04 Error: [FatalErrorException] Can't use method return value in write context
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/Users/raj/Site...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/Users/raj/Site...', 26, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:02:23 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:02:23 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:02:52 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:02:52 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:03:00 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:03:00 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:08:59 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:08:59 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:08:59 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:08:59 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:50:03 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:50:03 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:51:35 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:51:35 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:51:35 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:51:35 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:51:49 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:51:49 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:52:00 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:52:00 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 00:52:54 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 00:52:54 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:21:19 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:21:19 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:37:10 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:37:10 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:37:28 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:37:28 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:38:22 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:38:22 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:38:31 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:38:31 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:38:31 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:38:31 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-04 01:38:33 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Users/raj/Sites/webspace/sso/app/Controller/ReviewsController.php, line 13]
+2013-03-04 01:38:33 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 13, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 01:54:44 Error: Fatal Error (1): Call to undefined method WorksheetsController::completeWorksheet() in [/Users/raj/Sites/webspace/sso/app/Controller/WorksheetsController.php, line 533]
+2013-04-02 01:54:44 Error: [FatalErrorException] Call to undefined method WorksheetsController::completeWorksheet()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/raj/Site...', 533)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/raj/Site...', 533, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/raj/Site...', 533, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:29 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:29 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:31 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:31 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:31 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:31 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-02 02:13:32 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-02 02:13:32 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 18:50:13 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-06 18:50:13 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 18:50:13 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-06 18:50:13 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 18:50:21 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-06 18:50:21 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 18:51:44 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-06 18:51:44 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-06 18:58:18 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-06 18:58:18 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 18:58:19 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 36]
+2013-04-06 18:58:19 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 36, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:03:00 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:03:00 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:03:00 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:03:00 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:03:24 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:03:24 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:03:25 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:03:25 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:03 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:03 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:06 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:06 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:09 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:09 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:10 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:10 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:14 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:14 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:15 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:15 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:42 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:42 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:42 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:42 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:42 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:42 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:43 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:43 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:50 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:50 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:05:51 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:05:51 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:06:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:06:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:06:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:06:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:08 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:08 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:11 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:11 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:14 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:14 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:23 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:23 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:23 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:23 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:31 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:31 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:47 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:47 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:47 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:47 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:47 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:47 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:07:59 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:07:59 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:08:00 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:08:00 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:26:53 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:26:53 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:27:03 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:27:03 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:27:06 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:27:06 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:27:06 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:27:06 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:29:25 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:29:25 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:29:26 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:29:26 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:35:33 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:35:33 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:35:34 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:35:34 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:36:24 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:36:24 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:38:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:38:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:38:30 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:38:30 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:39:21 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:39:21 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:39:21 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:39:21 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:39:32 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:39:32 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:39:36 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:39:36 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-06 19:39:36 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-06 19:39:36 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 02:03:21 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 02:03:21 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 02:03:22 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 02:03:22 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:38:59 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:38:59 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:17 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:17 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:19 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:19 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:20 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:20 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:21 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:21 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:29 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:29 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 03:41:29 Error: Fatal Error (64): Cannot redeclare DashboardController::admin_settings() in [/Users/raj/Sites/webspace/sso/app/Controller/DashboardController.php, line 37]
+2013-04-07 03:41:29 Error: [FatalErrorException] Cannot redeclare DashboardController::admin_settings()
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/raj/Site...', 37, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 22:19:52 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:55 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:19:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 22:20:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-07 23:33:57 Error: Fatal Error (4): syntax error, unexpected $end in [/Users/raj/Sites/webspace/sso/app/View/Elements/addEditWorksheet.ctp, line 402]
+2013-04-07 23:33:57 Error: [FatalErrorException] syntax error, unexpected $end
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/raj/Site...', 402)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/raj/Site...', 402, Array)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/raj/Site...', 402, Array)
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-07 23:34:18 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/creator_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-07 23:48:45 Error: [MissingViewException] View file "/Users/raj/Sites/webspace/sso/app/View/Worksheet/creator_submit_worksheet_form.ctp" is missing.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(WorksheetsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-08 00:07:37 Error: [MissingActionException] Action ReviewController::reviewer_addWorksheet() could not be found.
+#0 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/raj/Sites/webspace/sso/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ReviewsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/raj/Sites/webspace/sso/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

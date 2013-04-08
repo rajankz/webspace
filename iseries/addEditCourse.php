@@ -5,15 +5,19 @@
 		<?php
 			$editCourseId = $_GET['courseId'];
 			$editCourse = false;
+			$formAction="saveCourse.php";
+			$formName="saveCourse";
 			if($editCourseId){
 				$event = "Edit";
 				$editCourse=true;
+				//$formAction="updateCourse.php";
+				//$formName="updateCourse";
 			}
 			else
 				$event = "Add";
 		?>
 
-			<form method="post" action="saveCourse.php" name="addCourse">
+			<form method="post" action="<?=$formAction?>" name="<?=$formName?>">
 			<h2 align="center"><?=$event;?> Course</h2>
 			
 			<?php
@@ -30,7 +34,7 @@
 			if($editCourse){
 				echo '<input type="hidden" name="data[course][id]" value='.$editCourseId.' />';
 				$selectCourseSql = "select * from iseries_courses where id=".$editCourseId;
-			$selectCourseInstSql = "select * from iseries_course_instructors where course_id=".$editCourseId;
+			$selectCourseInstSql = "select distinct(instructor_id) from iseries_course_instructors where course_id=".$editCourseId;
 			
 			$courseResultSet = mysql_query($selectCourseSql) or die("Unable to execute query ".$selectCourseSql);
 			$courseInstResultSet = mysql_query($selectCourseInstSql) or die("Unable to execute query ".$selectCourseInstSql);
@@ -103,7 +107,7 @@
 						echo '<td><input type="checkbox" ></td>';
 						echo '<td><select id="InstructorCourse'.$instOrder.'" name="data[course][instructor]['.$instOrder.']">';
 						
-						$selectedInstOptions = $iseries->createInstOptionsSelected($row[2]);
+						$selectedInstOptions = $iseries->createInstOptionsSelected($row[0]);
 						echo $selectedInstOptions;
 						echo '</select></td>';
 						echo "</tr>";

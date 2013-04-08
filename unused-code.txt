@@ -1,0 +1,33 @@
+	<a href="javascript:void(0);" onclick="addOneSemester();">Add One Semester</a>
+	
+	<script type="text/javascript">
+		
+		function removeSem(semNum){
+			alert(semNum);
+		}
+	
+		function addOneSemester(){
+			var content = document.getElementById('priorSemesters').innerHTML;
+			//var content = document.getElementById('priorSems').innerHTML;
+			var count=document.getElementById('WorksheetSemesterCount').value;
+			if(count == null || count=="")
+				count = 0;
+			count = parseInt(count);
+			count = count+1;
+			var oneNewSem = "";
+			
+			oneNewSem += "<div class='noMargin' name='data[Semester]["+count+"]' id='Semester"+count+"'>";
+			oneNewSem += "Semester: ";
+			oneNewSem += "<input type='text' name='data[Semester]["+count+"][sem]' /> ";
+			oneNewSem += "Code: ";
+			oneNewSem += "<input type='text' name='data[Semester]["+count+"][code]' /> ";
+			oneNewSem += "<a href='javascript:void(0);' onclick='removeSem("+count+")'>X</a>";
+			oneNewSem += "</div>";
+			
+			content += oneNewSem;
+			document.getElementById('WorksheetSemesterCount').value = count;
+			document.getElementById('priorSemesters').innerHTML = content;
+			
+			
+		}
+	</script>

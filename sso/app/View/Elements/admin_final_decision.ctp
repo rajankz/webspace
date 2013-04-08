@@ -1,8 +1,9 @@
 <div class="formBox"><a name="finalDecision"></a>
 	<h3>Final Decision</h3>
 	<?php 
-		$disabled=true;
-		if($worksheet['Worksheet']['statusId']=='7')
+		//new request: admin should be able to set final decision anytime
+		//$disabled=true;
+		//if($worksheet['Worksheet']['statusId']=='8')
 			$disabled=false;
 	?>	
 		<div class="input text reviewerComments">

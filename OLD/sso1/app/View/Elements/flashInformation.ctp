@@ -1,0 +1,1 @@
+<?php echo "<div class=\"flash flash_info\">{$message}</div>"; ?>

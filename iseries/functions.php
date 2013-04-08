@@ -6,6 +6,7 @@ class ISeries{
 	public static $instOptions = null;
 	public static $instResultSet = null;
 	public static $courseOptions = null;
+	public static $courseResultSet = null;
 	
 	public function createInstOptions(){
 		if(self::$instOptions!=null)
@@ -24,6 +25,25 @@ class ISeries{
 			$instOptions .= "</option>"; 
 		}
 		self::$instOptions = $instOptions;	
+	}
+	
+	public function createCourseOptions(){
+		if(self::$courseOptions!=null)
+			return self::$courseOptions;
+		$getAllCoursesSql = "select * from iseries_courses";
+		$resultSet = mysql_query($getAllCoursesSql) or die('Unable to retrieve course list');
+		$courseOptions .="<option></option>";
+		while ($row = mysql_fetch_array($resultSet, MYSQL_NUM)) {
+			$courseOptions .= "<option ";
+			$courseOptions .= "name=";
+			$courseOptions .= $row[1].$row[2].$row[3];
+			$courseOptions .= " value=".$row[0];
+			$courseOptions .= ">";
+			$name = $row[1].$row[2].$row[3]."-".$row[4];
+			$courseOptions .= $name;
+			$courseOptions .= "</option>"; 
+		}
+		self::$courseOptions = $courseOptions;	
 	}
 	
 	//public function setInstOptionSelected($optionSet)
@@ -51,10 +71,31 @@ class ISeries{
 		return $instOptions;	
 	}
 	
-	public function getInstOptions(){
-		//echo self::$instOptions;
-		return self::$instOptions;
+	public function createCourseOptionsSelected($selected=null){
+		//if(self::$instResultSet==null){
+			$getAllCoursesSql = "select * from iseries_courses";
+			$resultSet = mysql_query($getAllCoursesSql) or die('Unable to retrieve instructor list');
+			self::$courseResultSet = $resultSet;
+		//}
+		$resultSet=self::$courseResultSet;
+		$courseOptions .="<option></option>";
+		while ($row = mysql_fetch_array($resultSet, MYSQL_NUM)) {
+			$courseOptions .= "<option ";
+			$courseOptions .= "name=";
+			$courseOptions .= $row[1].$row[2].$row[3];
+			$courseOptions .= " value=".$row[0];
+			if($selected==$row[0])
+				$courseOptions .= " selected=selected";
+			$courseOptions .= ">";
+			$name = $row[1].$row[2].$row[3]."-".$row[4];
+			$courseOptions .= $name;
+			$courseOptions .= "</option>"; 
+		}
+		return $courseOptions;	
 	}
+	
+	public function getInstOptions(){return self::$instOptions;	}
+	public function getCourseOptions(){return self::$courseOptions;	}
 	
 }
 ?>

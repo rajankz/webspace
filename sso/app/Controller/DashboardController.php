@@ -4,6 +4,7 @@ class DashboardController extends AppController{
 
 	/** ADMIN **/
 	function admin_index(){
+	//debug($this);exit;
 		$this->redirect(array('controller'=>'dashboard','action'=>'worksheets','admin'=>true));
 	}
 	function admin_preferences(){}
@@ -16,6 +17,9 @@ class DashboardController extends AppController{
 	}
 	function admin_stats(){
 		$this->redirect(array('controller'=>'stats', 'action'=>'index'));
+	}
+	function admin_settings(){
+		$this->redirect(array('controller'=>'settings', 'action'=>'index'));
 	}
 	function admin_userEdit(){
 		$this->loadModel('User');
@@ -30,7 +34,6 @@ class DashboardController extends AppController{
 		$this->redirect(array('controller'=>'worksheets','action'=>'index'));		
 	}
 	function admin_addWorksheet(){}
-	function admin_settings(){}
 	
 	/** CREATOR **/
 	function creator_index(){

@@ -55,10 +55,12 @@
 		//echo $this->Html->css('bootstrap');
 		echo $this->Html->css('sso');
 		echo $this->Html->css('xhtml-1020px');
+		echo $this->Html->css('jquery-ui-1.10.2.custom.min');
         echo $this->Html->script('jquery-1.7.2.min.js');
         echo $this->Html->script('jquery.validate.min.js');
         echo $this->Html->script('additional-methods.min.js');
         echo $this->Html->script('functions.js');
+        echo $this->Html->script('jquery-ui-1.10.2.custom.min.js');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -136,7 +138,7 @@
             </a> <a href="http://www.umd.edu" class="blackonwhite">University of Maryland</a><br />
             College Park, MD 20742 <br>
             </p>
-            <?php //echo $this->element('sql_dump'); ?>
+            <?php echo $this->element('sql_dump'); ?>
 		</div>
 	</div>
 </div>

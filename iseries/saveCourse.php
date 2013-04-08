@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 <?php include('config.inc'); ?>
-<?php //print_r($_POST); ?>
 <?php
 if(isset($_POST['data']['course'])){
 	$coursePrefix = $_POST['data']['course']['prefix'];
@@ -11,7 +10,7 @@ if(isset($_POST['data']['course'])){
 	$courseLink = $_POST['data']['course']['link'];
 	$courseIsCore = $_POST['data']['course']['is_core']=='on'?1:0;
 	
-	if($coursePrefix=="" || $courseNum=="" || $courseSuffix=="" || $courseTitle=="" || $courseDescription=="" || $courseLink==""){
+	if($coursePrefix=="" || $courseNum=="" || $courseTitle=="" || $courseDescription=="" || $courseLink==""){
 		$_SESSION['msg']="All course fields are mandatory";
 		$_SESSION['msg_type']="error";
 		header("Location: courses.php");
@@ -38,54 +37,51 @@ if(isset($_POST['data']['course'])){
 	}
 	if(!$courseId)
 		$courseId = mysql_insert_id();
-	$orderNegate = 0;
 	
+	$instIdList = "(";
 	if(isset($_POST['data']['course']['instructor'])){	
 		foreach($_POST['data']['course']['instructor'] as $key=>$instructorId){
-			$selectOneCourseInstSql = "select * from iseries_course_instructors where course_id=".$courseId." and ci_order=".($key+$orderNegate);
-			$selectCourseInstResult = mysql_query($selectOneCourseInstSql) or die("Unable to perform query ".$selectOneCourseInstSql);
-			if(mysql_num_rows($selectCourseInstResult)>0){
-				if($instructorId==""){
-					$orderNegate-=1;
+			if($instructorId==""){
 					continue;
-				}else{
-					$updateOneCourseInstSql = "update iseries_course_instructors set instructor_id=".$instructorId." where course_id=".$courseId." and ci_order=".($key+$orderNegate);
-					$updateCourseInstResult = mysql_query($updateOneCourseInstSql) or die('unable to execute query: '.$updateOneCourseInstSql);
-				if(!$updateCourseInstResult){
-					$_SESSION['msg']="Unable to update the course-instructor information. Please try later.";
-					$_SESSION['msg_type']="error";
-					header("Location: courses.php");
-					exit;
-				}
-			  }			
 			}else{
-				if($instructorId==""){
-					$orderNegate-=1;
-					continue;
-				}
-				$order = $key + $orderNegate;
-				$saveCourseInstSql = "insert into iseries_course_instructors(course_id, instructor_id, ci_order) values(".$courseId.",".$instructorId.",".$order.")";
-				$courseInstResult = mysql_query($saveCourseInstSql) or die('unable to execute query: '.$saveCourseInstSql);
+				$instIdList .= $instructorId.", ";
+			}
+			$selectOneCourseInstSql = "select 1 from iseries_course_instructors where course_id=".$courseId." and instructor_id=".$instructorId;
+			$selectCourseInstResult = mysql_query($selectOneCourseInstSql) or die("Unable to perform query ".$selectOneCourseInstSql);
+			// if row exists then continue else add it
+			if(mysql_num_rows($selectCourseInstResult)>0){	
+				continue;
+			}else{
+				$insertCourseInstSql = "insert into iseries_course_instructors(course_id, instructor_id) values(".$courseId.",".$instructorId.")";
+				$courseInstResult = mysql_query($insertCourseInstSql) or die('unable to execute query: '.$insertCourseInstSql);
 				if(!$courseInstResult){
 					$_SESSION['msg']="Unable to save the course information. Please try later.";
 					$_SESSION['msg_type']="error";
 					header("Location: courses.php");
 					exit;
 				}
-			}		
+			}
 		}
 		//delete removed courses
-		$order=$key+$orderNegate;
-		$deleteCourseInstSql = "delete from iseries_course_instructors where course_id='$courseId' and ci_order>'$order'";
+		$instIdListLen=strlen($instIdList);
+		if($instIdListLen>1){
+			$instIdList = substr($instIdList,0, $instIdListLen-2);
+			$instIdList.=")";
+		}
+		if($instIdListLen>1)
+			$deleteCourseInstSql = "delete from iseries_course_instructors where course_id='$courseId' and instructor_id not in $instIdList";
+		else
+			$deleteCourseInstSql = "delete from iseries_course_instructors where course_id='$courseId'";
+			
 		$deleteCourseInstResult = mysql_query($deleteCourseInstSql) or die('unable to execute query: '.$deleteCourseInstSql);
 		if(!$deleteCourseInstResult){
 			$_SESSION['msg']="Unable to delete course-instructor information. Please try later.";
 			$_SESSION['msg_type']="error";
 			header("Location: courses.php");
 			exit;
+		
 		}
 	}
-
 	header("Location: courses.php");	
 }
 ?>

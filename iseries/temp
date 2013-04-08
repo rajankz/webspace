@@ -1,0 +1,68 @@
+
+			
+			Instructors who teach/taught this course<br />
+
+			<div>
+
+			<?php
+				include_once('functions.php');
+				$iseries = new ISeries();
+				$iseries->createInstOptions();
+				$options = $iseries->getInstOptions();		
+			?>
+			<script type="text/javascript">
+				function addInstructor(tableID) {
+				    var table = document.getElementById(tableID);
+				    var rowCount = table.rows.length;
+				    var row = table.insertRow(rowCount);
+				    rowNum = rowCount;
+				    
+				    var cell1 = row.insertCell(0);
+				    var element1 = document.createElement("input");
+				    element1.type = "checkbox";
+				    cell1.appendChild(element1);
+				
+				    var cell2 = row.insertCell(1);
+				    var oneInst = document.createElement("select");
+				    oneInst.setAttribute("id", "InstructorCourse"+rowNum);
+				    oneInst.setAttribute("name", "data[course][instructor]["+rowNum+"]");
+				    oneInst.innerHTML = '<?=$options;?>';
+				    cell2.appendChild(oneInst);
+				}
+			</script>
+			<table id="instructorsList">
+			<?php
+				if($courseInstResultSet!=null && mysql_num_rows($courseInstResultSet)>0){
+					$instOrder = 0;
+					echo "<tbody>";
+					while($row = mysql_fetch_array($courseInstResultSet, MYSQL_NUM)){
+						echo "<tr>";
+						echo '<td><input type="checkbox" ></td>';
+						echo '<td><select id="InstructorCourse'.$instOrder.'" name="data[course][instructor]['.$instOrder.']">';
+						
+						$selectedInstOptions = $iseries->createInstOptionsSelected($row[2]);
+						echo $selectedInstOptions;
+						echo '</select></td>';
+						echo "</tr>";
+						$instOrder++;
+					}					
+					echo "</tbody>";
+				}
+			?>
+			</table>
+			<input type="button" onclick="addInstructor('instructorsList')" value="Add Instructor" />
+			<input type="button" onclick="removeElement('instructorsList')" value="Remove Instructor" />
+			<!-- show option for profs and remove them if not needed -->
+			</div>
+			<br />
+			<input type="submit" value="Save" /><br />
+			
+			</form>	
+
+		</div>
+	</div>
+</div>
+
+	
+</body>
+</html>

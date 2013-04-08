@@ -182,6 +182,7 @@ table.dataGrid tr:nth-child(odd) {
 .red{color:#880000;text-shadow: 1px 1px 0 #fff;}
 input .redButton{background-color: #990000;color:#fefefe;}
 .redButton:hover{background-color: #333;}
+
 .grey{color:#444;text-shadow: 1px 1px 0 #fff;}
 
 table.uiGrid{
@@ -226,7 +227,6 @@ background: -o-linear-gradient(top,  #ba2727 0%,#ba3737 100%);
 background: -ms-linear-gradient(top,  #ba2727 0%,#ba3737 100%);
 background: linear-gradient(to bottom,  #ba2727 0%,#ba3737 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba2727', endColorstr='#ba3737',GradientType=0 );
-
 }
 
 input[type=submit]{
